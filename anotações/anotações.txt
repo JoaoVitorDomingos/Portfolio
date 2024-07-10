@@ -1,0 +1,17 @@
+Sobre Mim
+Eu sou um desenvolvedor Front-end com conhecimentos em HTML, CSS e Javascript, atualmente estou estudando Bootstrap.
+
+Estou cursando Ciências da Computação na UNESPAR, Universidade Estadual do Paraná, e comecei a me interessar por programação em 2020 realizando alguns cursos da Aluna de HTML e CSS, Lógica de Programação, entre outros. Também já estudei sobre a Engine Unity, aprendendo o básico sobre ela e a linguagem C#.
+
+CORES:
+Verde Escuro: #2D9687
+Verde Claro: #16D7BB
+Preto: #12130F
+Azul: #1C5D99
+
+
+FONTES:
+Principal: Open Sans
+Secundária: Roboto
+Destaque: Oswald
+
