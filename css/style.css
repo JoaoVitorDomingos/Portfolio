@@ -23,3 +23,38 @@ body {
     background-color: var(--preto);
     font-family: var(--principal);
 }
+
+
+/* CABEÇALHO */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10px;
+}
+
+header h1 {
+    font-family: var(--cursiva);
+    font-size: 1.7em;
+    color: var(--verde-claro);
+    margin-left: 15px;
+}
+
+nav > ul {
+    list-style: none;
+    display: flex;
+}
+
+nav > ul a {
+    text-decoration: none;
+    margin-right: 3px;
+    padding: 5px;
+    transition: 0.5s;
+}
+
+nav > ul a:hover {
+    color: var(--verde-claro);
+    text-decoration: underline;
+    font-weight: bold;
+}
+
