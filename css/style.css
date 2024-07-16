@@ -1,0 +1,25 @@
+/* Configurações Gerais */
+:root {
+    /* Cores */
+    --preto: #12130F;
+    --verde-escuro: #2D9687;
+    --verde-claro: #16D7BB;
+    --azul: #1C5D99;
+
+    /* Fontes */
+    --principal: "Roboto", "Open Sans", sans-serif;
+    --destaque: 'Oswald';
+    --cursiva: "Parisienne", cursive;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+body {
+    background-color: var(--preto);
+    font-family: var(--principal);
+}
