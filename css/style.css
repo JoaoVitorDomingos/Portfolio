@@ -166,3 +166,81 @@ section.sobre > p.p_btn > a.btn:hover {
     box-shadow: none;
     cursor: pointer;
 }
+
+
+
+/* PROJETOS */
+section#projetos {
+    padding: 20px 20px;
+}
+
+section#projetos > h1 {
+    margin-bottom: 40px;
+}
+
+div.container_projetos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section#projetos > div.container_projetos > div.projeto {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin-bottom: 40px;
+}
+
+section#projetos > div.container_projetos > div.projeto > img {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+section#projetos > div.container_projetos > div.projeto > div {
+    background-color: var(--verde-claro);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    height: 42vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+section#projetos > div.container_projetos > div.projeto > div > div.tecno > ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 15px;
+}
+
+div.projeto h2 {
+    text-align: center;
+    color: black;
+    margin-bottom: 5px;
+}
+
+div.projeto p {
+    padding: 0px 15px;
+    margin-bottom: 10px;
+    text-align: justify;
+    color: black;
+}
+
+div.projeto button.btn {
+    display: block;
+    margin: 0px auto 10px auto;
+    background-color: black;
+    color: white;
+    box-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 0.411);
+    transition: .5s;
+}
+
+div.projeto button.btn:hover {
+    font-weight: bold;
+    text-decoration: underline;
+    color: black;
+    background-color: transparent;
+    border: 2px solid black;
+    box-shadow: none;
+    cursor: pointer;
+}
