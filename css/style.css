@@ -24,6 +24,11 @@ body {
     font-family: var(--principal);
 }
 
+strong {
+    font-family: var(--destaque);
+    color: var(--verde-claro);
+}
+
 
 /* CABEÇALHO */
 header {
@@ -58,3 +63,39 @@ nav > ul a:hover {
     font-weight: bold;
 }
 
+
+
+/* INTRODUÇÃO */
+section.introducao {
+    padding: 20px;
+    background-image: url(../imgs/back/back1_50opacy_black.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+
+.introducao > div.textos {
+    text-align: center;
+}
+
+.introducao > div.textos > h1:first-of-type {
+    font-size: 2em;
+    margin: 5px 0px
+}
+
+.introducao > div.textos > h1:last-of-type {
+    font-size: 1.2em;
+}
+
+.introducao > div.contatos {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.introducao > div.contatos > a > img {
+    width: 10%;
+}
+
+.introducao > div.contatos > a:nth-child(2) > img{
+    margin: 0 20px;
+}
