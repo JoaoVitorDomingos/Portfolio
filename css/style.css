@@ -355,3 +355,25 @@ div.janela img {
     width: 10%;
     margin-right: 10px;
 }
+
+
+
+/* FOOTER */
+footer {
+    padding: 30px;
+    border-top: 2px solid var(--verde-claro);
+}
+
+footer p {
+    text-align: center;
+    font-size: 1.1em;
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--verde-claro);
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
