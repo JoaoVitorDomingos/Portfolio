@@ -192,6 +192,7 @@ section#projetos > div.container_projetos > div.projeto {
     flex-direction: column;
     width: 80%;
     margin-bottom: 40px;
+    box-shadow: 2px 1px 4px 0px #16d7ba62;
 }
 
 section#projetos > div.container_projetos > div.projeto > img {
@@ -313,4 +314,44 @@ div.janela img {
     background-color: red;
     opacity: 1;
     width: 45%;
+}
+
+
+
+/* CONTATO */
+#contato {
+    margin-bottom: 40px;
+}
+
+#contato h1 {
+    margin: 20px 0;
+}
+
+#contato p {
+    text-align: center;
+    font-size: 1.2em;
+}
+
+#contato div {
+    display: flex;
+    flex-direction: column;
+}
+
+#contato a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    text-decoration: none;
+}
+
+#contato a:hover {
+    font-weight: bold;
+    text-decoration: underline;
+    color: var(--verde-claro);
+}
+
+#contato img {
+    width: 10%;
+    margin-right: 10px;
 }
