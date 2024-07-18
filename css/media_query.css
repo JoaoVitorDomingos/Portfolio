@@ -1,0 +1,138 @@
+/* Tablet e Notebook */
+@media screen and (min-width: 768px) { 
+    /* Gerais */
+    p, a {
+        font-size: 1.6em;
+    }
+
+    .titulo {
+        font-size: 3.5em;
+    }
+
+    /* HEADER */
+    header {
+        padding: 40px 30px;
+    }
+
+    header h1 {
+        font-size: 2.8em;
+        margin-left: 30px;
+    }
+
+    nav > ul a {
+        margin-right: 10px;
+        padding: 10px;
+        font-size: 1.8em;
+    }
+
+    /* INTRODUÇÃO */
+    section.introducao {
+        height: 40vh;
+    }
+
+    .textos > h2 {
+        font-size: 2.8em;
+        margin-top: 40px;
+    }
+
+    .introducao > div.textos > h1:first-of-type {
+        font-size: 3.5em;
+        margin: 10px 0px;
+    }
+
+    .introducao > div.textos > h1:last-of-type {
+        font-size: 2.2em;
+    }
+
+    .introducao > div.contatos {
+        margin-top: 40px;
+    }
+
+      .introducao > div.contatos > a > img {
+        width: 9%;
+    }
+
+    .introducao > div.contatos > a:nth-child(2) > img{
+        margin: 0 40px;
+    }
+
+
+    /* SOBRE MIM */
+    .sobre h1.titulo {
+        margin-bottom: 30px;
+    }
+
+    .sobre p {
+        margin-right: 15px;
+        margin-left: 15px;
+    }
+
+    section.sobre > div.foto {
+        margin-top: 40px;
+        height: 50vh;
+        width: 60%;
+    }
+
+    section.sobre > p.p_btn {
+        margin: 20px 0px;
+    }
+
+    section.sobre > p.p_btn > a.btn {
+        padding: 10px 30px;
+    }
+
+
+    /* PROJETOS */
+    section#projetos > div.container_projetos > div.projeto > div {
+        height: 50vh;
+    }
+
+    section#projetos > div.container_projetos > div.projeto > div > div.tecno > ul {
+        padding: 30px;
+        font-size: 1.6em;
+    }
+
+    div.projeto h2 {
+        font-size: 2.5em;
+        margin-bottom: 15px;
+    }
+
+    div.projeto button.btn {
+        font-size: 1.3em;
+        padding: 15px 50px;
+        margin-bottom: 30px;
+    }
+
+
+    /* CONTATO */
+    #contato {
+        margin: 60px 0;
+    }
+
+    #contato h1 {
+        margin: 30px 0;
+    }
+
+    #contato p {
+        font-size: 1.6em;
+        margin-bottom: 30px;
+    }
+
+    #contato img {
+        margin-right: 20px;
+    }
+
+
+    /* FOOTER */
+    footer {
+        padding: 60px;
+    }
+
+    footer p {
+        font-size: 2em;
+    }
+
+    footer > p > a {
+        font-size: 1em;
+    }
+}
