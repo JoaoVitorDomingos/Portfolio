@@ -27,12 +27,12 @@
 
     /* INTRODUÇÃO */
     section.introducao {
-        height: 40vh;
+        height: 60vh;
     }
 
     .textos > h2 {
         font-size: 2.8em;
-        margin-top: 40px;
+        margin-top: 60px;
     }
 
     .introducao > div.textos > h1:first-of-type {
@@ -58,26 +58,26 @@
 
 
     /* SOBRE MIM */
-    .sobre h1.titulo {
+    #sobre h1.titulo {
         margin-bottom: 30px;
     }
 
-    .sobre p {
+    #sobre p {
         margin-right: 15px;
         margin-left: 15px;
     }
 
-    section.sobre > div.foto {
+    #sobre .foto {
         margin-top: 40px;
         height: 50vh;
         width: 60%;
     }
 
-    section.sobre > p.p_btn {
+    #sobre p.p_btn {
         margin: 20px 0px;
     }
 
-    section.sobre > p.p_btn > a.btn {
+    #sobre > p.p_btn > a.btn {
         padding: 10px 30px;
     }
 
@@ -134,5 +134,109 @@
 
     footer > p > a {
         font-size: 1em;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    /* GERAIS */
+    .titulo {
+        font-size: 5em;
+    }
+    
+    /* HEADER */
+    header h1 {
+        font-size: 3.5em;
+    }
+
+    nav > ul a {
+        font-size: 2em;
+    }
+
+    header div {
+        display: inline;
+        width: 20%;
+    }
+
+    header img {
+        width: 15%;
+        margin-right: 30px;
+    }
+
+    /* INTRODUÇÃO */
+    section.introducao {
+        height: 70vh;
+    }
+
+    .textos > h2 {
+        font-size: 3.5em;
+        margin-top: 100px;
+    }
+
+    .introducao > div.textos > h1:first-of-type {
+        font-size: 4.5em;
+        margin: 20px 0px;
+    }
+
+    .introducao > div.textos > h1:last-of-type {
+        font-size: 2.5em;
+    }
+
+    .introducao > div.contatos > a > img {
+        width: 4%;
+    }
+
+
+    /* SOBRE MIM */
+    #sobre {
+        margin-top: 150px;
+        display: flex;
+        justify-content: center;
+    }
+
+    #sobre .area-textos, #sobre .area-foto {
+        width: 45%;
+    }
+
+    #sobre .area-textos p {
+        font-size: 1.8em;
+    }
+
+
+    /* PROJETOS */
+    #projetos {
+        margin-top: 150px;
+    }
+
+    #projetos h1.titulo {
+        margin-bottom: 100px;
+    }
+
+    #projetos .container_projetos {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: start;
+    }
+
+    section#projetos > div.container_projetos > div.projeto {
+        width: 35%;
+    }
+
+
+    /* CONTATO */
+    #contato {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: start;
+        margin: 200px 0;
+    }
+
+    #contato div:last-of-type {
+        width: 30%;
+        margin-top: 30px;
+    }
+
+    #contato p {
+        font-size: 1.8em;
     }
 }

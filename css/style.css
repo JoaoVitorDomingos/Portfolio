@@ -88,6 +88,10 @@ nav > ul a:hover {
     font-weight: bold;
 }
 
+header > div {
+    display: none;
+}
+
 
 
 /* INTRODUÇÃO */
@@ -128,21 +132,22 @@ section.introducao {
 
 
 /* SOBRE MIM */
-section.sobre {
+#sobre {
     margin: 60px 0px;
     padding: 0px 20px;
 }
 
-section.sobre > h1, p{
+#sobre h1, p{
     margin-bottom: 15px;
 }
 
-section.sobre > p {
+#sobre p {
     text-align: justify;
     text-indent: 20px;
+    margin-right: 5px;
 }
 
-section.sobre > div.foto {
+#sobre .foto {
     display: block;
     margin: auto;
     height: 40vh;
@@ -155,17 +160,18 @@ section.sobre > div.foto {
     box-shadow: 2px 1px 1px -1px #16d7ba60;
 }
 
-section.sobre > p.p_btn {
-    padding: 20px;
-    margin: 5px 0px;
+#sobre p.p_btn {
     text-align: center;
+    padding: 20px;
+    margin: 10px 0px;
 }
 
-section.sobre > p.p_btn > a.btn {
+#sobre p.p_btn > a.btn {
+    padding: 10px 32px;
     box-shadow: 1px 1px 4px 0px #16d7ba60;
 }
 
-section.sobre > p.p_btn > a.btn:hover {
+#sobre p.p_btn > a.btn:hover {
     color: var(--verde-claro);
     border: 4px solid var(--verde-claro);
 }
