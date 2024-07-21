@@ -83,7 +83,7 @@
                             <h2>My Class</h2>
                             <p>Um site feito para professores, onde eles tem acesso aos alunos de sua turma, suas notas e médias, além de ser possível enviar aulas gravadas e atividades aos alunos.</p>
                         </div>
-                        <button type="button" class="btn">Ver mais</button>
+                        <button type="button" class="btn abrir_modal m1">Ver mais</button>
                     </div>
                 </div>
 
@@ -100,38 +100,40 @@
                             <h2>Luis Cartões</h2>
                             <p>Um site que vende serviços decartões de aniversários.</p>
                         </div>
-                        <button type="button" class="btn">Ver mais</button>
+                        <button type="button" class="btn abrir_modal m2">Ver mais</button>
                     </div>
                 </div>
             </div>
 
             <div class="container_janelas"> <!-- Container das Janelas Modais-->
-                <!-- <div class="janela">
-                    <button type="button">Fechar</button>
+                <div class="fade hide"></div>
+
+                <div class="janela hide" id="m1">
+                    <!-- <button type="button">Fechar</button> -->
                     <img src="imgs/projetos/my_class.PNG" alt="Imagem do Projeto My Class">
                     <div>
                         <h2>My Class</h2>
                         <p>Um site feito para professores, onde eles tem acesso aos alunos de sua turma, suas notas e médias, além de ser possível enviar aulas gravadas e atividades aos alunos.</p>
                         <div>
-                            <a href="http://" target="_blank" class="btn">Ver Projeto</a>
-                            <a href="http://" target="_blank" class="btn">Github</a>
+                            <a href="https://joaovitordomingos.github.io/my-class/" target="_blank" class="btn">Ver Projeto</a>
+                            <a href="https://github.com/JoaoVitorDomingos/my-class" target="_blank" class="btn">Github</a>
                         </div>
-                        <button type="button" class="btn">Fechar</button>
+                        <button type="button" class="btn fechar_modal">Fechar</button>
                     </div>
-                </div> -->
+                </div>
 
-                <!-- <div class="janela">
+                <div class="janela hide" id="m2">
                     <img src="imgs/projetos/luis_cartoes.PNG" alt="Imagem do Projeto Luis Cartões">
                     <div>
                         <h2>Luis Cartões</h2>
                         <p>Um site que vende serviços decartões de aniversários.</p>
                         <div>
-                            <a href="http://" target="_blank" class="btn">Ver Projeto</a>
-                            <a href="http://" target="_blank" class="btn">Github</a>
+                            <a href="https://joaovitordomingos.github.io/luis-cartoes/" target="_blank" class="btn">Ver Projeto</a>
+                            <a href="https://github.com/JoaoVitorDomingos/luis-cartoes" target="_blank" class="btn">Github</a>
                         </div>
-                        <button type="button" class="btn">Fechar</button>
+                        <button type="button" class="btn fechar_modal">Fechar</button>
                     </div>
-                </div> -->
+                </div>
             </div>
         </section>
 
@@ -163,5 +165,9 @@
     <footer>
         <p>Feito por <a href="https://github.com/JoaoVitorDomingos" target="_blank"><strong>João Vitor C. Domingos</strong></a> - 2024</p>
     </footer>
+
+
+    <!-- Script Principal -->
+     <script src="js/main.js"></script>
 </body>
 </html>

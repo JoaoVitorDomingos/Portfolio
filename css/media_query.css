@@ -104,6 +104,52 @@
     }
 
 
+    /* JANELAS MODAIS */
+    .fade {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.6);
+        z-index: 5;
+    }
+
+    .janela {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 60%;
+        height: 80%;
+        border-radius: 5px;
+        z-index: 10;
+    }
+
+    .janela img {
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+    }
+
+    .janela > div {
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        height: calc(697px - 252px);
+    }
+
+    .janela p {
+        height: calc(415px - 192px);
+    }
+
+    .janela > div > div a {
+        font-size: 1.3em;
+    }
+
+    .janela > div > button {
+        font-size: 1.3em;
+    }
+
+
     /* CONTATO */
     #contato {
         margin: 60px 0;
@@ -220,6 +266,46 @@
 
     section#projetos > div.container_projetos > div.projeto {
         width: 35%;
+    }
+
+
+    /* JANELA MODAL */
+    .janela {
+        width: 80%;
+        height: 80%;
+        display: flex;
+    }
+
+    .janela img {
+        width: 50%;
+        border-top-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
+
+    .janela > div {
+        padding: 30px;
+        height: 100%;
+    }
+
+    .janela h2 {
+        font-size: 3.5em;
+    }
+
+    .janela p {
+        font-size: 1.6em;
+        text-indent: 20px;
+        height: calc(706px - 253px);
+    }
+
+    .janela > div > div {
+        margin-bottom: 20px;
+    }
+
+    .janela > div > div a, .janela > div > button {
+        font-size: 1.5em;
+        width: 30%;
+        padding-top: 10px;
+        padding-bottom: 10px;
     }
 
 
