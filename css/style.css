@@ -58,6 +58,18 @@ strong {
     cursor: pointer;
 }
 
+.tec_html {
+    background-color: #FC490B;
+}
+
+.tec_css {
+    background-color: #1775BB;
+}
+
+.tec_javas {
+    background-color: #FCB040;
+}
+
 
 /* CABEÇALHO */
 header {
@@ -210,6 +222,13 @@ section#projetos > div.container_projetos > div.projeto > img {
     border-top-right-radius: 5px;
 }
 
+.tec_html, .tec_css, .tec_javas {
+    border: 1px solid transparent;
+    border-radius: 10px;
+    padding: 5px 10px;
+    font-size: 0.8em;
+}
+
 section#projetos > div.container_projetos > div.projeto > div {
     background-color: var(--verde-claro);
     border-bottom-left-radius: 5px;
@@ -288,12 +307,22 @@ div.projeto button.btn:hover {
     font-size: 2em;
 }
 
+.janela .textos_janelas {
+    height: calc(90vh - 317px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 .janela p {
     text-align: justify;
     color: black;
-    margin-top: 30px;
-    height: calc(90vh - 349px);
     font-size: 1.2em;
+}
+
+.janela strong {
+    color: black;
+    font-family: var(--principal);
 }
 
 .janela > div > div {

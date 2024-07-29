@@ -92,6 +92,10 @@
         font-size: 1.6em;
     }
 
+    .tec_html, .tec_css, .tec_javas {
+        padding: 5px 20px;
+    }
+
     div.projeto h2 {
         font-size: 2.5em;
         margin-bottom: 15px;
@@ -137,8 +141,8 @@
         height: calc(697px - 252px);
     }
 
-    .janela p {
-        height: calc(415px - 192px);
+    .janela .textos_janelas {
+        height: calc(415px - 164px);
     }
 
     .janela > div > div a {
@@ -291,10 +295,13 @@
         font-size: 3.5em;
     }
 
-    .janela p {
+    .janela .textos_janelas {
+        height: calc(706px - 253px);
+    }
+
+    .janela .textos_janelas p {
         font-size: 1.6em;
         text-indent: 20px;
-        height: calc(706px - 253px);
     }
 
     .janela > div > div {
