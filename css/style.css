@@ -70,6 +70,15 @@ strong {
     background-color: #FCB040;
 }
 
+.contato {
+    transition: 0.5s;
+}
+
+.contato:hover {
+    cursor: pointer;
+    color: var(--verde-claro);
+}
+
 
 /* CABEÇALHO */
 header {
@@ -158,18 +167,11 @@ header {
 
 #menu > div i {
     font-size: 2.5em;
-    transition: 0.5s;
 }
 
 #menu > div span {
     font-size: 3em;
-    transition: 0.5s;
     margin-top: 7px;
-}
-
-#menu > div i:hover, #menu > div span:hover {
-    cursor: pointer;
-    color: var(--verde-claro);
 }
 
 #menu_burgue {
@@ -183,45 +185,56 @@ header {
     cursor: pointer;
 }
 
-/* header > div {
-    display: none;
-} */
-
-
 
 /* INTRODUÇÃO */
 section.introducao {
     padding: 20px;
-    background-image: url(../imgs/back/back1_50opacy_black.jpg);
+    padding-bottom: 70px;
+    height: 90vh;
+    background-image: url(../imgs/back/back_cell_50.png);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center top;
+    background-position: center center;
+
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
 }
 
 .introducao > div.textos {
     text-align: center;
 }
 
+.introducao > div.textos > h2 {
+    font-size: 2.5em;
+}
+
 .introducao > div.textos > h1:first-of-type {
-    font-size: 2em;
-    margin: 5px 0px
+    font-size: 3em;
+    margin: 30px 0px 20px 0px;
 }
 
 .introducao > div.textos > h1:last-of-type {
-    font-size: 1.2em;
+    font-size: 1.7em;
 }
 
 .introducao > div.contatos {
-  text-align: center;
-  margin-top: 15px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    text-align: center;
+    margin-top: 40px;
+    width: 100%;
 }
 
-.introducao > div.contatos > a > img {
-    width: 10%;
+.introducao > div.contatos > a > i {
+    font-size: 2.5em;
 }
 
-.introducao > div.contatos > a:nth-child(2) > img{
-    margin: 0 20px;
+.introducao > div.contatos > a > span {
+    font-size: 3em;
+    margin-top: 7px;
 }
 
 
