@@ -73,40 +73,115 @@ strong {
 
 /* CABEÇALHO */
 header {
-    display: flex;
+    /* display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding: 20px 10px;
+    align-items: center; */
+    padding: 15px;
 }
 
-header h1 {
+#menu {
+    padding: 20px;
+    background-color: var(--preto);
+}
+
+#menu > .offcanvas-header {
+    justify-content: space-between;
+}
+
+#menu h1 {
     font-family: var(--cursiva);
-    font-size: 1.7em;
-    color: var(--verde-claro);
-    margin-left: 15px;
+    font-size: 2.5em;
 }
 
-nav > ul {
+#menu h1 > a {
+    color: var(--verde-claro);
+    text-decoration: none;
+}
+
+#menu > h1:hover {
+    cursor: pointer;
+}
+
+#menu > h1.header_titulo {
+    display: none;
+}
+
+#menu > .offcanvas-header > span {
+    color: var(--verde-claro);
+    opacity: .7;
+    transition: .4s;
+}
+
+#menu > .offcanvas-header > span:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+#menu > nav {
+    margin: 10px 0px;
+}
+
+#menu > nav > ul {
     list-style: none;
     display: flex;
+    flex-flow: column nowrap;
+    padding: 0;
+    margin: 0;
+    text-align: center;
 }
 
-nav > ul a {
+#menu > nav > ul a {
+    color: white;
+    font-size: 1.5em;
     text-decoration: none;
     margin-right: 3px;
     padding: 5px;
     transition: 0.5s;
 }
 
-nav > ul a:hover {
+#menu > nav > ul a:hover {
     color: var(--verde-claro);
     text-decoration: underline;
     font-weight: bold;
 }
 
-header > div {
-    display: none;
+#menu > .header_links {
+    margin-top: 16px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
 }
+
+#menu > div i {
+    font-size: 2.5em;
+    transition: 0.5s;
+}
+
+#menu > div span {
+    font-size: 3em;
+    transition: 0.5s;
+    margin-top: 7px;
+}
+
+#menu > div i:hover, #menu > div span:hover {
+    cursor: pointer;
+    color: var(--verde-claro);
+}
+
+#menu_burgue {
+    font-size: 2.5em;
+    color: var(--verde-claro);
+    display: block;
+    text-align: center;
+}
+
+#menu_burgue:hover {
+    cursor: pointer;
+}
+
+/* header > div {
+    display: none;
+} */
 
 
 
