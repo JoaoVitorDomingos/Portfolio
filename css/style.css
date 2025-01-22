@@ -130,9 +130,13 @@ header {
     text-align: center;
 }
 
+#menu > nav > ul > li {
+    margin-bottom: 15px;
+}
+
 #menu > nav > ul a {
     color: white;
-    font-size: 1.5em;
+    font-size: 1.6em;
     text-decoration: none;
     margin-right: 3px;
     padding: 5px;
