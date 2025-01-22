@@ -105,8 +105,11 @@ if(modal) {
         console.log(info.descricao)
         p1.innerHTML = info.descricao[0]
         let max = (info.descricao.length) - 1
-        let p = document.createElement("p")
+        console.log("Max: " + max)
         for(let i = 1; i <= max; i++) {
+            let p = document.createElement("p")
+            console.log("I: " + i)
+            console.log("Texto: " + info.descricao[i])
             p.innerHTML = info.descricao[i]
             divInfo.appendChild(p)
         }

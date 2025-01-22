@@ -320,6 +320,12 @@ div.container_projetos {
     background-color: var(--verde-claro);
 }
 
+.projeto > img {
+    height: 30vh;
+    object-fit: cover;
+    object-position: top;
+}
+
 .tec_html, .tec_css, .tec_javas, .tec_boot {
     border: 1px solid transparent;
     border-radius: 10px;
@@ -388,7 +394,7 @@ div.projeto a.btn:hover {
 .modal .modal-body > .projeto_img {
     /* background-image: url(""); */
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: top center;
     background-size: cover;
     width: 100%;
     height: 60vh;
@@ -413,6 +419,16 @@ div.projeto a.btn:hover {
 
 .modal .modal-body > .projeto_info > p strong {
     color: var(--preto);
+}
+
+.modal .modal-body > .projeto_info > p a {
+    color: var(--preto);
+    text-decoration: underline;
+}
+
+.modal .modal-body > .projeto_info > p a:hover {
+    cursor: pointer;
+    font-weight: bold;
 }
 
 .modal .modal-footer {
