@@ -51,6 +51,7 @@ strong {
 }
 
 .btn:hover {
+    border: 2px solid transparent;
     font-weight: bold;
     text-decoration: underline;
     background-color: transparent;
@@ -249,7 +250,7 @@ section.introducao {
     padding: 0px 20px;
 }
 
-#sobre h1, p{
+#sobre h1, #sobre p{
     margin-bottom: 15px;
 }
 
@@ -316,6 +317,7 @@ div.container_projetos {
 #projetos > .container_projetos > .projeto {
     box-shadow: 2px 1px 4px 0px #16d7ba62;
     margin-bottom: 40px;
+    background-color: var(--verde-claro);
 }
 
 .tec_html, .tec_css, .tec_javas, .tec_boot {
@@ -323,10 +325,6 @@ div.container_projetos {
     border-radius: 10px;
     padding: 5px 10px;
     font-size: 0.8em;
-}
-
-section#projetos > div.container_projetos > div.projeto > div.card-body {
-    background-color: var(--verde-claro);
 }
 
 section#projetos > div.container_projetos > div.projeto > div.card-body > div.tecno > ul {
@@ -363,27 +361,81 @@ div.projeto a.btn:hover {
 }
 
 
+
 /* JANELAS MODAIS */
-.fade, .janela {
+/* .fade, .janela {
     transition: .5s;
     opacity: 1;
     pointer-events: all;
-}
+} */
 
-.janela {
+#projetos > .container_janelas > .modal > .modal-dialog > .modal-content {
     background-color: var(--verde-claro);
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
 }
 
-.janela img {
-    width: 100%;
+#projetos > .container_janelas > .modal .modal-body {
+    padding: 20px 30px;
 }
 
-.janela > div {
+#projetos > .container_janelas > .modal .modal-header, .modal-footer {
+    border-color: var(--preto);
+    padding: 20px;
+}
+
+.modal .modal-body > .projeto_img {
+    background-image: url("../imgs/projetos/my_class_2.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    width: 100%;
+    height: 60vh;
+    /* border: 3px solid black; */
+    border-radius: 3px;
+    margin-bottom: 20px;
+    box-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 0.411);
+}
+
+.modal .modal-body > .projeto_info > h1 {
+    color: black;
+    text-align: center;
+    font-weight: bold;
+}
+
+.modal .modal-body > .projeto_info > p {
+    color: black;
+    text-align: justify;
+    text-indent: 15px;
+    margin: 0;
+}
+
+.modal .modal-footer {
+    justify-content: space-around;
+}
+
+.modal .modal-footer > a {
+    background-color: var(--preto);
+    color: white;
+    box-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 0.411);
+}
+
+.modal .modal-footer > a:hover {
+    color: var(--preto);
+    border-color: var(--preto);
+}
+
+.modal .modal-footer > p.btn_close {
+    color: white;
+    background-color: red;
+    opacity: 0.8;
+}
+
+.modal .modal-footer > p.btn_close:hover {
+    opacity: 1;
+    border: none;
+    text-decoration: none;
+}
+
+/* .janela > div {
     padding: 15px;
     display: flex;
     flex-direction: column;
@@ -457,7 +509,7 @@ div.projeto a.btn:hover {
 
 .janela.hide {
     top: 0;
-}
+} */
 
 
 

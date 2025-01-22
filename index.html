@@ -22,7 +22,7 @@
     <!-- Estilo Principal -->
     <link rel="stylesheet" href="css/style.css">
     <!-- Media Query -->
-     <link rel="stylesheet" href="css/media_query.css">
+     <!-- <link rel="stylesheet" href="css/media_query.css"> -->
 </head>
 <body>
     <header>
@@ -132,7 +132,7 @@
                         </div>
                         <h2 class="card-title">My Class</h2>
                         <p class="card-text">Um sistema escolar onde é possível adicionar alunos, lançar notas, lançar presença, entre outras coisas.</p>
-                        <a href="#" class="btn">Ver Mais</a>
+                        <a href="#" class="btn" data-bs-toggle="modal" data-bs-target="#modal_projeto">Ver Mais</a>
                     </div>
                 </div>
             
@@ -175,7 +175,29 @@
                     </div>
                 </div> -->
             
-                
+                <div class="modal fade" id="modal_projeto" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-xl modal-fullscreen-md-down">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+
+                            <div class="modal-body row">
+                                <div class="projeto_img col-lg-7"></div>
+                                <div class="projeto_info col-lg-5">
+                                    <h1>Titulo</h1>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus eius temporibus recusandae fugiat mollitia incidunt placeat cumque distinctio, laboriosam voluptate corrupti praesentium debitis error magni velit enim possimus excepturi quibusdam!</p>
+                                </div>
+                            </div>
+
+                            <div class="modal-footer">
+                                <a class="btn" href="#" target="_blank">Ver Projeto</a>
+                                <a class="btn" href="#" target="_blank">Github</a>
+                                <p class="btn btn_close" data-bs-dismiss="modal" aria-label="Close">Fechar</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             
             </div>
         </section>
@@ -213,6 +235,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
     <!-- Script Principal -->
-     <script src="js/main.js"></script>
+     <!-- <script src="js/main.js"></script> -->
 </body>
 </html>
