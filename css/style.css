@@ -373,17 +373,20 @@ div.projeto a.btn:hover {
     background-color: var(--verde-claro);
 }
 
+#projetos > .container_janelas > .modal .modal-header {
+    padding: 20px;
+}
+
 #projetos > .container_janelas > .modal .modal-body {
     padding: 20px 30px;
 }
 
 #projetos > .container_janelas > .modal .modal-header, .modal-footer {
     border-color: var(--preto);
-    padding: 20px;
 }
 
 .modal .modal-body > .projeto_img {
-    background-image: url("../imgs/projetos/my_class_2.png");
+    /* background-image: url(""); */
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -405,7 +408,11 @@ div.projeto a.btn:hover {
     color: black;
     text-align: justify;
     text-indent: 15px;
-    margin: 0;
+    margin-bottom: 7px;
+}
+
+.modal .modal-body > .projeto_info > p strong {
+    color: var(--preto);
 }
 
 .modal .modal-footer {
@@ -416,6 +423,7 @@ div.projeto a.btn:hover {
     background-color: var(--preto);
     color: white;
     box-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 0.411);
+    margin-bottom: 10px;
 }
 
 .modal .modal-footer > a:hover {
