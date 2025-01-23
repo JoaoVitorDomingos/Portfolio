@@ -546,14 +546,27 @@ div.projeto a.btn:hover {
     margin: 20px 0;
 }
 
-#contato p {
+#contato > div > p {
     text-align: center;
     font-size: 1.2em;
 }
 
-#contato div {
+#contato > div.contato_texto {
     display: flex;
     flex-direction: column;
+    align-items: center;
+}
+
+#contato > div.contato_links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#contato > div.contato_links > div {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: start;
 }
 
 #contato a {
@@ -564,15 +577,31 @@ div.projeto a.btn:hover {
     text-decoration: none;
 }
 
-#contato a:hover {
-    font-weight: bold;
-    text-decoration: underline;
+#contato a:hover > i, #contato a:hover > span, #contato a:hover > p {
     color: var(--verde-claro);
+    cursor: pointer;
 }
 
-#contato img {
-    width: 10%;
+#contato a:hover > p {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+#contato a > i, #contato a > span {
     margin-right: 10px;
+}
+
+#contato a > i {
+    font-size: 2.5em;
+}
+
+#contato a > span {
+    font-size: 3em;
+}
+
+#contato a > p {
+    font-size: 1.2em;
+    margin: 0;
 }
 
 
