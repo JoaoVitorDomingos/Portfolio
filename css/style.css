@@ -213,6 +213,10 @@ section.introducao {
     text-align: center;
 }
 
+.introducao > div.textos > h2, .introducao > div.textos > h1 {
+    text-shadow: 3px 3px 0px rgba(0, 0, 0, 0.397);
+}
+
 .introducao > div.textos > h2 {
     font-size: 2.5em;
 }
@@ -233,6 +237,10 @@ section.introducao {
     text-align: center;
     margin-top: 40px;
     width: 100%;
+}
+
+.introducao > div.contatos > a > i, .introducao > div.contatos > a > span {
+    text-shadow: 3px 3px 0px rgba(0, 0, 0, 0.397);
 }
 
 .introducao > div.contatos > a > i {
