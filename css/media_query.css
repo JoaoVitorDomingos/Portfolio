@@ -125,6 +125,41 @@
         padding: 6px 35px;
     }
 
+    /* Modal */
+    #projetos > .container_janelas > .modal .modal-header {
+        padding: 30px;
+    }
+
+    #projetos > .container_janelas > .modal .modal-header button {
+        font-size: 1.7em;
+    }
+
+    .modal .modal-body > .projeto_img {
+        width: 90%;
+        height: 50vh;
+        margin: 0 auto;
+        margin-bottom: 40px;
+        background-position: left top;
+    }
+
+    .modal .modal-body > .projeto_info > h1 {
+        font-size: 3em;
+        margin-bottom: 20px;
+    }
+
+    .modal .modal-footer {
+        padding: 30px;
+    }
+
+    .modal .modal-footer > a, .modal .modal-footer > p {
+        font-size: 1.3em;
+        padding: 6px 35px;
+    }
+
+    .modal .modal-body > .projeto_info > p a {
+        font-size: 1em;
+    }
+
 
     /* CONTATO */
     /* #contato {

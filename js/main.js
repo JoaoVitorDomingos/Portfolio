@@ -103,6 +103,7 @@ if(modal) {
         titulo.innerHTML = info.titulo
 
         console.log(info.descricao)
+
         p1.innerHTML = info.descricao[0]
         let max = (info.descricao.length) - 1
         console.log("Max: " + max)
@@ -116,5 +117,29 @@ if(modal) {
 
         links[0].setAttribute("href", info.linkProjeto)
         links[1].setAttribute("href", info.linkRepositorio)
+
+        info.jaAberto = true
+    })
+}
+
+if(modal) {
+    modal.addEventListener("hide.bs.modal", evento => {
+        // Deletar os Parágrafos Criados
+        const divInfo = document.querySelector(`#projetos>.container_janelas>.modal>.modal-dialog>.modal-content>.modal-body>.projeto_info`)
+
+        console.log(divInfo)
+
+        console.log("Filhos: ")
+        let filhos = divInfo.children
+        console.log(filhos)
+
+        let qtd = divInfo.childElementCount
+        console.log("Qtd: " + qtd)
+
+        for(let i = 2; i < qtd; i++) {
+            console.log("Filho Deletar: ")
+            console.log(filhos[2])
+            divInfo.removeChild(filhos[2])
+        }
     })
 }
