@@ -96,10 +96,13 @@ header {
 #menu {
     padding: 20px;
     background-color: var(--preto);
+    height: 100%;
 }
 
 #menu > .offcanvas-header {
     justify-content: space-between;
+    border-bottom: 1px solid var(--verde-claro);
+    padding: 0;
 }
 
 #menu h1 {
@@ -132,7 +135,7 @@ header {
 }
 
 #menu > nav {
-    margin: 10px 0px;
+    margin: 25px 0px;
 }
 
 #menu > nav > ul {
@@ -144,7 +147,7 @@ header {
     text-align: center;
 }
 
-#menu > nav > ul > li {
+#menu > nav > ul > li:not(:last-child) {
     margin-bottom: 15px;
 }
 
@@ -164,7 +167,6 @@ header {
 }
 
 #menu > .header_links {
-    margin-top: 16px;
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-around;

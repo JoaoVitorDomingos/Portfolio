@@ -1,4 +1,4 @@
-/* Tablet e Notebook */
+/* Tablet */
 @media screen and (min-width: 768px) { 
     /* Gerais */
     p, a {
@@ -11,6 +11,42 @@
 
     /* HEADER */
     header {
+        padding: 20px;
+    }
+
+    header > span#menu_burgue {
+        font-size: 3.2em;
+    }
+
+    header > #menu {
+        height: 50%;
+        padding: 30px;
+    }
+
+    #menu > .offcanvas-header {
+        margin-bottom: 20px;
+    }
+
+    #menu > nav {
+        margin: 50px 0;
+    }
+
+    #menu > nav > ul {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    #menu > nav > ul a {
+        font-size: 2.3em;
+    }
+
+    #menu > .header_links {
+        width: 85%;
+        margin: 0 auto;
+    }
+
+
+    /* header {
         padding: 40px 30px;
     }
 
@@ -23,10 +59,10 @@
         margin-right: 10px;
         padding: 10px;
         font-size: 1.8em;
-    }
+    } */
 
     /* INTRODUÇÃO */
-    section.introducao {
+    /* section.introducao {
         height: 60vh;
     }
 
@@ -54,11 +90,11 @@
 
     .introducao > div.contatos > a:nth-child(2) > img{
         margin: 0 40px;
-    }
+    } */
 
 
     /* SOBRE MIM */
-    #sobre h1.titulo {
+    /* #sobre h1.titulo {
         margin-bottom: 30px;
     }
 
@@ -79,11 +115,11 @@
 
     #sobre > p.p_btn > a.btn {
         padding: 10px 30px;
-    }
+    } */
 
 
     /* PROJETOS */
-    section#projetos > div.container_projetos > div.projeto > div {
+    /* section#projetos > div.container_projetos > div.projeto > div {
         height: 50vh;
     }
 
@@ -105,11 +141,11 @@
         font-size: 1.3em;
         padding: 15px 50px;
         margin-bottom: 30px;
-    }
+    } */
 
 
     /* JANELAS MODAIS */
-    .fade {
+    /* .fade {
         position: fixed;
         top: 0;
         left: 0;
@@ -151,11 +187,11 @@
 
     .janela > div > button {
         font-size: 1.3em;
-    }
+    } */
 
 
     /* CONTATO */
-    #contato {
+    /* #contato {
         margin: 60px 0;
     }
 
@@ -170,11 +206,11 @@
 
     #contato img {
         margin-right: 20px;
-    }
+    } */
 
 
     /* FOOTER */
-    footer {
+    /* footer {
         padding: 60px;
     }
 
@@ -184,18 +220,18 @@
 
     footer > p > a {
         font-size: 1em;
-    }
+    } */
 }
 
 /* Computadores e Telas Maiores */
 @media screen and (min-width: 1200px) {
     /* GERAIS */
-    .titulo {
+    /* .titulo {
         font-size: 5em;
-    }
+    } */
     
     /* HEADER */
-    header h1 {
+    /* header h1 {
         font-size: 3.5em;
     }
 
@@ -211,10 +247,10 @@
     header img {
         width: 15%;
         margin-right: 30px;
-    }
+    } */
 
     /* INTRODUÇÃO */
-    section.introducao {
+    /* section.introducao {
         height: 70vh;
     }
 
@@ -234,11 +270,11 @@
 
     .introducao > div.contatos > a > img {
         width: 4%;
-    }
+    } */
 
 
     /* SOBRE MIM */
-    #sobre {
+    /* #sobre {
         margin-top: 150px;
         display: flex;
         justify-content: center;
@@ -250,11 +286,11 @@
 
     #sobre .area-textos p {
         font-size: 1.8em;
-    }
+    } */
 
 
     /* PROJETOS */
-    #projetos {
+    /* #projetos {
         margin-top: 150px;
     }
 
@@ -270,11 +306,11 @@
 
     section#projetos > div.container_projetos > div.projeto {
         width: 35%;
-    }
+    } */
 
 
     /* JANELA MODAL */
-    .janela {
+    /* .janela {
         width: 80%;
         height: 80%;
         display: flex;
@@ -313,11 +349,11 @@
         width: 30%;
         padding-top: 10px;
         padding-bottom: 10px;
-    }
+    } */
 
 
     /* CONTATO */
-    #contato {
+    /* #contato {
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -332,5 +368,5 @@
 
     #contato p {
         font-size: 1.8em;
-    }
+    } */
 }
