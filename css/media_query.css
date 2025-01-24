@@ -245,6 +245,13 @@
         height: 50vh;
         width: 40%;
     }
+
+    /* Projeto - Modal */
+    .modal .modal-body > .projeto_info > p {
+        width: 90%;
+        margin-right: auto;
+        margin-left: auto;
+    }
 }
 
 /* Computadores e Telas Maiores */
