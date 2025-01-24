@@ -235,6 +235,16 @@
     .introducao > div.contatos {
         width: 70%;
     }
+
+    /* Sobre Mim */
+    #sobre > .area-textos {
+        width: 80%;
+    }
+
+    #sobre .foto {
+        height: 50vh;
+        width: 40%;
+    }
 }
 
 /* Computadores e Telas Maiores */
