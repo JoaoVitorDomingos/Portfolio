@@ -252,152 +252,96 @@
         margin-right: auto;
         margin-left: auto;
     }
+
+    /* Contato */
+    #contato {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        margin: 100px 0;
+    }
+
+    #contato > .contato_texto {
+        margin-right: 200px;
+    }
 }
 
 /* Computadores e Telas Maiores */
 @media screen and (min-width: 1200px) {
-    /* GERAIS */
-    /* .titulo {
-        font-size: 5em;
-    } */
-    
-    /* HEADER */
-    /* header h1 {
-        font-size: 3.5em;
+    /* Header */
+    header > #menu > h1.header_titulo {
+        font-size: 3em;
     }
 
-    nav > ul a {
-        font-size: 2em;
+    #menu > nav > ul a {
+        margin-right: 20px;
     }
 
-    header div {
-        display: inline;
-        width: 20%;
-    }
-
-    header img {
-        width: 15%;
-        margin-right: 30px;
-    } */
-
-    /* INTRODUÇÃO */
-    /* section.introducao {
-        height: 70vh;
-    }
-
-    .textos > h2 {
-        font-size: 3.5em;
-        margin-top: 100px;
-    }
-
-    .introducao > div.textos > h1:first-of-type {
-        font-size: 4.5em;
-        margin: 20px 0px;
-    }
-
-    .introducao > div.textos > h1:last-of-type {
-        font-size: 2.5em;
-    }
-
-    .introducao > div.contatos > a > img {
-        width: 4%;
-    } */
-
-
-    /* SOBRE MIM */
-    /* #sobre {
-        margin-top: 150px;
-        display: flex;
+    #menu > .header_links {
+        width: auto;
         justify-content: center;
     }
 
-    #sobre .area-textos, #sobre .area-foto {
+    #menu > div i {
+        margin-right: 30px;
+    }
+
+    /* INTRODUÇÃO */
+    .introducao {
+        height: 100vh;
+    }
+
+    .introducao > div.contatos {
         width: 45%;
     }
 
-    #sobre .area-textos p {
-        font-size: 1.8em;
-    } */
-
-
-    /* PROJETOS */
-    /* #projetos {
-        margin-top: 150px;
+    /* SOBRE MIM */
+    #sobre {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        margin: 100px 0;
     }
 
-    #projetos h1.titulo {
-        margin-bottom: 100px;
+    #sobre > .area-textos {
+        width: 50%;
+        margin: 0;
     }
 
-    #projetos .container_projetos {
+    #sobre > .area-foto {
+        margin: 0;
+        width: 40%;
+    }
+
+    #sobre .foto {
+        height: 58vh;
+        width: 90%;
+    }
+
+    /* Projetos */
+    div.container_projetos {
         flex-direction: row;
         justify-content: space-around;
-        align-items: start;
+        flex-wrap: wrap;
+        margin-bottom: 80px;
     }
 
-    section#projetos > div.container_projetos > div.projeto {
-        width: 35%;
-    } */
+    #projetos > .container_projetos > .projeto {
+        width: 40%;
+        margin: 0;
+    }  
 
-
-    /* JANELA MODAL */
-    /* .janela {
-        width: 80%;
-        height: 80%;
-        display: flex;
+    /* Modal */
+    .modal .modal-body > .projeto_info > p {
+        width: 85%;
+        margin-bottom: 30px;
     }
+    
+}
 
-    .janela img {
-        width: 50%;
-        border-top-left-radius: 5px;
-        border-bottom-right-radius: 5px;
-    }
-
-    .janela > div {
-        padding: 30px;
-        height: 100%;
-    }
-
-    .janela h2 {
-        font-size: 3.5em;
-    }
-
-    .janela .textos_janelas {
-        height: calc(706px - 253px);
-    }
-
-    .janela .textos_janelas p {
-        font-size: 1.6em;
-        text-indent: 20px;
-    }
-
-    .janela > div > div {
-        margin-bottom: 20px;
-    }
-
-    .janela > div > div a, .janela > div > button {
-        font-size: 1.5em;
+@media screen and (min-width: 1500px) {
+    #projetos > .container_projetos > .projeto {
         width: 30%;
-        padding-top: 10px;
-        padding-bottom: 10px;
-    } */
-
-
-    /* CONTATO */
-    /* #contato {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: start;
-        margin: 200px 0;
     }
-
-    #contato div:last-of-type {
-        width: 30%;
-        margin-top: 30px;
-    }
-
-    #contato p {
-        font-size: 1.8em;
-    } */
 }
