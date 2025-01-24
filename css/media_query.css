@@ -190,6 +190,44 @@
     }
 }
 
+/* Notebook */
+@media screen and (min-width: 1024px) {
+    header > #menu {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #menu > nav, #menu > nav > ul > li:not(:last-child) {
+        margin: 0;
+    }
+
+    header > #menu > h1.header_titulo {
+        display: inline;
+        margin: 0;
+        
+    }
+
+    #menu > nav > ul a {
+        font-size: 2em;
+    }
+
+    #menu > .header_links {
+        width: 25%;
+        justify-content: space-between;
+        margin: 0;
+    }
+
+    #menu > div i {
+        font-size: 2em;
+    }
+
+    #menu > div span {
+        font-size: 2.5em;
+    }
+}
+
 /* Computadores e Telas Maiores */
 @media screen and (min-width: 1200px) {
     /* GERAIS */
