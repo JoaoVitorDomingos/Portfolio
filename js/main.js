@@ -1,68 +1,3 @@
-// const body = document.querySelector("body")
-// const fade = document.querySelector(".fade")
-// let btnFecharModal = document.querySelectorAll(".fechar_modal")
-// let btnAbrirModal = document.querySelectorAll(".abrir_modal")
-// let modais = document.querySelectorAll(".janela")
-
-// let regexModal = /m[1-9]/
-
-// // console.log(body)
-// // console.log(fade)
-// // console.log(btnFecharModal)
-// // console.log(btnAbrirModal)
-
-// function FecharModal(evento) {
-//     //console.log(evento)
-//     if(evento.key === "Escape") {
-//         modais.forEach(el => el.classList.add("hide"))
-//         fade.classList.add("hide")
-//         body.classList.remove("no-scroll")
-//         body.removeEventListener("keyup", FecharModal)
-//     } 
-// }
-
-// btnAbrirModal.forEach(btn => {
-//     btn.addEventListener("click", (evt) => {
-//         //console.log("Este foi o botão clicado:")
-//         //console.log(evt.target)
-//         let classes = evt.target.classList
-//         //console.log("Suas Classes")
-//         //console.log(classes)
-
-
-//         let i = 0
-//         classes.forEach((classe, index) => {
-//             if (regexModal.test(classe)) {
-//                 //console.log(regexModal.test(classe))
-//                 i = index
-//                 //console.log(i)
-//             }
-//         })
-
-//         let modal = document.querySelector(`#${classes[i]}`)
-//         //console.log(modal)
-
-//         modal.classList.toggle("hide")
-//         fade.classList.toggle("hide")
-//         body.classList.add("no-scroll")
-
-//         body.addEventListener("keyup", FecharModal)
-//     })
-// })
-
-// btnFecharModal.forEach(btn => {
-//     btn.addEventListener("click", ()=> {
-//         modais.forEach(el => {
-//             el.classList.add("hide")
-//             fade.classList.add("hide")
-//             body.classList.remove("no-scroll")
-//         })
-
-//         body.removeEventListener("keyup", FecharModal)
-//     })
-// })
-
-
 import infoModais from "./info_modais.js";
 
 // Modal 
@@ -75,13 +10,13 @@ if(modal) {
 
         // Reconhercer qual botão ativou 
         const nomeBtn = btn.getAttribute('data-bs-whatever')
-        console.log("Nome Btn: " + nomeBtn)
+        // console.log("Nome Btn: " + nomeBtn)
 
         // Pegar informações do modal
         let info = infoModais.find(elemento => elemento.titulo == nomeBtn)
 
-        console.log("Info: ")
-        console.log(info)
+        // console.log("Info: ")
+        // console.log(info)
 
         // Atualizar Modal
         const caminho = "#projetos>.container_janelas>.modal>.modal-dialog>.modal-content"
@@ -92,25 +27,36 @@ if(modal) {
         const p1 = document.querySelector(`${caminho}>.modal-body>.projeto_info>p`)
         const links = [...document.querySelectorAll(`${caminho}>.modal-footer>a`)]
 
-        console.log(img)
-        console.log(titulo)
-        console.log(divInfo)
-        console.log(p1)
-        console.log(links)
+        // console.log(img)
+        // console.log(titulo)
+        // console.log(divInfo)
+        // console.log(p1)
+        // console.log(links)
 
-        img.style.backgroundImage = `url("${info.imagem}")`
+        let tamanho = window.innerWidth
+        if(tamanho < 768) {
+            // console.log("Celular")
+            img.style.backgroundImage = `url("${info.imagemP}")`
+        } else if(tamanho < 1024) {
+            // console.log("Tablet")
+            img.style.backgroundImage = `url("${info.imagemM}")`
+        } else {
+            // console.log("Notebook ou PC")
+            img.style.backgroundImage = `url("${info.imagemG}")`
+        }
+        
 
         titulo.innerHTML = info.titulo
 
-        console.log(info.descricao)
+        // console.log(info.descricao)
 
         p1.innerHTML = info.descricao[0]
         let max = (info.descricao.length) - 1
-        console.log("Max: " + max)
+        // console.log("Max: " + max)
         for(let i = 1; i <= max; i++) {
             let p = document.createElement("p")
-            console.log("I: " + i)
-            console.log("Texto: " + info.descricao[i])
+            // console.log("I: " + i)
+            // console.log("Texto: " + info.descricao[i])
             p.innerHTML = info.descricao[i]
             divInfo.appendChild(p)
         }
@@ -127,18 +73,18 @@ if(modal) {
         // Deletar os Parágrafos Criados
         const divInfo = document.querySelector(`#projetos>.container_janelas>.modal>.modal-dialog>.modal-content>.modal-body>.projeto_info`)
 
-        console.log(divInfo)
+        // console.log(divInfo)
 
-        console.log("Filhos: ")
+        // console.log("Filhos: ")
         let filhos = divInfo.children
-        console.log(filhos)
+        // console.log(filhos)
 
         let qtd = divInfo.childElementCount
-        console.log("Qtd: " + qtd)
+        // console.log("Qtd: " + qtd)
 
         for(let i = 2; i < qtd; i++) {
-            console.log("Filho Deletar: ")
-            console.log(filhos[2])
+            // console.log("Filho Deletar: ")
+            // console.log(filhos[2])
             divInfo.removeChild(filhos[2])
         }
     })

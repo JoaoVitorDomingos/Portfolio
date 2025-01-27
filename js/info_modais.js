@@ -7,7 +7,9 @@ const infoModais = [
         ],
         linkProjeto: "https://joaovitordomingos.github.io/My-Class/",
         linkRepositorio: "https://github.com/JoaoVitorDomingos/My-Class",
-        imagem: "../imgs/projetos/my_class_2.png",
+        imagemP: "../imgs/projetos/my_class_2.png",
+        imagemM: "../imgs/projetos/my_class_2.png",
+        imagemG: "../imgs/projetos/my_class_2.png",
     },
     {
         titulo: "MoveX",
@@ -18,7 +20,9 @@ const infoModais = [
         ],
         linkProjeto: "https://joaovitordomingos.github.io/moveX/",
         linkRepositorio: "https://github.com/JoaoVitorDomingos/moveX",
-        imagem: "../imgs/projetos/moveX_cell_2.png",
+        imagemP: "../imgs/projetos/moveX_cell_2.png",
+        imagemM: "../imgs/projetos/moveX_tablet_2.png",
+        imagemG: "../imgs/projetos/moveX_pc_2.png",
     }
 ]
 
