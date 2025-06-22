@@ -262,7 +262,7 @@ div.textos, div.contatos {
     justify-content: space-around;
     text-align: center;
     margin-top: 40px;
-    width: 80%;
+    width: min(80%, 276px);
 }
 
 .introducao > div.contatos > a > i {
@@ -308,7 +308,7 @@ div.textos, div.contatos {
 }
 
 #sobre > .area-foto > a {
-    margin: 20px 0px;
+    margin-top: 20px;
 }
 
 /* PROJETOS */
