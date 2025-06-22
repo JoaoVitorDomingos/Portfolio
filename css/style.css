@@ -330,6 +330,11 @@ div.container_projetos {
 
 .projeto .img_projeto {
     margin-bottom: 20px;
+    margin-inline: auto;
+}
+
+.container_projetos > .projeto:nth-child(2) img {
+    max-width: 384px;
 }
 
 .projeto h2 {
@@ -402,6 +407,7 @@ div.container_projetos {
 }
 
 #contato a:hover > p {
+    cursor: pointer;
     text-decoration: underline;
     font-weight: bold;
 }
@@ -441,7 +447,7 @@ footer a {
     transition: color .5s;
 }
 
-footer a:hover strong {
+footer a strong:hover {
     text-decoration: underline;
     color: var(--verde-escuro);
 }

@@ -55,8 +55,14 @@
     }
 
     /* INTRODUÇÃO */
+    section.introducao {
+        height: calc(100vh - 110px);
+        height: calc(100vh - 110px);
+    }
+
     .overlay {
         top: 110px;
+        height: calc(100vh - 110px);
     }
 
     .introducao > div.textos > h2 {
@@ -87,13 +93,13 @@
 
     /* SOBRE MIM */
     #sobre > .area-textos {
-        width: 90%;
         margin: auto;
         padding: 0;
     }
 
     #sobre > .area-textos > p {
         font-size: 1.8em;
+        width: max(90%, 583px);
     }
 
     #sobre > .area-foto {
@@ -143,7 +149,8 @@
     }
 
     .container_projetos > .projeto:nth-child(2) img {
-        width: 70%;
+        max-width: none;
+        width: min(70%, 470px);
         margin-inline: auto;
     }
 
@@ -189,30 +196,42 @@
 /* Notebook */
 @media screen and (min-width: 1024px) {
     header > #menu {
+        width: 100%;
         display: flex;
         flex-wrap: nowrap;
         justify-content: space-between;
         align-items: center;
     }
 
-    #menu > nav, #menu > nav > ul > li:not(:last-child) {
-        margin: 0;
-    }
-
     header > #menu > h1.header_titulo {
         display: inline;
         margin: 0;
-        
+        font-size: 4.5em;
+        margin-left: 30px;
+    }
+
+    #menu > nav > ul {
+        flex-flow: row nowrap;
+    }
+
+    #menu > nav > ul > li:not(:last-child)  {
+        margin-bottom: 0px;
+        margin-right: 30px;
     }
 
     #menu > nav > ul a {
+        margin: 0;
         font-size: 2em;
     }
 
     #menu > .header_links {
-        width: 25%;
-        justify-content: space-between;
-        margin: 0;
+        padding: 0;
+        border: none;
+        margin-right: 30px;
+    }
+
+    #menu > div i {
+        margin-right: 20px;
     }
 
     #menu > div i {
@@ -225,28 +244,34 @@
 
     /* Introdução */
     section.introducao {
-        background-image: url("../imgs/back/back1_50opacy_black.jpg");
+        background-image: url("../imgs/back/back1.jpg");
+
+        height: calc(100vh - 146px);
+        height: calc(100vh - 146px);
+    }
+
+    .overlay {
+        top: 144px;
+        height: calc(100vh - 146px);
+        opacity: .7;
     }
 
     .introducao > div.contatos {
-        width: 70%;
+        width: min(60%, 500px);
+        margin-top: 30px;
     }
 
-    /* Sobre Mim */
-    #sobre > .area-textos {
-        width: 80%;
+    /* Projeto */
+    .projeto .conteudo > p {
+        font-size: 1.7em;
     }
 
-    #sobre .foto {
-        height: 50vh;
-        width: 40%;
+    .botoes_projetos > a {
+        font-size: 1.4em;
     }
 
-    /* Projeto - Modal */
-    .modal .modal-body > .projeto_info > p {
-        width: 90%;
-        margin-right: auto;
-        margin-left: auto;
+    .container_projetos > .projeto:nth-child(2) img {
+        width: min(50%, 500px);
     }
 
     /* Contato */
