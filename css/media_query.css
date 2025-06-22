@@ -292,16 +292,7 @@
 @media screen and (min-width: 1200px) {
     /* Header */
     header > #menu > h1.header_titulo {
-        font-size: 3em;
-    }
-
-    #menu > nav > ul a {
-        margin-right: 20px;
-    }
-
-    #menu > .header_links {
-        width: auto;
-        justify-content: center;
+        font-size: 3.5em;
     }
 
     #menu > div i {
@@ -309,12 +300,18 @@
     }
 
     /* INTRODUÇÃO */
-    .introducao {
-        height: 100vh;
+    section.introducao {
+        height: calc(100vh - 124px);
+    }
+
+    .overlay {
+        top: 144px;
+        height: calc(100vh - 124px);
+        opacity: .7;
     }
 
     .introducao > div.contatos {
-        width: 45%;
+        width: min(45%, 466px);
     }
 
     /* SOBRE MIM */
@@ -341,28 +338,10 @@
     }
 
     /* Projetos */
-    div.container_projetos {
-        flex-direction: row;
-        justify-content: space-around;
-        flex-wrap: wrap;
-        margin-bottom: 80px;
-    }
-
-    #projetos > .container_projetos > .projeto {
-        width: 40%;
-        margin: 0;
-    }  
-
-    /* Modal */
-    .modal .modal-body > .projeto_info > p {
-        width: 85%;
-        margin-bottom: 30px;
+    .projeto .img_projeto {
+        margin-bottom: 0;
+        object-fit: cover;
+        object-position: center center;
     }
     
-}
-
-@media screen and (min-width: 1500px) {
-    #projetos > .container_projetos > .projeto {
-        width: 30%;
-    }
 }
