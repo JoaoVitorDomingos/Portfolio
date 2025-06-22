@@ -133,6 +133,10 @@
         margin-bottom: 20px;
     }
 
+    .container_tec > p {
+        font-size: 1.5em;
+    }
+
     .botoes_projetos > a {
         margin-right: 20px;
         font-size: 1.2em;
