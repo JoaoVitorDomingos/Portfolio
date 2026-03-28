@@ -1,0 +1,7 @@
+User-agent: Googlebot
+Disallow: /nogooglebot/
+
+User-agent: *
+Allow: /
+
+Sitemap: https://flamboyant-nonstop-rail-mnd2ze.teleporthq.app/sitemap.xml
