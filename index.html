@@ -1,38 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Portfolio</title>
-    <meta property="og:title" content="Portfolio" />
+    <title>João Vitor C. Domingos</title>
+    <meta property="og:title" content="João Vitor C. Domingos" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta charset="utf-8" />
     <meta property="twitter:card" content="summary_large_image" />
 
-    <style data-tag="reset-style-sheet">
-      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;  -webkit-font-smoothing: antialiased;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;  color: inherit;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}pre {  white-space: normal;}input {  padding: 2px 4px;}img {  display: block;}details {  display: block;  margin: 0;  padding: 0;}summary::-webkit-details-marker {  display: none;}[data-thq="accordion"] [data-thq="accordion-content"] {  max-height: 0;  overflow: hidden;  transition: max-height 0.3s ease-in-out;  padding: 0;}[data-thq="accordion"] details[data-thq="accordion-trigger"][open] + [data-thq="accordion-content"] {  max-height: 1000vh;}details[data-thq="accordion-trigger"][open] summary [data-thq="accordion-icon"] {  transform: rotate(180deg);}html { scroll-behavior: smooth  }
-    </style>
-    <style data-tag="default-style-sheet">
-      html {
-        font-family: "Roboto Mono";
-        font-size: 1rem;
-      }
+    <!-- Reset CSS -->
+    <link rel="stylesheet" href="styles/reset.css" data-tag="reset-style-sheet">
 
-      body {
-        font-weight: 400;
-        font-style:normal;
-        text-decoration: undefined;
-        text-transform: undefined;
-        letter-spacing: 0.02em;
-        line-height: 1.6;
-        color: var(--color-on-surface);
-        background: var(--color-surface);
+    <!-- CSS Padrão -->
+    <link rel="stylesheet" href="styles/padrao.css" data-tag="default-style-sheet">
 
-        fill: var(--color-on-surface);
-      }
-    </style>
+    <!-- Link Animação CSS -->
     <link
       rel="stylesheet"
       href="https://unpkg.com/animate.css@4.1.1/animate.css"
     />
+
+    <!-- Fontes Google -->
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;display=swap"
@@ -58,26 +45,2598 @@
       href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
       data-tag="font"
     />
+
+    <!-- TeleportHQ Script -->
     <link
       rel="stylesheet"
       href="https://unpkg.com/@teleporthq/teleport-custom-scripts/dist/style.css"
     />
-  </head>
-  <body>
-    <link rel="stylesheet" href="./style.css" />
-    <div>
-      <link href="./index.css" rel="stylesheet" />
 
-      <div class="home-container1">
+    <!-- Estilos -->
+    <link rel="stylesheet" href="styles/style.css" />
+
+    <link href="styles/portfolio.css" rel="stylesheet" />
+
+  </head>
+
+  <body>
+    <div>    
+      <div class="portfolio-container1">
+        <navigation-wrapper class="navigation-wrapper">
+          <!--Navigation component-->
+          <div class="navigation-container1">
+            <nav class="navigation-wrapper">
+              <div class="navigation-container">
+                <a href="index.html">
+                  <div aria-label="CodeVanta Home" class="navigation-logo-link">
+                    <div class="navigation-logo-icon">
+                      <svg
+                        width="24"
+                        xmlns="http://www.w3.org/2000/svg"
+                        height="24"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="m16 18l6-6l-6-6M8 6l-6 6l6 6"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        ></path>
+                      </svg>
+                    </div>
+                    <span>João</span>
+                    <span class="navigation-thq-brand-initial-elm">C.</span>
+                    <span>
+                      <span></span>
+                      <span class="navigation-text12">Domingos</span>
+                      <span></span>
+                    </span>
+                  </div>
+                </a>
+                <div class="navigation-desktop-links">
+                  <a href="#about">
+                    <div class="navigation-link"><span>About</span></div>
+                  </a>
+                  <div class="navigation-link"><span>Services</span></div>
+                  <div class="navigation-link"><span>Projects</span></div>
+                  <div class="navigation-link"><span>Skills</span></div>
+                  <a href="#contact">
+                    <div class="btn-primary btn btn-sm">
+                      <span>Let's Talk</span>
+                    </div>
+                  </a>
+                </div>
+                <button
+                  id="navigation-mobile-toggle"
+                  aria-label="Toggle Menu"
+                  aria-controls="navigation-mobile-overlay"
+                  aria-expanded="false"
+                  class="navigation-mobile-toggle"
+                >
+                  <svg
+                    width="24"
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    class="navigation-icon-open"
+                  >
+                    <path
+                      d="M4 6h16M4 12h16M4 18h16"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></path>
+                  </svg>
+                </button>
+              </div>
+            </nav>
+            <div
+              id="navigation-mobile-overlay"
+              class="navigation-mobile-overlay"
+            >
+              <div class="navigation-overlay-header">
+                <a href="index.html" id="navigation-mobile-logo">
+                  <div class="navigation-logo-link">
+                    <div class="navigation-logo-icon">
+                      <svg
+                        width="24"
+                        xmlns="http://www.w3.org/2000/svg"
+                        height="24"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="m16 18l6-6l-6-6M8 6l-6 6l6 6"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        ></path>
+                      </svg>
+                    </div>
+                    <span class="navigation-brand-name section-title">
+                      CodeVanta
+                    </span>
+                  </div>
+                </a>
+                <button
+                  id="navigation-mobile-close"
+                  aria-label="Close Menu"
+                  class="navigation-mobile-close"
+                >
+                  <svg
+                    width="24"
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="24"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1zm-5.5-3.5l-5 5m0-5l5 5"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></path>
+                  </svg>
+                </button>
+              </div>
+              <div class="navigation-overlay-content">
+                <div class="navigation-mobile-links">
+                  <a href="portfolio.html">
+                    <div class="navigation-mobile-link">
+                      <span>Portfolio</span>
+                    </div>
+                  </a>
+                  <a href="#services">
+                    <div class="navigation-mobile-link">
+                      <span>Services</span>
+                    </div>
+                  </a>
+                  <a href="#about">
+                    <div class="navigation-mobile-link"><span>About</span></div>
+                  </a>
+                  <a href="#contact">
+                    <div class="navigation-mobile-cta navigation-mobile-link">
+                      <span>Let's Talk</span>
+                    </div>
+                  </a>
+                </div>
+                <div class="navigation-overlay-footer">
+                  <p class="section-content">
+                    Computer Science Student &amp; Project Director
+                  </p>
+                  <div class="navigation-social-minimal">
+                    <a href="#">
+                      <div class="navigation-social-link">
+                        <span>LinkedIn</span>
+                      </div>
+                    </a>
+                    <a href="#">
+                      <div class="navigation-social-link">
+                        <span>GitHub</span>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="navigation-container2">
+              <div class="navigation-container3">
+                <style>
+                  @media (prefers-reduced-motion: reduce) {
+                  .navigation-mobile-overlay {
+                    transition: none;
+                  }
+                  .navigation-mobile-link:hover {
+                    transform: none;
+                  }
+                  }
+                </style>
+              </div>
+            </div>
+            <div class="navigation-container4">
+              <div class="navigation-container5">
+                <script defer="" data-name="navigation-logic">
+                  document.addEventListener('DOMContentLoaded', function() {
+                    (function(){
+                      const mobileToggle = document.getElementById("navigation-mobile-toggle")
+                      const mobileClose = document.getElementById("navigation-mobile-close")
+                      const mobileOverlay = document.getElementById("navigation-mobile-overlay")
+                      const mobileLinks = document.querySelectorAll(".navigation-mobile-link")
+
+                      function openMenu() {
+                        mobileOverlay.classList.add("is-open")
+                        mobileToggle.setAttribute("aria-expanded", "true")
+                        document.body.style.overflow = "hidden"
+                      }
+
+                      function closeMenu() {
+                        mobileOverlay.classList.remove("is-open")
+                        mobileToggle.setAttribute("aria-expanded", "false")
+                        document.body.style.overflow = ""
+                      }
+
+                      mobileToggle.addEventListener("click", openMenu)
+                      mobileClose.addEventListener("click", closeMenu)
+
+                      mobileLinks.forEach((link) => {
+                        link.addEventListener("click", closeMenu)
+                      })
+
+                      window.addEventListener("keydown", (e) => {
+                        if (e.key === "Escape" && mobileOverlay.classList.contains("is-open")) {
+                          closeMenu()
+                        }
+                      })
+
+                      let lastScroll = 0
+                      const navWrapper = document.querySelector(".navigation-wrapper")
+
+                      window.addEventListener("scroll", () => {
+                        const currentScroll = window.pageYOffset
+
+                        if (currentScroll <= 0) {
+                          navWrapper.style.boxShadow = "none"
+                          navWrapper.style.background = "var(--color-surface)"
+                          return
+                        }
+
+                        if (currentScroll > 50) {
+                          navWrapper.style.boxShadow = "0 10px 30px -10px rgba(0, 0, 0, 0.3)"
+                          navWrapper.style.background = "color-mix(in oklab, var(--color-surface) 95%, transparent)"
+                          navWrapper.style.backdropFilter = "blur(10px)"
+                        } else {
+                          navWrapper.style.boxShadow = "none"
+                          navWrapper.style.backdropFilter = "none"
+                        }
+
+                        lastScroll = currentScroll
+                      })
+                    })()
+                  });
+                </script>
+              </div>
+            </div>
+          </div>
+        </navigation-wrapper>
+        <section class="portfolio-intro">
+          <div class="intro-video-wrapper">
+            <video
+              src="https://videos.pexels.com/video-files/7101912/7101912-hd_1920_1080_25fps.mp4"
+              loop="true"
+              muted="true"
+              poster="https://images.pexels.com/videos/7101912/pictures/preview-0.jpg"
+              autoplay="true"
+              playsinline="true"
+              class="intro-video"
+            ></video>
+            <div class="intro-overlay"></div>
+          </div>
+          <div class="intro-content-container">
+            <div class="intro-text-block">
+              <span class="intro-badge">
+                Front-end Specialist | Computer Science Student
+              </span>
+              <h1 class="hero-title">
+                <span>Architecting the</span>
+                <span class="portfolio-text11">Future of Web</span>
+              </h1>
+              <p class="hero-subtitle">
+                I am a Front-end developer creating high-quality websites with
+                HTML, CSS, JavaScript, and WordPress. Currently expanding into
+                Fullstack development with Java and PostgreSQL to build robust,
+                end-to-end digital solutions.
+              </p>
+              <div class="intro-actions">
+                <a href="#projects">
+                  <div class="btn-primary btn-lg btn">
+                    <span>View Case Studies</span>
+                  </div>
+                </a>
+                <a href="#contact">
+                  <div class="btn-outline btn-lg btn">
+                    <span>Work With Me</span>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <about-me-wrapper class="about-me-wrapper">
+          <!--AboutMe component-->
+          <div class="about-me-container1">
+            <section id="about-me" class="about-me">
+              <div class="about-me-container">
+                <div class="about-me-layout">
+                  <div class="about-me-media-wrapper">
+                    <div class="about-me-image-frame">
+                      <img
+                        alt="CodeVanta Lead Developer"
+                        src="https://images.pexels.com/photos/7989025/pexels-photo-7989025.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=200"
+                        class="about-me-profile-img"
+                      />
+                      <div class="about-me-experience-badge">
+                        <span class="about-me-badge-number">JS</span>
+                        <span class="about-me-badge-text">Frontend Expert</span>
+                      </div>
+                      <div
+                        aria-hidden="true"
+                        class="about-me-decorative-dots"
+                      ></div>
+                    </div>
+                    <div class="about-me-tech-stack">
+                      <div class="about-me-stack-item">
+                        <div class="about-me-icon-box">
+                          <svg
+                            width="24"
+                            xmlns="http://www.w3.org/2000/svg"
+                            height="24"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              d="m16 18l6-6l-6-6M8 6l-6 6l6 6"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            ></path>
+                          </svg>
+                        </div>
+                        <span class="about-me-stack-label">HTML/CSS/JS</span>
+                      </div>
+                      <div class="about-me-stack-item">
+                        <div class="about-me-icon-box">
+                          <svg
+                            width="24"
+                            xmlns="http://www.w3.org/2000/svg"
+                            height="24"
+                            viewBox="0 0 24 24"
+                          >
+                            <g
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            >
+                              <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                              <path d="M3 5v14a9 3 0 0 0 18 0V5"></path>
+                              <path d="M3 12a9 3 0 0 0 18 0"></path>
+                            </g>
+                          </svg>
+                        </div>
+                        <span class="about-me-stack-label">
+                          Java/PostgreSQL
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="about-me-content-wrapper">
+                    <div class="about-me-header">
+                      <span class="about-me-label section-subtitle">
+                        Who I Am
+                      </span>
+                      <h2 class="section-title about-me-title">
+                        Crafting Digital Excellence
+                      </h2>
+                    </div>
+                    <div class="about-me-body">
+                      <p class="about-me-description section-content">
+                        I am a Front-end developer skilled in HTML, CSS,
+                        JavaScript, and WordPress. I have experience building
+                        responsive interfaces and working with modern tools like
+                        Git and GitHub. I am currently studying Computer Science
+                        and working as Project Director at a Junior Enterprise,
+                        gaining hands-on experience managing real projects. I am
+                        also expanding my skills into Fullstack development,
+                        currently learning Java and PostgreSQL.
+                      </p>
+                    </div>
+                    <div class="about-me-highlights">
+                      <div class="about-me-highlight-card">
+                        <div class="about-me-highlight-icon">
+                          <svg
+                            width="24"
+                            xmlns="http://www.w3.org/2000/svg"
+                            height="24"
+                            viewBox="0 0 24 24"
+                          >
+                            <g
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            >
+                              <path
+                                d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0zM22 10v6"
+                              ></path>
+                              <path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"></path>
+                            </g>
+                          </svg>
+                        </div>
+                        <div class="about-me-highlight-info">
+                          <h3 class="about-me-highlight-title">
+                            Computer Science
+                          </h3>
+                          <p class="about-me-highlight-text">
+                            Academic Foundation
+                          </p>
+                        </div>
+                      </div>
+                      <div class="about-me-highlight-card">
+                        <div class="about-me-highlight-icon">
+                          <svg
+                            width="24"
+                            xmlns="http://www.w3.org/2000/svg"
+                            height="24"
+                            viewBox="0 0 24 24"
+                          >
+                            <g
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            >
+                              <rect
+                                x="3"
+                                y="3"
+                                rx="2"
+                                width="18"
+                                height="18"
+                              ></rect>
+                              <path d="M7 7h10v10H7z"></path>
+                            </g>
+                          </svg>
+                        </div>
+                        <div class="about-me-highlight-info">
+                          <h3 class="about-me-highlight-title">
+                            Project Director
+                          </h3>
+                          <p class="about-me-highlight-text">
+                            Leadership Experience
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="about-me-actions">
+                      <a href="#portfolio">
+                        <div class="btn-primary btn-lg btn">
+                          <span>View My Projects</span>
+                        </div>
+                      </a>
+                      <a href="#contact">
+                        <div class="btn-outline btn-lg btn">
+                          <span>Get In Touch</span>
+                        </div>
+                      </a>
+                      <a href="Junior Enterprise">
+                        <div>
+                          <div class="btn-outline btn-lg btn">
+                            <span>My Junior Enterprise Story</span>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <div class="about-me-container3">
+              <div class="about-me-container4">
+                <script defer="" data-name="about-me-interactions">
+                  document.addEventListener('DOMContentLoaded', function() {
+                    (function(){
+                      const aboutMeObserverOptions = {
+                        threshold: 0.2,
+                        rootMargin: "0px",
+                      }
+
+                      const aboutMeObserver = new IntersectionObserver((entries) => {
+                        entries.forEach((entry) => {
+                          if (entry.isIntersecting) {
+                            entry.target.style.opacity = "1"
+                            entry.target.style.transform = "translateY(0)"
+                            aboutMeObserver.unobserve(entry.target)
+                          }
+                        })
+                      }, aboutMeObserverOptions)
+
+                      const animateElements = document.querySelectorAll(".about-me-content-wrapper, .about-me-media-wrapper")
+
+                      animateElements.forEach((el) => {
+                        el.style.opacity = "0"
+                        el.style.transform = "translateY(30px)"
+                        el.style.transition = "all 0.8s cubic-bezier(0.16, 1, 0.3, 1)"
+                        aboutMeObserver.observe(el)
+                      })
+
+                      const cards = document.querySelectorAll(".about-me-highlight-card")
+                      cards.forEach((card, index) => {
+                        card.style.transitionDelay = `${index * 150}ms`
+                      })
+                    })()
+                  });
+                </script>
+              </div>
+            </div>
+          </div>
+        </about-me-wrapper>
+        <section class="tech-stack">
+          <div class="tech-container">
+            <div class="tech-header">
+              <h2 class="section-title">Technical Arsenal</h2>
+              <p class="section-content">
+                Core technologies I leverage to build modern digital
+                experiences.
+              </p>
+            </div>
+            <div class="tech-grid">
+              <div class="tech-item">
+                <div class="tech-icon">
+                  <svg
+                    width="24"
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="24"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="m18 16l4-4l-4-4M6 8l-4 4l4 4m8.5-12l-5 16"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></path>
+                  </svg>
+                </div>
+                <h3 class="section-subtitle">Front-end Core</h3>
+                <p class="section-content">
+                  HTML5, CSS3, JavaScript (ES6+). Building semantic, responsive,
+                  and interactive interfaces.
+                </p>
+                <div class="proficiency-bar">
+                  <div
+                    class="portfolio-thq-proficiency-fill-elm1 proficiency-fill"
+                  ></div>
+                </div>
+              </div>
+              <div class="tech-item">
+                <div class="tech-icon">
+                  <svg
+                    width="24"
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="24"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></path>
+                    <path
+                      d="M9 12a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.4 22.4 0 0 1-4 2z"
+                    ></path>
+                    <path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 .05 5 .05"></path>
+                  </svg>
+                </div>
+                <h3 class="section-subtitle">WordPress</h3>
+                <p class="section-content">
+                  Custom theme and plugin development, WooCommerce, and
+                  performance optimization.
+                </p>
+                <div class="proficiency-bar">
+                  <div
+                    class="portfolio-thq-proficiency-fill-elm2 proficiency-fill"
+                  ></div>
+                </div>
+              </div>
+              <div class="tech-item">
+                <div class="tech-icon">
+                  <svg
+                    width="24"
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="24"
+                    viewBox="0 0 24 24"
+                  >
+                    <g
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path
+                        d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z"
+                      ></path>
+                      <path
+                        d="M14 2v5a1 1 0 0 0 1 1h5m-10 4.5L8 15l2 2.5m4-5l2 2.5l-2 2.5"
+                      ></path>
+                    </g>
+                  </svg>
+                </div>
+                <h3 class="section-subtitle">Java Backend</h3>
+                <p class="section-content">
+                  Building scalable server-side logic and robust
+                  enterprise-grade applications.
+                </p>
+                <div class="proficiency-bar">
+                  <div
+                    class="portfolio-thq-proficiency-fill-elm3 proficiency-fill"
+                  ></div>
+                </div>
+              </div>
+              <div class="tech-item">
+                <div class="tech-icon">
+                  <svg
+                    width="24"
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="24"
+                    viewBox="0 0 24 24"
+                  >
+                    <g
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                      <path d="M3 5v14a9 3 0 0 0 18 0V5"></path>
+                      <path d="M3 12a9 3 0 0 0 18 0"></path>
+                    </g>
+                  </svg>
+                </div>
+                <h3 class="section-subtitle">PostgreSQL</h3>
+                <p class="section-content">
+                  Relational database design, complex queries, and data
+                  integrity management.
+                </p>
+                <div class="proficiency-bar">
+                  <div
+                    class="portfolio-thq-proficiency-fill-elm4 proficiency-fill"
+                  ></div>
+                </div>
+              </div>
+              <div class="tech-item">
+                <div class="tech-icon">
+                  <svg
+                    width="24"
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="24"
+                    viewBox="0 0 24 24"
+                  >
+                    <g
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path
+                        d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09"
+                      ></path>
+                      <path
+                        d="M9 12a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.4 22.4 0 0 1-4 2z"
+                      ></path>
+                      <path
+                        d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 .05 5 .05"
+                      ></path>
+                    </g>
+                  </svg>
+                </div>
+                <h3 class="section-subtitle">UI/UX Design</h3>
+                <p class="section-content">
+                  Figma prototyping, design systems, and user-centric interface
+                  architectural design.
+                </p>
+                <div class="proficiency-bar">
+                  <div
+                    class="portfolio-thq-proficiency-fill-elm5 proficiency-fill"
+                  ></div>
+                </div>
+              </div>
+              <div class="tech-item">
+                <div class="tech-icon">
+                  <svg
+                    width="24"
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="24"
+                    viewBox="0 0 24 24"
+                  >
+                    <g
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <rect
+                        x="2"
+                        y="2"
+                        rx="2"
+                        ry="2"
+                        width="20"
+                        height="8"
+                      ></rect>
+                      <rect
+                        x="2"
+                        y="14"
+                        rx="2"
+                        ry="2"
+                        width="20"
+                        height="8"
+                      ></rect>
+                      <path d="M6 6h.01M6 18h.01"></path>
+                    </g>
+                  </svg>
+                </div>
+                <h3 class="section-subtitle">Modern DevOps</h3>
+                <p class="section-content">
+                  Git version control, CI/CD pipelines, and cloud hosting
+                  management.
+                </p>
+                <div class="proficiency-bar">
+                  <div
+                    class="portfolio-thq-proficiency-fill-elm6 proficiency-fill"
+                  ></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <services-wrapper class="services-wrapper">
+          <!--Services component-->
+          <div class="services-container1">
+            <div class="services-container2">
+              <div class="services-container3">
+                <style>
+                  @media (prefers-reduced-motion: reduce) {
+                  .services-card {
+                    animation: none;
+                  }
+                  .services-card:hover {
+                    transform: none;
+                  }
+                  }
+                </style>
+              </div>
+            </div>
+            <section id="services" class="services-section">
+              <div class="services-container">
+                <div class="services-header">
+                  <h2 class="section-title">What I Do</h2>
+                  <p class="section-content">
+                    Crafting high-performance digital experiences with a focus
+                    on code quality, user experience, and modern technology.
+                  </p>
+                </div>
+                <div class="services-grid">
+                  <article class="services-card">
+                    <div class="services-icon-wrapper">
+                      <svg
+                        fill="none"
+                        width="24"
+                        xmlns="http://www.w3.org/2000/svg"
+                        height="24"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <path
+                          d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09"
+                        ></path>
+                        <path
+                          d="M9 12a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.4 22.4 0 0 1-4 2z"
+                        ></path>
+                        <path
+                          d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 .05 5 .05"
+                        ></path>
+                      </svg>
+                    </div>
+                    <h3 class="section-subtitle">Landing Pages</h3>
+                    <p class="section-content">
+                      High-converting and responsive pages for marketing and
+                      lead generation
+                    </p>
+                    <div class="services-card-glow"></div>
+                  </article>
+                  <article class="services-card">
+                    <div class="services-icon-wrapper">
+                      <svg
+                        fill="none"
+                        width="24"
+                        xmlns="http://www.w3.org/2000/svg"
+                        height="24"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <path
+                          d="M4 8h16M4 6a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2zm4-2v4"
+                        ></path>
+                      </svg>
+                    </div>
+                    <h3 class="section-subtitle">Institutional Websites</h3>
+                    <p class="section-content">
+                      Professional websites focused on strong online presence
+                      and user experience
+                    </p>
+                    <div class="services-card-glow"></div>
+                  </article>
+                  <article class="services-card">
+                    <div class="services-icon-wrapper">
+                      <svg
+                        fill="none"
+                        width="24"
+                        xmlns="http://www.w3.org/2000/svg"
+                        height="24"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <g
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        >
+                          <path
+                            d="M9.5 9h3M4 9h2.5M11 9l3 11l4-9M5.5 9L9 20l3-7m6-2c.177-.528 1-1.364 1-2.5c0-1.78-.776-2.5-1.875-2.5C16.227 6 16 6.812 16 7.429c0 1.83 2 2.058 2 3.571"
+                          ></path>
+                          <path d="M3 12a9 9 0 1 0 18 0a9 9 0 1 0-18 0"></path>
+                        </g>
+                      </svg>
+                    </div>
+                    <h3 class="section-subtitle">WordPress Development</h3>
+                    <p class="section-content">
+                      Custom and scalable websites built and customized with
+                      WordPress
+                    </p>
+                    <div class="services-card-glow"></div>
+                  </article>
+                  <article class="services-card">
+                    <div class="services-icon-wrapper">
+                      <svg
+                        fill="none"
+                        width="24"
+                        xmlns="http://www.w3.org/2000/svg"
+                        height="24"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <g
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        >
+                          <path
+                            d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 0 0 2.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 0 0 1.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 0 0-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 0 0-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 0 0-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 0 0-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 0 0 1.066-2.573c-.94-1.543.826-3.31 2.37-2.37c1 .608 2.296.07 2.572-1.065"
+                          ></path>
+                          <path d="M9 12a3 3 0 1 0 6 0a3 3 0 0 0-6 0"></path>
+                        </g>
+                      </svg>
+                    </div>
+                    <h3 class="section-subtitle">
+                      Website Maintenance &amp; Support
+                    </h3>
+                    <p class="section-content">
+                      Updates, bug fixes, and performance improvements
+                    </p>
+                    <div class="services-card-glow"></div>
+                  </article>
+                  <article class="services-card">
+                    <div class="services-icon-wrapper">
+                      <svg
+                        fill="none"
+                        width="24"
+                        xmlns="http://www.w3.org/2000/svg"
+                        height="24"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <g
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        >
+                          <path d="m21 21l-4.34-4.34"></path>
+                          <circle r="8" cx="11" cy="11"></circle>
+                        </g>
+                      </svg>
+                    </div>
+                    <h3 class="section-subtitle">Basic SEO Optimization</h3>
+                    <p class="section-content">
+                      Improve structure, performance, and on-page SEO for better
+                      visibility
+                    </p>
+                    <div class="services-card-glow"></div>
+                  </article>
+                  <div
+                    aria-hidden="true"
+                    class="services-card-decorative services-card"
+                  >
+                    <div class="services-decorative-content">
+                      <span class="section-subtitle">Future Proof</span>
+                      <p class="section-content">
+                        Expanding into Fullstack development with Java and
+                        PostgreSQL.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <div class="services-container4">
+              <div class="services-container5">
+                <style>
+                          @keyframes servicesFadeUp {from {opacity: 0;
+                  transform: translateY(20px);}
+                  to {opacity: 1;
+                  transform: translateY(0);}}
+                </style>
+              </div>
+            </div>
+            <div class="services-container6">
+              <div class="services-container7">
+                <script defer="" data-name="services-hover-tracking">
+                  document.addEventListener('DOMContentLoaded', function() {
+                    (function(){
+                      const servicesCards = document.querySelectorAll(".services-card")
+
+                      servicesCards.forEach((card) => {
+                        card.addEventListener("mousemove", (e) => {
+                          const rect = card.getBoundingClientRect()
+                          const x = e.clientX - rect.left
+                          const y = e.clientY - rect.top
+
+                          const glow = card.querySelector(".services-card-glow")
+                          if (glow) {
+                            glow.style.background = `radial-gradient(circle at ${x}px ${y}px, color-mix(in srgb, var(--color-primary) 20%, transparent) 0%, transparent 70%)`
+                          }
+                        })
+                      })
+                    })()
+                  });
+                </script>
+              </div>
+            </div>
+          </div>
+        </services-wrapper>
+        <projects-wrapper class="projects-wrapper">
+          <!--Projects component-->
+          <div class="projects-container1">
+            <section id="featured-projects" class="projects-section">
+              <div class="projects-container">
+                <div class="projects-projects-header">
+                  <div class="projects-badge">
+                    <svg
+                      fill="none"
+                      width="20"
+                      xmlns="http://www.w3.org/2000/svg"
+                      height="20"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path d="m16 18l6-6l-6-6M8 6l-6 6l6 6"></path>
+                    </svg>
+                    <span class="section-subtitle">Portfolio Showcase</span>
+                  </div>
+                  <h2 class="section-title">Featured Projects</h2>
+                  <p class="section-content projects-intro">
+                    A selection of my recent web development work, combining
+                    clean code with modern design principles and user-centric
+                    experiences.
+                  </p>
+                </div>
+                <div class="projects-projects-grid">
+                  <article class="projects-card">
+                    <div class="projects-media">
+                      <img
+                        alt="E-commerce Platform Interface"
+                        src="https://images.pexels.com/photos/3888149/pexels-photo-3888149.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=200"
+                        loading="lazy"
+                        class="projects-image"
+                      />
+                      <div class="projects-overlay">
+                        <div class="projects-actions">
+                          <a href="#">
+                            <div
+                              aria-label="View Source Code"
+                              class="projects-action-btn"
+                            >
+                              <svg
+                                fill="none"
+                                width="20"
+                                xmlns="http://www.w3.org/2000/svg"
+                                height="20"
+                                stroke="currentColor"
+                                viewBox="0 0 24 24"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              >
+                                <path
+                                  d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5c.08-1.25-.27-2.48-1-3.5c.28-1.15.28-2.35 0-3.5c0 0-1 0-3 1.5c-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.4 5.4 0 0 0 4 9c0 3.5 3 5.5 6 5.5c-.39.49-.68 1.05-.85 1.65S8.93 17.38 9 18v4"
+                                ></path>
+                                <path d="M9 18c-4.51 2-5-2-7-2"></path>
+                              </svg>
+                            </div>
+                          </a>
+                          <a href="#">
+                            <div
+                              aria-label="Live Demo"
+                              class="projects-action-btn"
+                            >
+                              <svg
+                                fill="none"
+                                width="20"
+                                xmlns="http://www.w3.org/2000/svg"
+                                height="20"
+                                stroke="currentColor"
+                                viewBox="0 0 24 24"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              >
+                                <path
+                                  d="M15 3h6v6m-11 5L21 3m-3 10v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                                ></path>
+                              </svg>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="projects-content">
+                      <h3 class="projects-card-title">NovaShop E-commerce</h3>
+                      <p class="section-content projects-description">
+                        A high-performance online store featuring real-time
+                        inventory tracking, secure stripe integration, and a
+                        custom-built headless CMS.
+                      </p>
+                      <div class="projects-tags">
+                        <span class="projects-tag">React</span>
+                        <span class="projects-tag">Node.js</span>
+                        <span class="projects-tag">Tailwind</span>
+                      </div>
+                    </div>
+                  </article>
+                  <article class="projects-card">
+                    <div class="projects-media">
+                      <img
+                        alt="SaaS Dashboard Design"
+                        src="https://images.pexels.com/photos/7190953/pexels-photo-7190953.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=200"
+                        loading="lazy"
+                        class="projects-image"
+                      />
+                      <div class="projects-overlay">
+                        <div class="projects-actions">
+                          <a href="#">
+                            <div
+                              aria-label="View Source Code"
+                              class="projects-action-btn"
+                            >
+                              <svg
+                                fill="none"
+                                width="20"
+                                xmlns="http://www.w3.org/2000/svg"
+                                height="20"
+                                stroke="currentColor"
+                                viewBox="0 0 24 24"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              >
+                                <path
+                                  d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5c.08-1.25-.27-2.48-1-3.5c.28-1.15.28-2.35 0-3.5c0 0-1 0-3 1.5c-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.4 5.4 0 0 0 4 9c0 3.5 3 5.5 6 5.5c-.39.49-.68 1.05-.85 1.65S8.93 17.38 9 18v4"
+                                ></path>
+                                <path d="M9 18c-4.51 2-5-2-7-2"></path>
+                              </svg>
+                            </div>
+                          </a>
+                          <a href="#">
+                            <div
+                              aria-label="Live Demo"
+                              class="projects-action-btn"
+                            >
+                              <svg
+                                fill="none"
+                                width="20"
+                                xmlns="http://www.w3.org/2000/svg"
+                                height="20"
+                                stroke="currentColor"
+                                viewBox="0 0 24 24"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              >
+                                <path
+                                  d="M15 3h6v6m-11 5L21 3m-3 10v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                                ></path>
+                              </svg>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="projects-content">
+                      <h3 class="projects-card-title">Vanta Analytics</h3>
+                      <p class="section-content projects-description">
+                        A real-time data visualization dashboard for marketing
+                        teams, focusing on complex data sets and intuitive user
+                        interactions.
+                      </p>
+                      <div class="projects-tags">
+                        <span class="projects-tag">TypeScript</span>
+                        <span class="projects-tag">D3.js</span>
+                        <span class="projects-tag">Next.js</span>
+                      </div>
+                    </div>
+                  </article>
+                  <article class="projects-card">
+                    <div class="projects-media">
+                      <img
+                        alt="Creative Portfolio Website"
+                        src="https://images.pexels.com/photos/6633920/pexels-photo-6633920.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=200"
+                        loading="lazy"
+                        class="projects-image"
+                      />
+                      <div class="projects-overlay">
+                        <div class="projects-actions">
+                          <a href="#">
+                            <div
+                              aria-label="View Source Code"
+                              class="projects-action-btn"
+                            >
+                              <svg
+                                fill="none"
+                                width="20"
+                                xmlns="http://www.w3.org/2000/svg"
+                                height="20"
+                                stroke="currentColor"
+                                viewBox="0 0 24 24"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              >
+                                <path
+                                  d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5c.08-1.25-.27-2.48-1-3.5c.28-1.15.28-2.35 0-3.5c0 0-1 0-3 1.5c-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.4 5.4 0 0 0 4 9c0 3.5 3 5.5 6 5.5c-.39.49-.68 1.05-.85 1.65S8.93 17.38 9 18v4"
+                                ></path>
+                                <path d="M9 18c-4.51 2-5-2-7-2"></path>
+                              </svg>
+                            </div>
+                          </a>
+                          <a href="#">
+                            <div
+                              aria-label="Live Demo"
+                              class="projects-action-btn"
+                            >
+                              <svg
+                                fill="none"
+                                width="20"
+                                xmlns="http://www.w3.org/2000/svg"
+                                height="20"
+                                stroke="currentColor"
+                                viewBox="0 0 24 24"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              >
+                                <path
+                                  d="M15 3h6v6m-11 5L21 3m-3 10v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                                ></path>
+                              </svg>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="projects-content">
+                      <h3 class="projects-card-title">ArchiBuild Studio</h3>
+                      <p class="section-content projects-description">
+                        A bespoke WordPress theme for an architectural firm,
+                        featuring heavy optimization for image-rich content and
+                        SEO.
+                      </p>
+                      <div class="projects-tags">
+                        <span class="projects-tag">WordPress</span>
+                        <span class="projects-tag">PHP</span>
+                        <span class="projects-tag">GSAP</span>
+                      </div>
+                    </div>
+                  </article>
+                  <article class="projects-card">
+                    <div class="projects-media">
+                      <img
+                        alt="Mobile App Interface"
+                        src="https://images.pexels.com/photos/20653991/pexels-photo-20653991.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=200"
+                        loading="lazy"
+                        class="projects-image"
+                      />
+                      <div class="projects-overlay">
+                        <div class="projects-actions">
+                          <a href="#">
+                            <div
+                              aria-label="View Source Code"
+                              class="projects-action-btn"
+                            >
+                              <svg
+                                fill="none"
+                                width="20"
+                                xmlns="http://www.w3.org/2000/svg"
+                                height="20"
+                                stroke="currentColor"
+                                viewBox="0 0 24 24"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              >
+                                <path
+                                  d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5c.08-1.25-.27-2.48-1-3.5c.28-1.15.28-2.35 0-3.5c0 0-1 0-3 1.5c-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.4 5.4 0 0 0 4 9c0 3.5 3 5.5 6 5.5c-.39.49-.68 1.05-.85 1.65S8.93 17.38 9 18v4"
+                                ></path>
+                                <path d="M9 18c-4.51 2-5-2-7-2"></path>
+                              </svg>
+                            </div>
+                          </a>
+                          <a href="#">
+                            <div
+                              aria-label="Live Demo"
+                              class="projects-action-btn"
+                            >
+                              <svg
+                                fill="none"
+                                width="20"
+                                xmlns="http://www.w3.org/2000/svg"
+                                height="20"
+                                stroke="currentColor"
+                                viewBox="0 0 24 24"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              >
+                                <path
+                                  d="M15 3h6v6m-11 5L21 3m-3 10v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                                ></path>
+                              </svg>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="projects-content">
+                      <h3 class="projects-card-title">TaskFlow Native</h3>
+                      <p class="section-content projects-description">
+                        A productivity mobile application focused on
+                        gesture-based navigation and offline-first data
+                        synchronization.
+                      </p>
+                      <div class="projects-tags">
+                        <span class="projects-tag">React Native</span>
+                        <span class="projects-tag">PostgreSQL</span>
+                        <span class="projects-tag">Firebase</span>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+                <div class="projects-footer">
+                  <a href="portfolio.html">
+                    <div class="btn-outline btn-lg btn">
+                      <span>View All Projects</span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </section>
+            <div class="projects-container2">
+              <div class="projects-container3">
+                <script defer="" data-name="projects-interaction">
+                  document.addEventListener('DOMContentLoaded', function() {
+                    (function(){
+                      const projectCards = document.querySelectorAll(".projects-card")
+
+                      const observerOptions = {
+                        threshold: 0.1,
+                        rootMargin: "0px 0px -50px 0px",
+                      }
+
+                      const projectsObserver = new IntersectionObserver((entries) => {
+                        entries.forEach((entry, index) => {
+                          if (entry.isIntersecting) {
+                            entry.target.style.opacity = "1"
+                            entry.target.style.transform = "translateY(0)"
+                            projectsObserver.unobserve(entry.target)
+                          }
+                        })
+                      }, observerOptions)
+
+                      projectCards.forEach((card, index) => {
+                        card.style.opacity = "0"
+                        card.style.transform = "translateY(30px)"
+                        card.style.transition = `all 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) ${index * 0.1}s`
+                        projectsObserver.observe(card)
+                      })
+                    })()
+                  });
+                </script>
+              </div>
+            </div>
+          </div>
+        </projects-wrapper>
+        <section class="portfolio-thq-case-studies-elm case-studies">
+          <div class="case-studies-container">
+            <div class="case-studies-header">
+              <h2 class="section-title">In-Depth Case Studies</h2>
+              <p class="section-content">
+                A deep dive into the challenges, process, and results of my key
+                projects.
+              </p>
+            </div>
+            <div class="case-grid">
+              <div class="case-item">
+                <div class="case-content">
+                  <span class="case-number">01</span>
+                  <h3 class="case-title">E-Commerce Transformation</h3>
+                  <p class="case-summary">
+                    Rebuilding a legacy WordPress store into a high-performance
+                    headless commerce solution.
+                  </p>
+                  <div class="case-details">
+                    <div class="detail-row">
+                      <strong>Role:</strong>
+                      <span>Lead Front-end</span>
+                    </div>
+                    <div class="detail-row">
+                      <strong>Tech:</strong>
+                      <span>JavaScript, WordPress API</span>
+                    </div>
+                  </div>
+                  <button class="btn-link btn btn-sm">Read Full Study</button>
+                </div>
+              </div>
+              <div class="case-item">
+                <div class="case-content">
+                  <span class="case-number">02</span>
+                  <h3 class="case-title">Junior Enterprise ERP</h3>
+                  <p class="case-summary">
+                    Designing and implementing a custom management system for
+                    project directors.
+                  </p>
+                  <div class="case-details">
+                    <div class="detail-row">
+                      <strong>Role:</strong>
+                      <span>Project Director</span>
+                    </div>
+                    <div class="detail-row">
+                      <strong>Tech:</strong>
+                      <span>Java, PostgreSQL</span>
+                    </div>
+                  </div>
+                  <button class="btn-link btn btn-sm">Read Full Study</button>
+                </div>
+              </div>
+              <div class="case-item">
+                <div class="case-content">
+                  <span class="case-number">03</span>
+                  <h3 class="case-title">Tech-Savvy SaaS UI</h3>
+                  <p class="case-summary">
+                    A futuristic dashboard interface with complex data
+                    visualization and real-time updates.
+                  </p>
+                  <div class="case-details">
+                    <div class="detail-row">
+                      <strong>Role:</strong>
+                      <span>UI Engineer</span>
+                    </div>
+                    <div class="detail-row">
+                      <strong>Tech:</strong>
+                      <span>HTML5, CSS Grid, Chart.js</span>
+                    </div>
+                  </div>
+                  <button class="btn-link btn btn-sm">Read Full Study</button>
+                </div>
+              </div>
+              <div class="case-item">
+                <div class="case-content">
+                  <span class="case-number">04</span>
+                  <h3 class="case-title">Global Logistics Web</h3>
+                  <p class="case-summary">
+                    Streamlining user flows for a logistics company resulting in
+                    30% faster booking.
+                  </p>
+                  <div class="case-details">
+                    <div class="detail-row">
+                      <strong>Role:</strong>
+                      <span>WordPress Dev</span>
+                    </div>
+                    <div class="detail-row">
+                      <strong>Tech:</strong>
+                      <span>PHP, Custom Hooks</span>
+                    </div>
+                  </div>
+                  <button class="btn-link btn btn-sm">Read Full Study</button>
+                </div>
+              </div>
+              <div class="case-item">
+                <div class="case-content">
+                  <span class="case-number">05</span>
+                  <h3 class="case-title">Financial Data Vault</h3>
+                  <p class="case-summary">
+                    Secure, scalable backend architecture for sensitive
+                    financial transaction logging.
+                  </p>
+                  <div class="case-details">
+                    <div class="detail-row">
+                      <strong>Role:</strong>
+                      <span>Backend Student</span>
+                    </div>
+                    <div class="detail-row">
+                      <strong>Tech:</strong>
+                      <span>Java, SQL</span>
+                    </div>
+                  </div>
+                  <button class="btn-link btn btn-sm">Read Full Study</button>
+                </div>
+              </div>
+              <div class="case-item">
+                <div class="case-content">
+                  <span class="case-number">06</span>
+                  <h3 class="case-title">Interactive Portfolio</h3>
+                  <p class="case-summary">
+                    Exploring the limits of CSS and SVG animations for a
+                    high-impact personal brand.
+                  </p>
+                  <div class="case-details">
+                    <div class="detail-row">
+                      <strong>Role:</strong>
+                      <span>Creative Developer</span>
+                    </div>
+                    <div class="detail-row">
+                      <strong>Tech:</strong>
+                      <span>HTML, CSS, JS</span>
+                    </div>
+                  </div>
+                  <button class="btn-link btn btn-sm">Read Full Study</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="portfolio-thq-dev-process-elm dev-process">
+          <div class="process-container">
+            <h2 class="section-title">The Engineering Workflow</h2>
+            <div class="process-steps">
+              <div class="step-item">
+                <div class="step-icon-wrapper">
+                  <svg
+                    width="24"
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="24"
+                    viewBox="0 0 24 24"
+                  >
+                    <g
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path
+                        d="m13 13.5l2-2.5l-2-2.5M21 21l-4.3-4.3M9 8.5L7 11l2 2.5"
+                      ></path>
+                      <circle r="8" cx="11" cy="11"></circle>
+                    </g>
+                  </svg>
+                </div>
+                <div class="step-content">
+                  <h3 class="step-title">01 Research</h3>
+                  <p class="section-content">
+                    Analyzing requirements and target audience to define
+                    technical specifications.
+                  </p>
+                </div>
+              </div>
+              <div class="step-item">
+                <div class="step-icon-wrapper">
+                  <svg
+                    width="24"
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="24"
+                    viewBox="0 0 24 24"
+                  >
+                    <g
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <rect x="2" y="3" rx="2" width="20" height="14"></rect>
+                      <path d="M8 21h8m-4-4v4"></path>
+                    </g>
+                  </svg>
+                </div>
+                <div class="step-content">
+                  <h3 class="step-title">02 Design</h3>
+                  <p class="section-content">
+                    Creating high-fidelity wireframes and prototyping the user
+                    experience.
+                  </p>
+                </div>
+              </div>
+              <div class="step-item">
+                <div class="step-icon-wrapper">
+                  <svg
+                    width="24"
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="24"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="m16 18l6-6l-6-6M8 6l-6 6l6 6"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></path>
+                  </svg>
+                </div>
+                <div class="step-content">
+                  <h3 class="step-title">03 Development</h3>
+                  <p class="section-content">
+                    Writing clean, modular code following modern best practices
+                    and accessibility.
+                  </p>
+                </div>
+              </div>
+              <div class="step-item">
+                <div class="step-icon-wrapper">
+                  <svg
+                    width="24"
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="24"
+                    viewBox="0 0 24 24"
+                  >
+                    <g
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path d="m9 10l2 2l4-4"></path>
+                      <rect x="2" y="3" rx="2" width="20" height="14"></rect>
+                      <path d="M12 17v4m-4 0h8"></path>
+                    </g>
+                  </svg>
+                </div>
+                <div class="step-content">
+                  <h3 class="step-title">04 Testing</h3>
+                  <p class="section-content">
+                    Rigorous cross-browser testing and performance optimization
+                    for all devices.
+                  </p>
+                </div>
+              </div>
+              <div class="step-item">
+                <div class="step-icon-wrapper">
+                  <svg
+                    width="24"
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="24"
+                    viewBox="0 0 24 24"
+                  >
+                    <g
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path
+                        d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09"
+                      ></path>
+                      <path
+                        d="M9 12a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.4 22.4 0 0 1-4 2z"
+                      ></path>
+                      <path
+                        d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 .05 5 .05"
+                      ></path>
+                    </g>
+                  </svg>
+                </div>
+                <div class="step-content">
+                  <h3 class="step-title">05 Deployment</h3>
+                  <p class="section-content">
+                    Secure launch and continuous monitoring to ensure stability
+                    and growth.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section
+          id="projects"
+          class="portfolio-thq-featured-projects-elm featured-projects"
+        >
+          <div class="projects-header">
+            <h2 class="section-title">Featured Projects</h2>
+            <p class="section-content">
+              A selection of my most recent work, blending creative UI with
+              technical precision.
+            </p>
+          </div>
+          <div class="projects-grid">
+            <article class="project-card">
+              <div class="project-image-wrapper">
+                <img
+                  alt="E-commerce Platform"
+                  src="https://images.pexels.com/photos/574069/pexels-photo-574069.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1500"
+                  class="project-img"
+                />
+                <div class="project-hover-overlay">
+                  <a href="#">
+                    <div class="btn-accent btn btn-sm">
+                      <span>Explore Project</span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="project-info">
+                <h3 class="project-name">VantaShop Pro</h3>
+                <div class="tech-tags">
+                  <span class="tag">JavaScript</span>
+                  <span class="tag">WordPress</span>
+                  <span class="tag">CSS3</span>
+                </div>
+              </div>
+            </article>
+            <article class="project-card">
+              <div class="project-image-wrapper">
+                <img
+                  alt="Corporate Dashboard"
+                  src="https://images.pexels.com/photos/159299/graphic-design-studio-tracfone-programming-html-159299.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1500"
+                  class="project-img"
+                />
+                <div class="project-hover-overlay">
+                  <a href="#">
+                    <div class="btn-accent btn btn-sm">
+                      <span>Explore Project</span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="project-info">
+                <h3 class="project-name">Enterprise Analytics</h3>
+                <div class="tech-tags">
+                  <span class="tag">HTML5</span>
+                  <span class="tag">SASS</span>
+                  <span class="tag">API</span>
+                </div>
+              </div>
+            </article>
+            <article class="project-card">
+              <div class="project-image-wrapper">
+                <img
+                  alt="SaaS Landing Page"
+                  src="https://images.pexels.com/photos/3861951/pexels-photo-3861951.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1500"
+                  class="project-img"
+                />
+                <div class="project-hover-overlay">
+                  <a href="#">
+                    <div class="btn-accent btn btn-sm">
+                      <span>Explore Project</span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="project-info">
+                <h3 class="project-name">CloudSync Landing</h3>
+                <div class="tech-tags">
+                  <span class="tag">Animation</span>
+                  <span class="tag">UI/UX</span>
+                  <span class="tag">JS</span>
+                </div>
+              </div>
+            </article>
+            <article class="project-card">
+              <div class="project-image-wrapper">
+                <img
+                  alt="Education Portal"
+                  src="https://images.pexels.com/photos/4164418/pexels-photo-4164418.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1500"
+                  class="project-img"
+                />
+                <div class="project-hover-overlay">
+                  <a href="#">
+                    <div class="btn-accent btn btn-sm">
+                      <span>Explore Project</span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="project-info">
+                <h3 class="project-name">EduVanta Portal</h3>
+                <div class="tech-tags">
+                  <span class="tag">Java</span>
+                  <span class="tag">PostgreSQL</span>
+                  <span class="tag">Fullstack</span>
+                </div>
+              </div>
+            </article>
+            <article class="project-card">
+              <div class="project-image-wrapper">
+                <img
+                  alt="Portfolio Site"
+                  src="https://images.pexels.com/photos/270632/pexels-photo-270632.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1500"
+                  class="project-img"
+                />
+                <div class="project-hover-overlay">
+                  <a href="#">
+                    <div class="btn-accent btn btn-sm">
+                      <span>Explore Project</span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="project-info">
+                <h3 class="project-name">Creative Portfolio</h3>
+                <div class="tech-tags">
+                  <span class="tag">GSAP</span>
+                  <span class="tag">Three.js</span>
+                  <span class="tag">Modern UI</span>
+                </div>
+              </div>
+            </article>
+            <article class="project-card">
+              <div class="project-image-wrapper">
+                <img
+                  alt="Booking System"
+                  src="https://images.pexels.com/photos/574070/pexels-photo-574070.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1500"
+                  class="project-img"
+                />
+                <div class="project-hover-overlay">
+                  <a href="#">
+                    <div class="btn-accent btn btn-sm">
+                      <span>Explore Project</span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="project-info">
+                <h3 class="project-name">Booking Engine</h3>
+                <div class="tech-tags">
+                  <span class="tag">PHP</span>
+                  <span class="tag">MySQL</span>
+                  <span class="tag">WordPress</span>
+                </div>
+              </div>
+            </article>
+          </div>
+        </section>
+        <section class="portfolio-thq-showcase-outcomes-elm showcase-outcomes">
+          <div class="outcomes-header">
+            <h2 class="section-title">Impact &amp; Results</h2>
+            <p class="section-content">
+              Measurable success stories from projects where technical skill met
+              business goals.
+            </p>
+          </div>
+          <div class="outcomes-grid">
+            <div class="outcome-card">
+              <div class="outcome-visual">
+                <div class="before comparison-tag"><span>Legacy</span></div>
+                <div class="after comparison-tag"><span>CodeVanta</span></div>
+                <img
+                  alt="Speed comparison"
+                  src="https://images.pexels.com/photos/4578665/pexels-photo-4578665.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1500"
+                  class="outcome-img"
+                />
+              </div>
+              <div class="outcome-info">
+                <h3 class="section-subtitle">Load Speed Optimization</h3>
+                <div class="metric-block">
+                  <span class="metric-value">+85%</span>
+                  <span class="metric-label">Performance Score</span>
+                </div>
+              </div>
+            </div>
+            <div class="outcome-card">
+              <div class="outcome-visual">
+                <img
+                  alt="Conversion comparison"
+                  src="https://images.pexels.com/photos/2764993/pexels-photo-2764993.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1500"
+                  class="outcome-img"
+                />
+              </div>
+              <div class="outcome-info">
+                <h3 class="section-subtitle">Conversion Uplift</h3>
+                <div class="metric-block">
+                  <span class="metric-value">4.2x</span>
+                  <span class="metric-label">Sales Growth</span>
+                </div>
+              </div>
+            </div>
+            <div class="outcome-card">
+              <div class="outcome-visual">
+                <img
+                  alt="Accessibility comparison"
+                  src="https://images.pexels.com/photos/16129724/pexels-photo-16129724.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1500"
+                  class="outcome-img"
+                />
+              </div>
+              <div class="outcome-info">
+                <h3 class="section-subtitle">Accessibility Compliance</h3>
+                <div class="metric-block">
+                  <span class="metric-value">100/100</span>
+                  <span class="metric-label">Lighthouse Score</span>
+                </div>
+              </div>
+            </div>
+            <div class="outcome-card">
+              <div class="outcome-visual">
+                <img
+                  alt="Backend comparison"
+                  src="https://images.pexels.com/photos/4974912/pexels-photo-4974912.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1500"
+                  class="outcome-img"
+                />
+              </div>
+              <div class="outcome-info">
+                <h3 class="section-subtitle">Backend Stability</h3>
+                <div class="metric-block">
+                  <span class="metric-value">99.9%</span>
+                  <span class="metric-label">Uptime Record</span>
+                </div>
+              </div>
+            </div>
+            <div class="outcome-card">
+              <div class="outcome-visual">
+                <img
+                  alt="SEO comparison"
+                  src="https://images.pexels.com/photos/693859/pexels-photo-693859.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1500"
+                  class="outcome-img"
+                />
+              </div>
+              <div class="outcome-info">
+                <h3 class="section-subtitle">SEO Visibility</h3>
+                <div class="metric-block">
+                  <span class="metric-value">#1</span>
+                  <span class="metric-label">Rank for Keywords</span>
+                </div>
+              </div>
+            </div>
+            <div class="outcome-card">
+              <div class="outcome-visual">
+                <img
+                  alt="User experience comparison"
+                  src="https://images.pexels.com/photos/943096/pexels-photo-943096.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1500"
+                  class="outcome-img"
+                />
+              </div>
+              <div class="outcome-info">
+                <h3 class="section-subtitle">User Retention</h3>
+                <div class="metric-block">
+                  <span class="metric-value">+40%</span>
+                  <span class="metric-label">Avg Session Time</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="portfolio-thq-testimonials-elm testimonials">
+          <div class="testimonials-header">
+            <h2 class="section-title">Trusted by Partners</h2>
+          </div>
+          <div class="testimonial-rail">
+            <div class="testimonial-card">
+              <p class="testimonial-quote">
+                "CodeVanta transformed our online presence. Their attention to
+                detail in the front-end development was exceptional."
+              </p>
+              <div class="testimonial-author">
+                <span class="author-name">Sarah Jenkins</span>
+                <span class="author-role">CEO, TechFlow Solutions</span>
+              </div>
+            </div>
+            <div class="testimonial-card">
+              <p class="testimonial-quote">
+                "Working with them at the junior enterprise was a masterclass in
+                leadership and technical execution. Highly professional."
+              </p>
+              <div class="testimonial-author">
+                <span class="author-name">Marko Rossi</span>
+                <span class="author-role">Operations Director</span>
+              </div>
+            </div>
+            <div class="testimonial-card">
+              <p class="testimonial-quote">
+                "A rare talent who understands both the aesthetic and the logic.
+                The WordPress custom theme they built is flawless."
+              </p>
+              <div class="testimonial-author">
+                <span class="author-name">Elena Vance</span>
+                <span class="author-role">Marketing Lead</span>
+              </div>
+            </div>
+            <div class="testimonial-card">
+              <p class="testimonial-quote">
+                "The transition to full-stack is evident in their logical
+                approach to problem-solving. A top-tier recruiter's choice."
+              </p>
+              <div class="testimonial-author">
+                <span class="author-name">David Chen</span>
+                <span class="author-role">Senior Recruiter</span>
+              </div>
+            </div>
+            <div class="testimonial-card">
+              <p class="testimonial-quote">
+                "Efficiency and modern style define their work. Our site
+                performance doubled after the CodeVanta optimization."
+              </p>
+              <div class="testimonial-author">
+                <span class="author-name">Jessica Wu</span>
+                <span class="author-role">Startup Founder</span>
+              </div>
+            </div>
+          </div>
+        </section>
+        <div class="portfolio-container2">
+          <div class="portfolio-container3">
+            <style>
+              section {
+                padding: var(--spacing-4xl) 0;
+                overflow: hidden;
+              }
+            </style>
+          </div>
+        </div>
+        <div class="portfolio-container4">
+          <div class="portfolio-container5">
+            <script defer="" data-name="portfolio-enhancements">
+              document.addEventListener('DOMContentLoaded', function() {
+                (function(){
+                  // Intersection Observer for scroll animations
+                  const observerOptions = {
+                    threshold: 0.1,
+                  }
+
+                  const observer = new IntersectionObserver((entries) => {
+                    entries.forEach((entry) => {
+                      if (entry.isIntersecting) {
+                        entry.target.style.opacity = "1"
+                        entry.target.style.transform = "translateY(0)"
+                      }
+                    })
+                  }, observerOptions)
+
+                  // Apply initial hidden state to cards
+                  document.querySelectorAll(".project-card, .case-item, .tech-item, .outcome-card").forEach((el) => {
+                    el.style.opacity = "0"
+                    el.style.transform = "translateY(20px)"
+                    el.style.transition = "all 0.6s ease-out"
+                    observer.observe(el)
+                  })
+
+                  // Testimonial Rail auto-scroll (subtle)
+                  const rail = document.querySelector(".testimonial-rail")
+                  let isDown = false
+                  let startX
+                  let scrollLeft
+
+                  rail.addEventListener("mousedown", (e) => {
+                    isDown = true
+                    startX = e.pageX - rail.offsetLeft
+                    scrollLeft = rail.scrollLeft
+                  })
+                  rail.addEventListener("mouseleave", () => {
+                    isDown = false
+                  })
+                  rail.addEventListener("mouseup", () => {
+                    isDown = false
+                  })
+                  rail.addEventListener("mousemove", (e) => {
+                    if (!isDown) return
+                    e.preventDefault()
+                    const x = e.pageX - rail.offsetLeft
+                    const walk = (x - startX) * 2
+                    rail.scrollLeft = scrollLeft - walk
+                  })
+                })()
+              });
+            </script>
+          </div>
+        </div>
+        <contact-wrapper class="contact-wrapper">
+          <!--Contact component-->
+          <div class="contact-container1">
+            <section id="contact" class="contact-section">
+              <div class="contact-container">
+                <div class="contact-layout">
+                  <div class="contact-info-column">
+                    <div class="contact-header">
+                      <h2 class="section-title">
+                        <span>Let's Build Something</span>
+                        <span class="contact-thq-contact-accent-text-elm">
+                          Legendary
+                        </span>
+                      </h2>
+                      <p class="section-content">
+                        I'm currently looking for new opportunities and
+                        collaborations. Whether you have a question or just want
+                        to say hi, I'll try my best to get back to you!
+                      </p>
+                    </div>
+                    <div class="contact-details-list">
+                      <div class="contact-detail-item">
+                        <div class="contact-icon-wrapper">
+                          <svg
+                            width="24"
+                            xmlns="http://www.w3.org/2000/svg"
+                            height="24"
+                            viewBox="0 0 24 24"
+                          >
+                            <g
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            >
+                              <path
+                                d="m22 7l-8.991 5.727a2 2 0 0 1-2.009 0L2 7"
+                              ></path>
+                              <rect
+                                x="2"
+                                y="4"
+                                rx="2"
+                                width="20"
+                                height="16"
+                              ></rect>
+                            </g>
+                          </svg>
+                        </div>
+                        <div class="contact-text-group">
+                          <span class="contact-label">Email Me</span>
+                          <a href="mailto:hello@codevanta.dev?subject=">
+                            <div class="contact-link">
+                              <span>hello@codevanta.dev</span>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="contact-social-footer">
+                      <span class="contact-label">Connect with me</span>
+                      <div class="contact-social-grid">
+                        <a
+                          href="https://linkedin.com"
+                          target="_blank"
+                          rel="noreferrer noopener"
+                        >
+                          <div
+                            rel="noopener noreferrer"
+                            target="_blank"
+                            aria-label="LinkedIn"
+                            class="contact-social-card"
+                          >
+                            <svg
+                              width="24"
+                              xmlns="http://www.w3.org/2000/svg"
+                              height="24"
+                              viewBox="0 0 24 24"
+                            >
+                              <g
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              >
+                                <path
+                                  d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2a2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6M2 9h4v12H2z"
+                                ></path>
+                                <circle r="2" cx="4" cy="4"></circle>
+                              </g>
+                            </svg>
+                            <span>LinkedIn</span>
+                          </div>
+                        </a>
+                        <a
+                          href="https://github.com"
+                          target="_blank"
+                          rel="noreferrer noopener"
+                        >
+                          <div
+                            rel="noopener noreferrer"
+                            target="_blank"
+                            aria-label="GitHub"
+                            class="contact-social-card"
+                          >
+                            <svg
+                              width="24"
+                              xmlns="http://www.w3.org/2000/svg"
+                              height="24"
+                              viewBox="0 0 24 24"
+                            >
+                              <g
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              >
+                                <path
+                                  d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5c.08-1.25-.27-2.48-1-3.5c.28-1.15.28-2.35 0-3.5c0 0-1 0-3 1.5c-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.4 5.4 0 0 0 4 9c0 3.5 3 5.5 6 5.5c-.39.49-.68 1.05-.85 1.65S8.93 17.38 9 18v4"
+                                ></path>
+                                <path d="M9 18c-4.51 2-5-2-7-2"></path>
+                              </g>
+                            </svg>
+                            <span>GitHub</span>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="contact-form-column">
+                    <div class="contact-glass-card">
+                      <form
+                        id="contactForm"
+                        action="/submit"
+                        method="POST"
+                        data-form-id="7f4bf2b0-20dc-4dd9-8738-7205e5ca8bf7"
+                        class="contact-form"
+                      >
+                        <div class="contact-input-group">
+                          <label for="name" class="contact-form-label">
+                            Full Name
+                          </label>
+                          <div class="contact-field-container">
+                            <input
+                              type="text"
+                              id="name"
+                              name="true"
+                              required="true"
+                              placeholder="John Doe"
+                              data-form-field-id="name"
+                              class="contact-input"
+                            />
+                            <div class="contact-focus-line"></div>
+                          </div>
+                        </div>
+                        <div class="contact-input-group">
+                          <label for="email" class="contact-form-label">
+                            Email Address
+                          </label>
+                          <div class="contact-field-container">
+                            <input
+                              type="email"
+                              id="email"
+                              name="email"
+                              required="true"
+                              placeholder="john@example.com"
+                              data-form-field-id="email"
+                              class="contact-input"
+                            />
+                            <div class="contact-focus-line"></div>
+                          </div>
+                        </div>
+                        <div class="contact-input-group">
+                          <label for="message" class="contact-form-label">
+                            Your Message
+                          </label>
+                          <div class="contact-field-container">
+                            <textarea
+                              id="message"
+                              name="message"
+                              required="true"
+                              minlength="10"
+                              placeholder="Tell me about your project..."
+                              data-form-field-id="message"
+                              class="contact-textarea"
+                            ></textarea>
+                            <div class="contact-focus-line"></div>
+                          </div>
+                        </div>
+                        <button
+                          id="thq_button_JYPa"
+                          name="button"
+                          type="submit"
+                          data-form-field-id="thq_button_JYPa"
+                          class="btn-primary contact-submit-btn btn-lg btn"
+                        >
+                          <span>Send Message</span>
+                          <svg
+                            width="20"
+                            xmlns="http://www.w3.org/2000/svg"
+                            height="20"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11zm7.318-19.539l-10.94 10.939"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            ></path>
+                          </svg>
+                        </button>
+                        <div
+                          id="formStatus"
+                          aria-live="polite"
+                          class="contact-status-message"
+                        ></div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="contact-bg-glow contact-glow-1"></div>
+              <div class="contact-glow-2 contact-bg-glow"></div>
+            </section>
+            <div class="contact-container2">
+              <div class="contact-container3">
+                <script defer="" data-name="contact-form-handler">
+                  document.addEventListener('DOMContentLoaded', function() {
+                    (function(){
+                      const contactForm = document.getElementById("contactForm")
+                      const statusMessage = document.getElementById("formStatus")
+
+                      if (contactForm) {
+                        contactForm.addEventListener("submit", function (event) {
+                          // We let the native action happen, but we can provide UI feedback
+                          // In a real environment, this might be handled by an AJAX request,
+                          // but per instructions we maintain native submission capability.
+
+                          const submitBtn = contactForm.querySelector(".contact-submit-btn")
+                          const btnText = submitBtn.querySelector("span")
+
+                          // Visual feedback for submission start
+                          btnText.textContent = "Sending..."
+                          submitBtn.style.pointerEvents = "none"
+                          submitBtn.style.opacity = "0.7"
+
+                          // Note: In a production environment with a real backend,
+                          // the page would redirect or refresh.
+                          // This script demonstrates visual handling of the native validation.
+                        })
+
+                        // Real-time validation feedback
+                        const inputs = contactForm.querySelectorAll("input, textarea")
+                        inputs.forEach((input) => {
+                          input.addEventListener("blur", () => {
+                            if (!input.checkValidity()) {
+                              input.style.borderColor = "#e74c3c"
+                            } else {
+                              input.style.borderColor = ""
+                            }
+                          })
+
+                          input.addEventListener("input", () => {
+                            if (input.checkValidity()) {
+                              input.style.borderColor = ""
+                            }
+                          })
+                        })
+                      }
+                    })()
+                  });
+                </script>
+              </div>
+            </div>
+          </div>
+        </contact-wrapper>
+        <section class="portfolio-thq-project-cta-elm project-cta">
+          <div class="cta-container">
+            <div class="cta-card">
+              <div class="cta-content">
+                <h2 class="hero-title">
+                  <span>Ready to</span>
+                  <span class="portfolio-text47">Innovate?</span>
+                </h2>
+                <p class="section-content">
+                  Whether you're a startup looking for a modern web presence or
+                  a company needing a technical specialist, let's build
+                  something extraordinary together.
+                </p>
+                <div class="cta-buttons">
+                  <a href="#">
+                    <div class="btn-xl btn-primary btn">
+                      <span>Start a Project</span>
+                    </div>
+                  </a>
+                  <a href="#">
+                    <div class="btn-xl btn-secondary btn">
+                      <span>Request Case Studies</span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="cta-decoration">
+                <svg
+                  width="120"
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="120"
+                  viewBox="0 0 24 24"
+                >
+                  <g
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path
+                      d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09"
+                    ></path>
+                    <path
+                      d="M9 12a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.4 22.4 0 0 1-4 2z"
+                    ></path>
+                    <path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 .05 5 .05"></path>
+                  </g>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </section>
+        <footer-wrapper class="footer-wrapper">
+          <!--Footer component-->
+          <div class="footer-container1">
+            <footer class="footer-root">
+              <div class="footer-container">
+                <div class="footer-grid">
+                  <div class="footer-brand-col footer-column">
+                    <div class="footer-logo-wrapper">
+                      <svg
+                        fill="none"
+                        width="32"
+                        xmlns="http://www.w3.org/2000/svg"
+                        height="32"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="footer-logo-icon"
+                      >
+                        <path d="m16 18l6-6-6-6M8 6l-6 6l6 6"></path>
+                      </svg>
+                      <span class="footer-brand-name">CodeVanta</span>
+                    </div>
+                    <p class="section-content footer-description">
+                      Crafting high-performance digital experiences with
+                      precision and innovation. Front-end specialist
+                      transitioning to Full-stack excellence.
+                    </p>
+                    <div class="footer-social-links">
+                      <a href="https://github.com">
+                        <div aria-label="GitHub" class="footer-social-btn">
+                          <svg
+                            fill="none"
+                            width="20"
+                            xmlns="http://www.w3.org/2000/svg"
+                            height="20"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          >
+                            <path
+                              d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5c.08-1.25-.27-2.48-1-3.5c.28-1.15.28-2.35 0-3.5c0 0-1 0-3 1.5c-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.4 5.4 0 0 0 4 9c0 3.5 3 5.5 6 5.5c-.39.49-.68 1.05-.85 1.65S8.93 17.38 9 18v4"
+                            ></path>
+                            <path d="M9 18c-4.51 2-5-2-7-2"></path>
+                          </svg>
+                        </div>
+                      </a>
+                      <a href="https://linkedin.com">
+                        <div aria-label="LinkedIn" class="footer-social-btn">
+                          <svg
+                            fill="none"
+                            width="20"
+                            xmlns="http://www.w3.org/2000/svg"
+                            height="20"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          >
+                            <path
+                              d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2a2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6M2 9h4v12H2z"
+                            ></path>
+                            <circle r="2" cx="4" cy="4"></circle>
+                          </svg>
+                        </div>
+                      </a>
+                      <a href="https://instagram.com">
+                        <div aria-label="Instagram" class="footer-social-btn">
+                          <svg
+                            fill="none"
+                            width="20"
+                            xmlns="http://www.w3.org/2000/svg"
+                            height="20"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          >
+                            <rect
+                              x="2"
+                              y="2"
+                              rx="5"
+                              ry="5"
+                              width="20"
+                              height="20"
+                            ></rect>
+                            <path
+                              d="M16 11.37A4 4 0 1 1 12.63 8A4 4 0 0 1 16 11.37m1.5-4.87h.01"
+                            ></path>
+                          </svg>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <nav
+                    aria-labelledby="footer-nav-heading"
+                    class="footer-column"
+                  >
+                    <h2
+                      id="footer-nav-heading"
+                      class="footer-col-title section-subtitle"
+                    >
+                      Navigation
+                    </h2>
+                    <ul class="footer-link-list">
+                      <li class="footer-link-item">
+                        <a href="#about.html">
+                          <div class="footer-link"><span>About Me</span></div>
+                        </a>
+                      </li>
+                      <li class="footer-link-item">
+                        <a href="#services.html">
+                          <div class="footer-link"><span>Services</span></div>
+                        </a>
+                      </li>
+                      <li class="footer-link-item">
+                        <a href="portfolio.html">
+                          <div class="footer-link"><span>Projects</span></div>
+                        </a>
+                      </li>
+                      <li class="footer-link-item">
+                        <div class="footer-link"><span>Skills</span></div>
+                      </li>
+                    </ul>
+                  </nav>
+                  <div class="footer-column">
+                    <h2 class="footer-col-title section-subtitle">
+                      Tech Stack
+                    </h2>
+                    <ul class="footer-link-list">
+                      <li class="footer-link-item">
+                        <span class="footer-static-link">
+                          React &amp; Next.js
+                        </span>
+                      </li>
+                      <li class="footer-link-item">
+                        <span class="footer-static-link">
+                          TypeScript &amp; Node
+                        </span>
+                      </li>
+                      <li class="footer-link-item">
+                        <span class="footer-static-link">
+                          Java &amp; PostgreSQL
+                        </span>
+                      </li>
+                      <li class="footer-link-item">
+                        <span class="footer-static-link">
+                          WordPress Mastery
+                        </span>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="footer-cta-col footer-column">
+                    <h2 class="footer-col-title section-subtitle">
+                      Start a Project
+                    </h2>
+                    <p class="section-content footer-cta-text">
+                      Looking for a modern, high-quality website? Let's build
+                      something extraordinary.
+                    </p>
+                    <a href="mailto:hello@codevanta.dev?subject=">
+                      <div class="btn-primary footer-cta-btn btn btn-sm">
+                        <span>Get in Touch</span>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="footer-bottom">
+                  <div class="footer-divider"></div>
+                  <div class="footer-bottom-content">
+                    <p class="footer-copyright">
+                      © 2026 CodeVanta. All rights reserved. Designed for the
+                      future.
+                    </p>
+                    <div class="footer-legal-links">
+                      <a href="privacy.html">
+                        <div class="footer-legal-link">
+                          <span>Privacy Policy</span>
+                        </div>
+                      </a>
+                      <a href="terms.html">
+                        <div class="footer-legal-link">
+                          <span>Terms of Service</span>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </footer>
+            <div class="footer-container2">
+              <div class="footer-container3">
+                <script defer="" data-name="footer-interactivity">
+                  document.addEventListener('DOMContentLoaded', function() {
+                    (function(){
+                      // Minimal interaction for social links hover effect enhancement
+                      const socialButtons = document.querySelectorAll(".footer-social-btn")
+
+                      socialButtons.forEach((btn) => {
+                        btn.addEventListener("mouseenter", () => {
+                          btn.style.transition = "all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275)"
+                        })
+                      })
+
+                      // Scroll to top functionality could be added here if needed,
+                      // but keeping it simple as per implementation guidance.
+                    })()
+                  });
+                </script>
+              </div>
+            </div>
+          </div>
+        </footer-wrapper>
         <a href="https://play.teleporthq.io/signup">
-          <div aria-label="Sign up to TeleportHQ" class="home-container2">
+          <div aria-label="Sign up to TeleportHQ" class="portfolio-container6">
             <svg
               width="24"
               height="24"
               viewBox="0 0 19 21"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
-              class="home-icon1"
+              class="portfolio-icon60"
             >
               <path
                 d="M9.1017 4.64355H2.17867C0.711684 4.64355 -0.477539 5.79975 -0.477539 7.22599V13.9567C-0.477539 15.3829 0.711684 16.5391 2.17867 16.5391H9.1017C10.5687 16.5391 11.7579 15.3829 11.7579 13.9567V7.22599C11.7579 5.79975 10.5687 4.64355 9.1017 4.64355Z"
@@ -92,13 +2651,13 @@
                 fill="#2874DE"
               ></path>
             </svg>
-            <span class="home-text">Built in TeleportHQ</span>
+            <span class="portfolio-text50">Built in TeleportHQ</span>
           </div>
         </a>
       </div>
       <link
         rel="canonical"
-        href="https://flamboyant-nonstop-rail-mnd2ze.teleporthq.app/"
+        href="https://flamboyant-nonstop-rail-mnd2ze.teleporthq.app/portfolio"
       />
     </div>
   </body>
