@@ -8,55 +8,39 @@
   font-weight: 800;
   text-shadow: 0 0 8px rgba(0, 217, 255, 0.4);
 }
- 
+
 .navigation-text12 {
   font-weight: 700;
-}
-
-.about-me-wrapper {
-  display: contents;
-}
- 
-.about-me-container1 {
-  display: contents;
-}
- 
-.about-me-container3 {
-  display: none;
-}
- 
-.about-me-container4 {
-  display: contents;
 }
 
 .services-wrapper {
   display: contents;
 }
- 
+
 .services-container1 {
   display: contents;
 }
- 
+
 .services-container2 {
   display: none;
 }
- 
+
 .services-container3 {
   display: contents;
 }
- 
+
 .services-container4 {
   display: none;
 }
- 
+
 .services-container5 {
   display: contents;
 }
- 
+
 .services-container6 {
   display: none;
 }
- 
+
 .services-container7 {
   display: contents;
 }
@@ -64,15 +48,15 @@
 .projects-wrapper {
   display: contents;
 }
- 
+
 .projects-container1 {
   display: contents;
 }
- 
+
 .projects-container2 {
   display: none;
 }
- 
+
 .projects-container3 {
   display: contents;
 }
@@ -80,20 +64,20 @@
 .contact-wrapper {
   display: contents;
 }
- 
+
 .contact-container1 {
   display: contents;
 }
- 
+
 .contact-thq-contact-accent-text-elm {
   color: var(--color-primary);
   display: block;
 }
- 
+
 .contact-container2 {
   display: none;
 }
- 
+
 .contact-container3 {
   display: contents;
 }
@@ -101,97 +85,103 @@
 .footer-wrapper {
   display: contents;
 }
- 
+
 .footer-container1 {
   display: contents;
 }
- 
+
 .footer-container2 {
   display: none;
 }
- 
+
 .footer-container3 {
   display: contents;
 }
- 
+
 .portfolio-text11 {
   display: inline-block;
   background: linear-gradient(135deg, var(--color-primary), var(--color-accent));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
- 
+
 .portfolio-thq-proficiency-fill-elm1 {
   width: 95%;
 }
- 
+
 .portfolio-thq-proficiency-fill-elm2 {
   width: 90%;
 }
- 
+
 .portfolio-thq-proficiency-fill-elm3 {
   width: 75%;
 }
- 
+
 .portfolio-thq-proficiency-fill-elm4 {
   width: 80%;
 }
- 
+
 .portfolio-thq-proficiency-fill-elm5 {
   width: 85%;
 }
- 
+
 .portfolio-thq-proficiency-fill-elm6 {
   width: 70%;
 }
- 
+
+/* Estilo para elementos <strong> dentro da descrição "about-me" */
+#sobre .about-me-description strong {
+  color: var(--color-primary);
+  font-weight: 800;
+}
+
 .portfolio-thq-case-studies-elm {
   display: none;
 }
- 
+
 .portfolio-thq-dev-process-elm {
   display: none;
 }
- 
+
 .portfolio-thq-featured-projects-elm {
   display: none;
 }
- 
+
 .portfolio-thq-showcase-outcomes-elm {
   display: none;
 }
- 
+
 .portfolio-thq-testimonials-elm {
   display: none;
 }
- 
+
 .portfolio-container2 {
   display: none;
 }
- 
+
 .portfolio-container3 {
   display: contents;
 }
- 
+
 .portfolio-container4 {
   display: none;
 }
- 
+
 .portfolio-container5 {
   display: contents;
 }
- 
+
 .portfolio-thq-project-cta-elm {
   display: none;
 }
- 
+
 .portfolio-text47 {
   display: inline-block;
   background: linear-gradient(135deg, var(--color-primary), var(--color-accent));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
- 
+
 .portfolio-container6 {
   right: 50px;
   border: 1px solid #ffffff5c;
@@ -210,12 +200,12 @@
   backdrop-filter: blur(6px);
   background-color: rgba(41, 41, 41, 0.41);
 }
- 
+
 .portfolio-icon60 {
   width: 24px;
   margin-right: 4px;
 }
- 
+
 .portfolio-text50 {
   color: white;
   font-size: 13px;

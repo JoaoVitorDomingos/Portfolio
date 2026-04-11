@@ -1669,24 +1669,20 @@
 .testimonial-rail::-webkit-scrollbar {
   display: none;
 }
- 
-.about-me {
-  padding: var(--spacing-4xl) 0;
-  overflow: hidden;
-  position: relative;
-  background-color: var(--color-surface);
-}
- 
-.about-me-container {
-  margin: 0 auto;
-  padding: 0 var(--spacing-xl);
-  max-width: var(--content-max-width);
-}
- 
-.about-me-layout {
-  gap: var(--spacing-4xl);
+
+/* Section Sobre */
+.section_sobre {
   display: flex;
   align-items: center;
+  gap: var(--spacing-4xl);
+
+  position: relative;
+  max-width: var(--content-max-width);
+  padding: var(--spacing-4xl) var(--spacing-xl);
+  margin: 0 auto;
+  overflow: hidden;
+
+  background-color: var(--color-surface);
 }
  
 .about-me-media-wrapper {
@@ -1714,10 +1710,6 @@
   display: flex;
   margin-top: var(--spacing-2xl);
 }
- 
-
- 
-
  
 .about-me-highlights {
   gap: var(--spacing-lg);
@@ -1846,8 +1838,6 @@
   border-radius: var(--border-radius-sm);
   justify-content: center;
 }
- 
-
  
 .about-me-highlight-title {
   color: var(--color-on-surface);
@@ -3232,10 +3222,12 @@
   .outcomes-grid {
     grid-template-columns: repeat(2, 1fr);
   }
-  .about-me-layout {
+
+  .section_sobre {
     gap: var(--spacing-3xl);
     flex-direction: column;
   }
+
   .about-me-media-wrapper {
     width: 100%;
     margin: 0 auto;
@@ -3251,6 +3243,7 @@
   }
   .about-me-description {
     margin: 0 auto;
+    text-align: justify;
   }
   .services-grid {
     grid-template-columns: repeat(2, 1fr);
