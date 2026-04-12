@@ -42,6 +42,8 @@
 
   <link href="styles/portfolio.css" rel="stylesheet" />
 
+  <link rel="stylesheet" href="styles/animations.css" />
+
 </head>
 
 <body>
@@ -214,16 +216,14 @@
         </div>
       </div>
     </section>
-
+    
     <!-- Section Sobre mim -->
     <section id="sobre" class="section_sobre">
       <!-- Media -->
       <div class="about-me-media-wrapper">
         <!-- IMG -->
         <div class="about-me-image-frame">
-          <img alt="Foto de perfil do desenvolvedor front-end"
-            src="imgs/foto3.jpg"
-            class="about-me-profile-img" />
+          <img alt="Foto de perfil do desenvolvedor front-end" src="imgs/foto3.jpg" class="about-me-profile-img" />
 
           <div class="about-me-experience-badge">
             <span class="about-me-badge-number">JS</span>
@@ -492,181 +492,131 @@
       </div>
     </section>
 
-    <services-wrapper class="services-wrapper">
-      <!--Services component-->
-      <div class="services-container1">
-        <div class="services-container2">
-          <div class="services-container3">
-            <style>
-              @media (prefers-reduced-motion: reduce) {
-                .services-card {
-                  animation: none;
-                }
+    <!-- Serviços -->
+    <section id="servicos" class="services-section">
+      <div class="services-header">
+        <h2 class="section-title">O que eu faço</h2>
+        <p class="section-content">
+          Criando experiências digitais de alto desempenho com foco em qualidade de código, experiência do usuário e
+          tecnologia moderna.
+        </p>
+      </div>
 
-                .services-card:hover {
-                  transform: none;
-                }
-              }
-            </style>
+      <div class="services-grid">
+        <article class="services-card">
+          <div class="services-icon-wrapper">
+            <svg fill="none" width="24" xmlns="http://www.w3.org/2000/svg" height="24" stroke="currentColor"
+              viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path
+                d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09">
+              </path>
+              <path d="M9 12a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.4 22.4 0 0 1-4 2z">
+              </path>
+              <path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 .05 5 .05"></path>
+            </svg>
           </div>
-        </div>
-        <section id="services" class="services-section">
-          <div class="services-container">
-            <div class="services-header">
-              <h2 class="section-title">What I Do</h2>
-              <p class="section-content">
-                Crafting high-performance digital experiences with a focus
-                on code quality, user experience, and modern technology.
-              </p>
-            </div>
-            <div class="services-grid">
-              <article class="services-card">
-                <div class="services-icon-wrapper">
-                  <svg fill="none" width="24" xmlns="http://www.w3.org/2000/svg" height="24" stroke="currentColor"
-                    viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path
-                      d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09">
-                    </path>
-                    <path d="M9 12a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.4 22.4 0 0 1-4 2z">
-                    </path>
-                    <path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 .05 5 .05"></path>
-                  </svg>
-                </div>
-                <h3 class="section-subtitle">Landing Pages</h3>
-                <p class="section-content">
-                  High-converting and responsive pages for marketing and
-                  lead generation
-                </p>
-                <div class="services-card-glow"></div>
-              </article>
-              <article class="services-card">
-                <div class="services-icon-wrapper">
-                  <svg fill="none" width="24" xmlns="http://www.w3.org/2000/svg" height="24" stroke="currentColor"
-                    viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M4 8h16M4 6a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2zm4-2v4"></path>
-                  </svg>
-                </div>
-                <h3 class="section-subtitle">Institutional Websites</h3>
-                <p class="section-content">
-                  Professional websites focused on strong online presence
-                  and user experience
-                </p>
-                <div class="services-card-glow"></div>
-              </article>
-              <article class="services-card">
-                <div class="services-icon-wrapper">
-                  <svg fill="none" width="24" xmlns="http://www.w3.org/2000/svg" height="24" stroke="currentColor"
-                    viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                      stroke-linejoin="round">
-                      <path
-                        d="M9.5 9h3M4 9h2.5M11 9l3 11l4-9M5.5 9L9 20l3-7m6-2c.177-.528 1-1.364 1-2.5c0-1.78-.776-2.5-1.875-2.5C16.227 6 16 6.812 16 7.429c0 1.83 2 2.058 2 3.571">
-                      </path>
-                      <path d="M3 12a9 9 0 1 0 18 0a9 9 0 1 0-18 0"></path>
-                    </g>
-                  </svg>
-                </div>
-                <h3 class="section-subtitle">WordPress Development</h3>
-                <p class="section-content">
-                  Custom and scalable websites built and customized with
-                  WordPress
-                </p>
-                <div class="services-card-glow"></div>
-              </article>
-              <article class="services-card">
-                <div class="services-icon-wrapper">
-                  <svg fill="none" width="24" xmlns="http://www.w3.org/2000/svg" height="24" stroke="currentColor"
-                    viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                      stroke-linejoin="round">
-                      <path
-                        d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 0 0 2.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 0 0 1.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 0 0-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 0 0-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 0 0-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 0 0-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 0 0 1.066-2.573c-.94-1.543.826-3.31 2.37-2.37c1 .608 2.296.07 2.572-1.065">
-                      </path>
-                      <path d="M9 12a3 3 0 1 0 6 0a3 3 0 0 0-6 0"></path>
-                    </g>
-                  </svg>
-                </div>
-                <h3 class="section-subtitle">
-                  Website Maintenance &amp; Support
-                </h3>
-                <p class="section-content">
-                  Updates, bug fixes, and performance improvements
-                </p>
-                <div class="services-card-glow"></div>
-              </article>
-              <article class="services-card">
-                <div class="services-icon-wrapper">
-                  <svg fill="none" width="24" xmlns="http://www.w3.org/2000/svg" height="24" stroke="currentColor"
-                    viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                      stroke-linejoin="round">
-                      <path d="m21 21l-4.34-4.34"></path>
-                      <circle r="8" cx="11" cy="11"></circle>
-                    </g>
-                  </svg>
-                </div>
-                <h3 class="section-subtitle">Basic SEO Optimization</h3>
-                <p class="section-content">
-                  Improve structure, performance, and on-page SEO for better
-                  visibility
-                </p>
-                <div class="services-card-glow"></div>
-              </article>
-              <div aria-hidden="true" class="services-card-decorative services-card">
-                <div class="services-decorative-content">
-                  <span class="section-subtitle">Future Proof</span>
-                  <p class="section-content">
-                    Expanding into Fullstack development with Java and
-                    PostgreSQL.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <div class="services-container4">
-          <div class="services-container5">
-            <style>
-              @keyframes servicesFadeUp {
-                from {
-                  opacity: 0;
-                  transform: translateY(20px);
-                }
 
-                to {
-                  opacity: 1;
-                  transform: translateY(0);
-                }
-              }
-            </style>
-          </div>
-        </div>
-        <div class="services-container6">
-          <div class="services-container7">
-            <script defer="" data-name="services-hover-tracking">
-              document.addEventListener('DOMContentLoaded', function () {
-                (function () {
-                  const servicesCards = document.querySelectorAll(".services-card")
+          <h3 class="section-subtitle">Landing Pages</h3>
 
-                  servicesCards.forEach((card) => {
-                    card.addEventListener("mousemove", (e) => {
-                      const rect = card.getBoundingClientRect()
-                      const x = e.clientX - rect.left
-                      const y = e.clientY - rect.top
+          <p class="section-content">
+            Páginas responsivas e de alta conversão para marketing e geração de leads
+          </p>
 
-                      const glow = card.querySelector(".services-card-glow")
-                      if (glow) {
-                        glow.style.background = `radial-gradient(circle at ${x}px ${y}px, color-mix(in srgb, var(--color-primary) 20%, transparent) 0%, transparent 70%)`
-                      }
-                    })
-                  })
-                })()
-              });
-            </script>
+          <div class="services-card-glow"></div>
+        </article>
+
+        <article class="services-card">
+          <div class="services-icon-wrapper">
+            <svg fill="none" width="24" xmlns="http://www.w3.org/2000/svg" height="24" stroke="currentColor"
+              viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 8h16M4 6a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2zm4-2v4"></path>
+            </svg>
           </div>
+
+          <h3 class="section-subtitle">Websites Institucionais</h3>
+
+          <p class="section-content">
+            Sites profissionais focados em forte presença online e experiência do usuário
+          </p>
+
+          <div class="services-card-glow"></div>
+        </article>
+
+        <article class="services-card">
+          <div class="services-icon-wrapper">
+            <svg fill="none" width="24" xmlns="http://www.w3.org/2000/svg" height="24" stroke="currentColor"
+              viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path
+                  d="M9.5 9h3M4 9h2.5M11 9l3 11l4-9M5.5 9L9 20l3-7m6-2c.177-.528 1-1.364 1-2.5c0-1.78-.776-2.5-1.875-2.5C16.227 6 16 6.812 16 7.429c0 1.83 2 2.058 2 3.571">
+                </path>
+                <path d="M3 12a9 9 0 1 0 18 0a9 9 0 1 0-18 0"></path>
+              </g>
+            </svg>
+          </div>
+
+          <h3 class="section-subtitle">WordPress</h3>
+
+          <p class="section-content">
+            Websites personalizados e escaláveis construídos e customizadoscom WordPress
+          </p>
+
+          <div class="services-card-glow"></div>
+        </article>
+
+        <article class="services-card">
+          <div class="services-icon-wrapper">
+            <svg fill="none" width="24" xmlns="http://www.w3.org/2000/svg" height="24" stroke="currentColor"
+              viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path
+                  d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 0 0 2.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 0 0 1.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 0 0-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 0 0-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 0 0-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 0 0-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 0 0 1.066-2.573c-.94-1.543.826-3.31 2.37-2.37c1 .608 2.296.07 2.572-1.065">
+                </path>
+                <path d="M9 12a3 3 0 1 0 6 0a3 3 0 0 0-6 0"></path>
+              </g>
+            </svg>
+          </div>
+
+          <h3 class="section-subtitle">
+            Manutenção &amp; Suporte de Websites
+          </h3>
+
+          <p class="section-content">
+            Atualizações, correções de bugs e melhorias de desempenho
+          </p>
+
+          <div class="services-card-glow"></div>
+        </article>
+
+        <article class="services-card">
+          <div class="services-icon-wrapper">
+            <svg fill="none" width="24" xmlns="http://www.w3.org/2000/svg" height="24" stroke="currentColor"
+              viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="m21 21l-4.34-4.34"></path>
+                <circle r="8" cx="11" cy="11"></circle>
+              </g>
+            </svg>
+          </div>
+
+          <h3 class="section-subtitle">Otimização Básica de SEO</h3>
+
+          <p class="section-content">
+            Melhore a estrutura, desempenho e SEO na página para melhor visibilidade
+          </p>
+
+          <div class="services-card-glow"></div>
+        </article>
+
+        <div aria-hidden="true" class="services-card-decorative services-card">
+          <span class="section-subtitle">Serviço Futuro</span>
+          <p class="section-content">
+            Expandindo para desenvolvimento Fullstack com Java e
+            PostgreSQL.
+          </p>
         </div>
       </div>
-    </services-wrapper>
+    </section>
 
     <projects-wrapper class="projects-wrapper">
       <!--Projects component-->
@@ -1937,6 +1887,8 @@
   <script src="js/main.js"></script>
 
   <script src="js/sobre.js"></script>
+
+  <script src="js/services-hover.js"></script>
 </body>
 
 </html>
