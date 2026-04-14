@@ -3686,3 +3686,9 @@
     aspect-ratio: 4 / 3;
   }
 }
+
+/* Inline style moved from index.html */
+section {
+  padding: var(--spacing-4xl) 0;
+  overflow: hidden;
+}
