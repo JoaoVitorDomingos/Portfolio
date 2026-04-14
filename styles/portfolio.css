@@ -87,30 +87,6 @@
   font-weight: 800;
 }
 
-.portfolio-thq-case-studies-elm {
-  display: none;
-}
-
-.portfolio-thq-dev-process-elm {
-  display: none;
-}
-
-.portfolio-thq-featured-projects-elm {
-  display: none;
-}
-
-.portfolio-thq-showcase-outcomes-elm {
-  display: none;
-}
-
-.portfolio-thq-testimonials-elm {
-  display: none;
-}
-
-.portfolio-thq-project-cta-elm {
-  display: none;
-}
-
 .portfolio-text47 {
   display: inline-block;
   background: linear-gradient(135deg, var(--color-primary), var(--color-accent));
