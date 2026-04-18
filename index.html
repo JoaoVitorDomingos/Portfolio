@@ -1,186 +1,1187 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JVdomingos | Portfólio</title>
+  <title>João Vitor C. Domingos</title>
+  <meta property="og:title" content="João Vitor C. Domingos" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="utf-8" />
+  <meta property="twitter:card" content="summary_large_image" />
 
-    <!-- Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <!-- Reset CSS -->
+  <link rel="stylesheet" href="styles/reset.css" data-tag="reset-style-sheet">
 
-    <!-- Ícones Bootstrap -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <!-- CSS Padrão -->
+  <link rel="stylesheet" href="styles/padrao.css" data-tag="default-style-sheet">
 
-    <!-- Ícone Google Fonts -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <!-- Link Animação CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/animate.css@4.1.1/animate.css" />
 
-    <!-- Fontes -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Parisienne&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <!-- Fontes Google -->
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Oxanium:wght@200;300;400;500;600;700;800&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+    data-tag="font" />
 
-    <!-- Estilo Principal -->
-    <link rel="stylesheet" href="css/style.css">
-    <!-- Media Query -->
-    <link rel="stylesheet" href="css/media_query.css">
+  <!-- TeleportHQ Script -->
+  <link rel="stylesheet" href="https://unpkg.com/@teleporthq/teleport-custom-scripts/dist/style.css" />
+
+  <!-- Estilos -->
+  <link rel="stylesheet" href="styles/style.css" />
+
+  <link href="styles/portfolio.css" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles/animations.css" />
+
 </head>
+
 <body>
-    <header>
-        <div id="menu" class="offcanvas-lg offcanvas-top" tabindex="-1" aria-labelledby="offcanvasResponsiveLabel">
-            <div class="offcanvas-header container-fluid">
-                <h1 class="offcanvas-title"><a href="#" rel="self" data-bs-dismiss="offcanvas" data-bs-target="#menu" aria-label="Close">JV</a></h1>
-                <span class="material-symbols-outlined" data-bs-dismiss="offcanvas" data-bs-target="#menu" aria-label="Close">close</span>
+  <header class="navigation-wrapper">
+    <!-- Componente Navegaçao PC -->
+    <nav class="navigation-container">
+      <!-- Logo -->
+      <a href="index.html">
+        <div aria-label="João C. Domingos Home" class="navigation-logo-link">
+          <div class="navigation-logo-icon">
+            <svg width="24" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24">
+              <path d="m16 18l6-6l-6-6M8 6l-6 6l6 6" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>
+          </div>
+
+          <span class="navigation-logo">João</span>
+
+          <span class="navigation-logo navigation-thq-brand-initial-elm">C.</span>
+
+          <span class="navigation-logo navigation-text12">Domingos</span>
+        </div>
+      </a>
+
+      <!-- Navegação -->
+      <div class="navigation-desktop-links">
+        <a href="#sobre">
+          <div class="navigation-link">Sobre</div>
+        </a>
+        <a href="#servicos">
+          <div class="navigation-link">Serviços</div>
+        </a>
+        <a href="#projetos">
+          <div class="navigation-link">Projetos</div>
+        </a>
+        <a href="#habilidades">
+          <div class="navigation-link">Habilidades</div>
+        </a>
+        <a href="#contato">
+          <div class="btn-primary btn btn-sm">
+            Vamos Conversar
+          </div>
+        </a>
+      </div>
+
+      <!-- Botão de Toggle do Menu Mobile -->
+      <button id="navigation-mobile-toggle" aria-label="Toggle Menu" aria-controls="navigation-mobile-overlay"
+        aria-expanded="false" class="navigation-mobile-toggle">
+        <svg width="24" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" class="navigation-icon-open">
+          <path d="M4 6h16M4 12h16M4 18h16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round"></path>
+        </svg>
+      </button>
+    </nav>
+
+    <!-- Componente de Navegação Mobile -->
+    <div id="navigation-mobile-overlay" class="navigation-mobile-overlay">
+      <div class="navigation-overlay-header">
+        <a href="index.html" id="navigation-mobile-logo">
+          <div class="navigation-logo-link">
+            <div class="navigation-logo-icon">
+              <svg width="24" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24">
+                <path d="m16 18l6-6l-6-6M8 6l-6 6l6 6" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round"></path>
+              </svg>
             </div>
-            <h1 class="header_titulo"><a href="#" rel="self">JV</a></h1>
-            <nav>
-                <ul>
-                    <li data-bs-dismiss="offcanvas" data-bs-target="#menu" aria-label="Close"><a href="#sobre" rel="self">Sobre</a></li>
-                    <li data-bs-dismiss="offcanvas" data-bs-target="#menu" aria-label="Close"><a href="#projetos" rel="self">Projetos</a></li>
-                    <li data-bs-dismiss="offcanvas" data-bs-target="#menu" aria-label="Close"><a href="#contato" rel="self">Contato</a></li>
-                </ul>
-            </nav>
-            <div class="header_links">
-                <a href="https://github.com/JoaoVitorDomingos" target="_blank"><i class="bi bi-github contato"></i></a>
-                <a href="https://www.linkedin.com/in/jvdomingos/" target="_blank"><i class="bi bi-linkedin contato"></i></a>
-                <a href="mailto:joaovitorcdomingos@gmail.com"><span class="material-symbols-outlined contato">mail</span></a>
+
+            <span class="navigation-logo">João</span>
+
+            <span class="navigation-logo navigation-thq-brand-initial-elm">C.</span>
+
+            <span class="navigation-logo navigation-text12">Domingos</span>
+          </div>
+        </a>
+
+        <button id="navigation-mobile-close" aria-label="Close Menu" class="navigation-mobile-close">
+          <svg width="24" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24">
+            <path
+              d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1zm-5.5-3.5l-5 5m0-5l5 5"
+              fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            </path>
+          </svg>
+        </button>
+      </div>
+
+      <div class="navigation-overlay-content">
+        <div class="navigation-mobile-links">
+          <a href="#sobre">
+            <div class="navigation-mobile-link">Sobre</div>
+          </a>
+          <a href="#servicos">
+            <div class="navigation-mobile-link">Serviços</div>
+          </a>
+          <a href="#projetos">
+            <div class="navigation-mobile-link">Projetos</div>
+          </a>
+          <a href="#habilidades">
+            <div class="navigation-mobile-link">Habilidades</div>
+          </a>
+          <a href="#contato">
+            <div class="navigation-mobile-cta navigation-mobile-link">
+              Vamos Conversar
             </div>
+          </a>
         </div>
 
-        <span class="material-symbols-outlined d-lg-none" id="menu_burgue" data-bs-toggle="offcanvas" data-bs-target="#menu" aria-controls="offcanvasResponsive">menu</span>
-    </header>
+        <div class="navigation-overlay-footer">
+          <p class="section-content">
+            Estudante Ciência Computação &amp; Diretor Projetos
+          </p>
 
-    <main>
-        <!-- Introdução -->
-        <section class="introducao">
-            <div class="textos">
-                <h2>Bem vindo!</h2>
-                <h1>Me chamo <strong style="font-family: var(--principal);">João Vitor</strong></h1>
-                <h1>Desenvolvedor <strong>Front-End</strong></h1>
-            </div>
-            <div class="contatos">
-                <a href="https://github.com/JoaoVitorDomingos" target="_blank"><i class="bi bi-github contato"></i></a>
-                <a href="https://www.linkedin.com/in/jvdomingos/" target="_blank"><i class="bi bi-linkedin contato"></i></a>
-                <a href="mailto:joaovitorcdomingos@gmail.com"><span class="material-symbols-outlined contato">mail</span></a>
-            </div>
-        </section>
-        <div class="overlay"></div>
+          <div class="navigation-social-minimal">
+            <a href="https://www.linkedin.com/in/jvdomingos/" target="_blank">
+              <div class="navigation-social-link">
+                <span>LinkedIn</span>
+              </div>
+            </a>
+            <a href="https://github.com/JoaoVitorDomingos" target="_blank">
+              <div class="navigation-social-link">
+                <span>GitHub</span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
 
-         <!-- Sobre Mim -->
-        <section id="sobre" class="sobre">
-            <div class="area-textos">
-                <h1 class="titulo">Sobre Mim</h1>
-                <p>Eu sou um desenvolvedor Front-end com <strong>conhecimentos</strong> em <strong>HTML</strong>, <strong>CSS</strong>, <strong>Javascript</strong> e <strong>Bootstrap</strong>, atualmente estou <strong>estudando</strong> <strong>Word Press</strong>.</p>
-                <p>Estou cursando Ciências da Computação na UNESPAR, Universidade Estadual do Paraná, e comecei a me interessar por programação em 2020 realizando alguns cursos da Alura de HTML e CSS, Lógica de Programação, entre outros.</p>
-                <p>Também já estudei sobre a Engine Unity, aprendendo o básico sobre ela e a linguagem C#. Na faculdade aprendi C e, atualmente, estudando Java.</p>
-            </div>
-            <div class="area-foto">
-                <div class="foto"></div>
-                <a href="curriculo_jv_frontend.pdf" target="_blank" class="btn1">Currículo</a>
-            </div>
-        </section> 
+  <main>
+    <!-- Hero -->
+    <section class="portfolio-intro">
+      <div class="intro-video-wrapper">
+        <video src="video/hero.mp4" loop="true" muted="true"
+          poster="https://images.pexels.com/videos/7101912/pictures/preview-0.jpg" autoplay="true" playsinline="true"
+          class="intro-video"></video>
 
-         <!-- Projetos -->
-        
-        <section id="projetos">
-            <h1 class="titulo">Projetos</h1>
+        <div class="intro-overlay"></div>
+      </div>
+
+      <div class="intro-content-container">
+        <div class="intro-text-block">
+          <span class="intro-badge">
+            Desenvolvedor Front-end | Estudante Ciência Computação
+          </span>
+
+          <h1 class="hero-title">
+            <span>Arquitetando o</span>
+            <span class="portfolio-text11">Futuro da Web</span>
+          </h1>
+
+          <p class="hero-subtitle">
+            Sou um desenvolvedor Front-end que cria sites de alta qualidade com HTML, CSS, JavaScript e WordPress.
+            Atualmente, estou expandindo minha atuação para o desenvolvimento Full-stack com Java e PostgreSQL para
+            construir soluções digitais robustas e completas.
+          </p>
+
+          <div class="intro-actions">
+            <a href="#projetos">
+              <div class="btn-primary btn-lg btn">
+                <span>Veja Meus Projetos</span>
+              </div>
+            </a>
+
+            <a href="#contato">
+              <div class="btn-outline btn-lg btn">
+                <span>Trabalhe Comigo</span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section Sobre mim -->
+    <section id="sobre" class="section_sobre">
+      <!-- Media -->
+      <div class="about-me-media-wrapper">
+        <!-- IMG -->
+        <div class="about-me-image-frame">
+          <img alt="Foto de perfil do desenvolvedor front-end" src="imgs/foto3.jpg" class="about-me-profile-img" />
+
+          <div class="about-me-experience-badge">
+            <span class="about-me-badge-number">JS</span>
+            <span class="about-me-badge-text">Desenvolvedor Frontend</span>
+          </div>
+
+          <div aria-hidden="true" class="about-me-decorative-dots"></div>
+        </div>
+
+        <!-- Tech Stack -->
+        <div class="about-me-tech-stack">
+          <div class="about-me-stack-item">
+            <div class="about-me-icon-box">
+              <svg width="24" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24">
+                <path d="m16 18l6-6l-6-6M8 6l-6 6l6 6" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round"></path>
+              </svg>
+            </div>
+
+            <span class="about-me-stack-label">HTML/CSS/JS</span>
+          </div>
+
+          <div class="about-me-stack-item">
+            <div class="about-me-icon-box">
+              <!-- Banco de dados
+              <svg width="24" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24">
+                <g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                  <path d="M3 5v14a9 3 0 0 0 18 0V5"></path>
+                  <path d="M3 12a9 3 0 0 0 18 0"></path>
+                </g>
+              </svg>
+              -->
+
+              <svg fill="none" width="24" xmlns="http://www.w3.org/2000/svg" height="24" stroke="currentColor"
+                viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path
+                    d="M9.5 9h3M4 9h2.5M11 9l3 11l4-9M5.5 9L9 20l3-7m6-2c.177-.528 1-1.364 1-2.5c0-1.78-.776-2.5-1.875-2.5C16.227 6 16 6.812 16 7.429c0 1.83 2 2.058 2 3.571">
+                  </path>
+                  <path d="M3 12a9 9 0 1 0 18 0a9 9 0 1 0-18 0"></path>
+                </g>
+              </svg>
+            </div>
+
+            <span class="about-me-stack-label">
+              Wordpress
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Conteudo -->
+      <div class="about-me-content-wrapper">
+        <div class="about-me-header">
+          <span class="about-me-label section-subtitle">
+            Quem eu sou
+          </span>
+
+          <h2 class="section-title about-me-title">
+            Criando Excelência Digital
+          </h2>
+        </div>
+
+        <div class="about-me-body">
+          <p class="about-me-description section-content">
+            Meu nome é João Vitor, sou <strong>desenvolvedor Front-end</strong> com experiência em
+            <strong>HTML</strong>,
+            <strong>CSS</strong>,
+            <strong>JavaScript</strong> e <strong>WordPress</strong>. Construo interfaces responsivas e
+            utilizo ferramentas modernas como Git e GitHub. Atualmente
+            <strong>estudo Ciência da Computação</strong> e atuo como <strong>
+              Diretor de
+              Projetos em uma Empresa Júnior (EJ)
+            </strong>, adquirindo experiência
+            prática no gerenciamento de projetos reais. Também estou
+            ampliando minhas habilidades para desenvolvimento
+            full-stack, <strong>estudando Java e PostgreSQL</strong>.
+          </p>
+        </div>
+
+        <div class="about-me-highlights">
+          <div class="about-me-highlight-card">
+            <div class="about-me-highlight-icon">
+              <svg width="24" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24">
+                <g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path
+                    d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0zM22 10v6">
+                  </path>
+                  <path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"></path>
+                </g>
+              </svg>
+            </div>
+
+            <div class="about-me-highlight-info">
+              <h3 class="about-me-highlight-title">
+                Ciência da Computação
+              </h3>
+              <p class="about-me-highlight-text">
+                UNESPAR - Universidade Estadual do Paraná
+              </p>
+            </div>
+          </div>
+
+          <div class="about-me-highlight-card">
+            <div class="about-me-highlight-icon">
+              <svg width="24" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24">
+                <g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="3" y="3" rx="2" width="18" height="18"></rect>
+                  <path d="M7 7h10v10H7z"></path>
+                </g>
+              </svg>
+            </div>
+
+            <div class="about-me-highlight-info">
+              <h3 class="about-me-highlight-title">
+                Diretor de Projetos
+              </h3>
+              <p class="about-me-highlight-text">
+                Experiência prática em liderança e gestão de projetos reais
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-me-actions">
+          <a href="#projetos">
+            <div class="btn-primary btn-lg btn">
+              <span>Veja Meus Projetos</span>
+            </div>
+          </a>
+
+          <a href="#contato">
+            <div class="btn-outline btn-lg btn">
+              <span>Entre em Contato</span>
+            </div>
+          </a>
+
+          <!--
+          <a href="#">
+            <div>
+              <div class="btn-outline btn-lg btn">
+                <span>Minha História na EJ</span>
+              </div>
+            </div>
+          </a>
+          -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="habilidades" class="tech-stack">
+      <div class="tech-container">
+        <div class="tech-header">
+          <h2 class="section-title">Minhas Habilidades</h2>
+          <p class="section-content">
+            Tecnologias principais que utilizo para experiências digitais modernas.
+          </p>
+        </div>
+
+        <div class="tech-grid">
+          <div class="tech-item">
+            <div class="tech-icon">
+              <svg width="24" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24">
+                <path d="m18 16l4-4l-4-4M6 8l-4 4l4 4m8.5-12l-5 16" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round"></path>
+              </svg>
+            </div>
+
+            <h3 class="section-subtitle">Front-end Core</h3>
+
+            <p class="section-content">
+              HTML5, CSS3, JavaScript (ES6+). Construindo interfaces semânticas, responsivas e interativas.
+            </p>
+
+            <div class="proficiency-bar">
+              <div class="portfolio-thq-proficiency-fill-elm1 proficiency-fill"></div>
+            </div>
+          </div>
+
+          <div class="tech-item">
+            <div class="tech-icon">
+              <svg width="24" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24">
+                <path
+                  d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09"
+                  fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                </path>
+                <path d="M9 12a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.4 22.4 0 0 1-4 2z">
+                </path>
+                <path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 .05 5 .05"></path>
+              </svg>
+            </div>
+
+            <h3 class="section-subtitle">WordPress</h3>
+
+            <p class="section-content">
+              Desenvolvimento de sites personalizados e otimização de desempenho.
+            </p>
+
+            <div class="proficiency-bar">
+              <div class="portfolio-thq-proficiency-fill-elm2 proficiency-fill"></div>
+            </div>
+          </div>
+
+          <div class="tech-item">
+            <div class="tech-icon">
+              <svg width="24" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24">
+                <g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="2" rx="2" ry="2" width="20" height="8"></rect>
+                  <rect x="2" y="14" rx="2" ry="2" width="20" height="8"></rect>
+                  <path d="M6 6h.01M6 18h.01"></path>
+                </g>
+              </svg>
+            </div>
+
+            <h3 class="section-subtitle">Git e Github</h3>
+
+            <p class="section-content">
+              Versionamento de código com Git e hospedagem de projetos no GitHub para colaboração.
+            </p>
+
+            <div class="proficiency-bar">
+              <div class="portfolio-thq-proficiency-fill-elm6 proficiency-fill"></div>
+            </div>
+          </div>
+
+          <!-- Futuros Skills - Full Stack
+
+          <div class="tech-item">
+            <div class="tech-icon">
+              <svg width="24" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24">
+                <g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path
+                    d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z">
+                  </path>
+                  <path d="M14 2v5a1 1 0 0 0 1 1h5m-10 4.5L8 15l2 2.5m4-5l2 2.5l-2 2.5"></path>
+                </g>
+              </svg>
+            </div>
+
+            <h3 class="section-subtitle">Java Backend</h3>
+
+            <p class="section-content">
+              Building scalable server-side logic and robust
+              enterprise-grade applications.
+            </p>
             
-            <div class="container_projetos">
-                <div class="projeto container-md">
-                    <div class="row">
-                        <img src="./imgs/projetos/tech_care_800.jpg" alt="Imagem do projeto chamado TechCare" class="img_projeto col-xl-6 col-xxl-7">
-                        <div class="conteudo col-xl-5">
-                            <h2>TechCare</h2>
-                            <p>Uma <strong>landing page</strong> de uma empresa de manutenção de computadores, chamada TechCare. Este site possui um <strong>Tema Escuro e Claro</strong> e <strong>dois idiomas</strong>, <strong>Português Brasileiro e Inglês</strong>, ambos são definidos a partir das <strong>preferências do usuário</strong>, e também, podem ser alternados. O projeto foi realizado com HTML, CSS e Javascript, utilizando a prática <strong>Mobile First</strong> e <strong>versionamento Git</strong>.</p>
-                            <div class="container_tec">
-                                <p>HTML</p>
-                                <p>CSS</p>
-                                <p>Javascript</p>
-                            </div>
-                            <div class="botoes_projetos">
-                                <a href="https://joaovitordomingos.github.io/TechCare/" target="_blank" class="btn2">Ver Projeto</a>
-                                <a href="https://github.com/JoaoVitorDomingos/TechCare" target="_blank" class="btn2">Saiba Mais</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="projeto container-md">
-                    <div class="row">
-                        <img src="imgs/projetos/moveX.jpg" alt="Imagem do projeto chamado MoveX" class="img_projeto col-xl-6 col-xxl-7">
-                        <div class="conteudo col-xl-5">
-                            <h2>MoveX</h2>
-                            <p>Este é um projeto de um <strong>site de uma loja de roupas esportivas</strong>, chamada MoveX. Este site foi feito com HTML, CSS, Javascript e Bootstrap, utilizando a prática <strong>Mobile First</strong>, com o objetivo de colocar em prática o que estudei, principalmente em Bootstrap. Também foi utilizada uma <strong>Biblioteca</strong> chamada <strong>Swiper</strong>, para facilitar a implementação de um elemento e o <strong>Git</strong> para controle de versões.</p>
-                            <div class="container_tec">
-                                <p>HTML</p>
-                                <p>CSS</p>
-                                <p>Javascript</p>
-                                <p>Bootstrap</p>
-                            </div>
-                            <div class="botoes_projetos">
-                                <a href="https://joaovitordomingos.github.io/moveX/" target="_blank" class="btn2">Ver Projeto</a>
-                                <a href="https://github.com/JoaoVitorDomingos/moveX" target="_blank" class="btn2">Saiba Mais</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="projeto container-md">
-                    <div class="row">
-                        <img src="imgs/projetos/my_class_800.jpg" alt="Imagem do projeto chamado My Class" class="img_projeto col-xl-6 col-xxl-7">
-                        <div class="conteudo col-xl-5">
-                            <h2>My Class</h2>
-                            <p>Um <strong>sistema escolar</strong> onde é possível adicionar alunos, lançar notas, lançar presença, entre outras coisas. Projeto realizado com <strong>HTML</strong>, <strong>CSS</strong>, <strong>Javascript</strong> e <strong>Bootstrap</strong>, com o objetivo de colocar em prática o que estudei, principalmente em Javascript.</p>
-                            <div class="container_tec">
-                                <p>HTML</p>
-                                <p>CSS</p>
-                                <p>Javascript</p>
-                                <p>Bootstrap</p>
-                            </div>
-                            <div class="botoes_projetos">
-                                <a href="https://joaovitordomingos.github.io/My-Class/" target="_blank" class="btn2">Ver Projeto</a>
-                                <a href="https://github.com/JoaoVitorDomingos/My-Class" target="_blank" class="btn2">Saiba Mais</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="proficiency-bar">
+              <div class="portfolio-thq-proficiency-fill-elm3 proficiency-fill"></div>
             </div>
-        </section>
+          </div>
 
-         <!-- Contato -->
-        <section id="contato">
-            <div class="contato_texto">
-                <h1 class="titulo">Se interessou?</h1>
-                <p>Entre em contato comigo pelo</p>
+          <div class="tech-item">
+            <div class="tech-icon">
+              <svg width="24" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24">
+                <g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                  <path d="M3 5v14a9 3 0 0 0 18 0V5"></path>
+                  <path d="M3 12a9 3 0 0 0 18 0"></path>
+                </g>
+              </svg>
             </div>
-            <div class="contato_links">
-                <div>
-                    <a href="https://github.com/JoaoVitorDomingos" target="_blank">
-                        <i class="bi bi-github contato"></i>
-                        <p>Github</p>
-                    </a>
-                
-                    <a href="https://www.linkedin.com/in/jo%C3%A3o-vitor-domingos-b3594826a/" target="_blank">
-                        <i class="bi bi-linkedin contato"></i>
-                        <p>Linkedin</p>
-                    </a>
-                
-                    <a href="mailto:joaovitorcdomingos@gmail.com">
-                        <span class="material-symbols-outlined contato">mail</span>
-                        <p>E-mail</p>
-                    </a>
+            <h3 class="section-subtitle">PostgreSQL</h3>
+            <p class="section-content">
+              Relational database design, complex queries, and data
+              integrity management.
+            </p>
+            <div class="proficiency-bar">
+              <div class="portfolio-thq-proficiency-fill-elm4 proficiency-fill"></div>
+            </div>
+          </div>
+
+          <div class="tech-item">
+            <div class="tech-icon">
+              <svg width="24" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24">
+                <g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path
+                    d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09">
+                  </path>
+                  <path d="M9 12a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.4 22.4 0 0 1-4 2z">
+                  </path>
+                  <path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 .05 5 .05"></path>
+                </g>
+              </svg>
+            </div>
+            <h3 class="section-subtitle">UI/UX Design</h3>
+            <p class="section-content">
+              Figma prototyping, design systems, and user-centric interface
+              architectural design.
+            </p>
+            <div class="proficiency-bar">
+              <div class="portfolio-thq-proficiency-fill-elm5 proficiency-fill"></div>
+            </div>
+          </div>
+
+          -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Serviços -->
+    <section id="servicos" class="services-section">
+      <div class="services-header">
+        <h2 class="section-title">O que eu faço</h2>
+        <p class="section-content">
+          Criando experiências digitais de alto desempenho com foco em qualidade de código, experiência do usuário e
+          tecnologia moderna.
+        </p>
+      </div>
+
+      <div class="services-grid">
+        <article class="services-card">
+          <div class="services-icon-wrapper">
+            <svg fill="none" width="24" xmlns="http://www.w3.org/2000/svg" height="24" stroke="currentColor"
+              viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path
+                d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09">
+              </path>
+              <path d="M9 12a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.4 22.4 0 0 1-4 2z">
+              </path>
+              <path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 .05 5 .05"></path>
+            </svg>
+          </div>
+
+          <h3 class="section-subtitle">Landing Pages</h3>
+
+          <p class="section-content">
+            Páginas responsivas e de alta conversão para marketing e geração de leads
+          </p>
+
+          <div class="services-card-glow"></div>
+        </article>
+
+        <article class="services-card">
+          <div class="services-icon-wrapper">
+            <svg fill="none" width="24" xmlns="http://www.w3.org/2000/svg" height="24" stroke="currentColor"
+              viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 8h16M4 6a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2zm4-2v4"></path>
+            </svg>
+          </div>
+
+          <h3 class="section-subtitle">Websites Institucionais</h3>
+
+          <p class="section-content">
+            Sites profissionais focados em forte presença online e experiência do usuário
+          </p>
+
+          <div class="services-card-glow"></div>
+        </article>
+
+        <article class="services-card">
+          <div class="services-icon-wrapper">
+            <svg fill="none" width="24" xmlns="http://www.w3.org/2000/svg" height="24" stroke="currentColor"
+              viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path
+                  d="M9.5 9h3M4 9h2.5M11 9l3 11l4-9M5.5 9L9 20l3-7m6-2c.177-.528 1-1.364 1-2.5c0-1.78-.776-2.5-1.875-2.5C16.227 6 16 6.812 16 7.429c0 1.83 2 2.058 2 3.571">
+                </path>
+                <path d="M3 12a9 9 0 1 0 18 0a9 9 0 1 0-18 0"></path>
+              </g>
+            </svg>
+          </div>
+
+          <h3 class="section-subtitle">WordPress</h3>
+
+          <p class="section-content">
+            Websites personalizados e escaláveis construídos e customizados com WordPress
+          </p>
+
+          <div class="services-card-glow"></div>
+        </article>
+
+        <article class="services-card">
+          <div class="services-icon-wrapper">
+            <svg fill="none" width="24" xmlns="http://www.w3.org/2000/svg" height="24" stroke="currentColor"
+              viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path
+                  d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 0 0 2.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 0 0 1.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 0 0-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 0 0-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 0 0-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 0 0-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 0 0 1.066-2.573c-.94-1.543.826-3.31 2.37-2.37c1 .608 2.296.07 2.572-1.065">
+                </path>
+                <path d="M9 12a3 3 0 1 0 6 0a3 3 0 0 0-6 0"></path>
+              </g>
+            </svg>
+          </div>
+
+          <h3 class="section-subtitle">
+            Manutenção &amp; Suporte de Websites
+          </h3>
+
+          <p class="section-content">
+            Atualizações, correções de bugs e melhorias de desempenho
+          </p>
+
+          <div class="services-card-glow"></div>
+        </article>
+
+        <article class="services-card">
+          <div class="services-icon-wrapper">
+            <svg fill="none" width="24" xmlns="http://www.w3.org/2000/svg" height="24" stroke="currentColor"
+              viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="m21 21l-4.34-4.34"></path>
+                <circle r="8" cx="11" cy="11"></circle>
+              </g>
+            </svg>
+          </div>
+
+          <h3 class="section-subtitle">Otimização Básica de SEO</h3>
+
+          <p class="section-content">
+            Melhore a estrutura, desempenho e SEO na página para melhor visibilidade
+          </p>
+
+          <div class="services-card-glow"></div>
+        </article>
+
+        <div aria-hidden="true" class="services-card-decorative services-card">
+          <span class="section-subtitle">Serviço Futuro</span>
+          <p class="section-content">
+            Expandindo para desenvolvimento Fullstack com Java e
+            PostgreSQL.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projetos -->
+    <section id="projetos" class="projects-section">
+      <div class="projects-container">
+        <div class="projects-projects-header">
+          <div class="projects-badge">
+            <svg fill="none" width="20" xmlns="http://www.w3.org/2000/svg" height="20" stroke="currentColor"
+              viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="m16 18l6-6l-6-6M8 6l-6 6l6 6"></path>
+            </svg>
+            <span class="section-subtitle">Meus projetos de estudo</span>
+          </div>
+
+          <h2 class="section-title">Melhores Projetos</h2>
+
+          <p class="section-content projects-intro">
+            Meus melhores projetos de estudo colocando em prática tudo que aprendi. Baseados em situações reais,
+            focado em qualidade e experiência do usuário. Demostra minha paixão paixão por criar soluções digitais
+            de alta qualidade e minha dedicação ao aprendizado contínuo.
+          </p>
+        </div>
+
+        <div class="projects-projects-grid">
+          <article class="projects-card">
+            <div class="projects-media">
+              <img alt="Site institucional de uma empresa de fisioterapia" src="#" loading="lazy"
+                class="projects-image" />
+
+              <div class="projects-overlay">
+                <div class="projects-actions">
+                  <a href="#">
+                    <div aria-label="Veja demonstração" class="projects-action-btn">
+                      <svg fill="none" width="20" xmlns="http://www.w3.org/2000/svg" height="20" stroke="currentColor"
+                        viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M15 3h6v6m-11 5L21 3m-3 10v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6">
+                        </path>
+                      </svg>
+                    </div>
+                  </a>
+
+                  <a href="#">
+                    <div aria-label="Ver código fonte" class="projects-action-btn">
+                      <svg fill="none" width="20" xmlns="http://www.w3.org/2000/svg" height="20" stroke="currentColor"
+                        viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path
+                          d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5c.08-1.25-.27-2.48-1-3.5c.28-1.15.28-2.35 0-3.5c0 0-1 0-3 1.5c-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.4 5.4 0 0 0 4 9c0 3.5 3 5.5 6 5.5c-.39.49-.68 1.05-.85 1.65S8.93 17.38 9 18v4">
+                        </path>
+                        <path d="M9 18c-4.51 2-5-2-7-2"></path>
+                      </svg>
+                    </div>
+                  </a>
                 </div>
+              </div>
             </div>
-        </section>
-    </main>
 
-    <footer>
-        <p>&copy Feito por <a href="https://github.com/JoaoVitorDomingos" target="_blank"><strong>João Vitor C. Domingos</strong></a> - 2024</p>
-    </footer>
+            <div class="projects-content">
+              <h3 class="projects-card-title">Skin Vital</h3>
 
-    <!-- Script Bootstrap -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+              <p class="section-content projects-description">
+                Um site institucional clean e responsivo, construído com WordPress (Astra), otimizado para SEO e
+                integrado ao Mailchimp para fortalecer a presença digital.
+              </p>
 
-    <!-- Script Principal -->
-    <script type="module" src="js/main.js"></script>
+              <div class="projects-tags">
+                <span class="projects-tag">Wordpress</span>
+                <span class="projects-tag">Astra</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="projects-card">
+            <div class="projects-media">
+              <img alt="Landing page de alta conversão para um e-book de nutrição" src="imgs/projetos/lp1.png" loading="lazy"
+                class="projects-image" />
+
+              <div class="projects-overlay">
+                <div class="projects-actions">
+                  <a href="https://joaovitordomingos.github.io/LP-eBook/" target="_blank">
+                    <div aria-label="Ver demostração" class="projects-action-btn">
+                      <svg fill="none" width="20" xmlns="http://www.w3.org/2000/svg" height="20" stroke="currentColor"
+                        viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M15 3h6v6m-11 5L21 3m-3 10v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6">
+                        </path>
+                      </svg>
+                    </div>
+                  </a>
+
+                  <a href="https://github.com/JoaoVitorDomingos/LP-eBook" target="_blank">
+                    <div aria-label="Ver código fonte" class="projects-action-btn">
+                      <svg fill="none" width="20" xmlns="http://www.w3.org/2000/svg" height="20" stroke="currentColor"
+                        viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path
+                          d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5c.08-1.25-.27-2.48-1-3.5c.28-1.15.28-2.35 0-3.5c0 0-1 0-3 1.5c-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.4 5.4 0 0 0 4 9c0 3.5 3 5.5 6 5.5c-.39.49-.68 1.05-.85 1.65S8.93 17.38 9 18v4">
+                        </path>
+                        <path d="M9 18c-4.51 2-5-2-7-2"></path>
+                      </svg>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="projects-content">
+              <h3 class="projects-card-title">LP Alta Conversão</h3>
+
+              <p class="section-content projects-description">
+                Uma landing page de alta conversão para um e-book de receitas saudáveis, com design responsivo,
+                desenvolvida em HTML e CSS, e integração com Mailchimp com formulário personalizado para captação de
+                leads.
+              </p>
+
+              <div class="projects-tags">
+                <span class="projects-tag">HTML</span>
+                <span class="projects-tag">CSS</span>
+                <span class="projects-tag">Mailchimp</span>
+                <span class="projects-tag">Mobile First</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="projects-card">
+            <div class="projects-media">
+              <img alt="Site institucional de uma loja de roupas" src="imgs/projetos/movex1.jpg" loading="lazy" class="projects-image" />
+
+              <div class="projects-overlay">
+                <div class="projects-actions">
+                  <a href="https://joaovitordomingos.github.io/moveX/" target="_blank">
+                    <div aria-label="Ver demostração" class="projects-action-btn">
+                      <svg fill="none" width="20" xmlns="http://www.w3.org/2000/svg" height="20" stroke="currentColor"
+                        viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M15 3h6v6m-11 5L21 3m-3 10v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6">
+                        </path>
+                      </svg>
+                    </div>
+                  </a>
+
+                  <a href="https://github.com/JoaoVitorDomingos/moveX" target="_blank">
+                    <div aria-label="Ver código fonte" class="projects-action-btn">
+                      <svg fill="none" width="20" xmlns="http://www.w3.org/2000/svg" height="20" stroke="currentColor"
+                        viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path
+                          d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5c.08-1.25-.27-2.48-1-3.5c.28-1.15.28-2.35 0-3.5c0 0-1 0-3 1.5c-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.4 5.4 0 0 0 4 9c0 3.5 3 5.5 6 5.5c-.39.49-.68 1.05-.85 1.65S8.93 17.38 9 18v4">
+                        </path>
+                        <path d="M9 18c-4.51 2-5-2-7-2"></path>
+                      </svg>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="projects-content">
+              <h3 class="projects-card-title">MoveX</h3>
+
+              <p class="section-content projects-description">
+                Um site moderno para uma loja de roupas esportivas, desenvolvido com HTML, CSS, JavaScript e
+                Bootstrap, com abordagem Mobile First e design responsivo para uma melhor experiência em diferentes
+                dispositivos.
+              </p>
+
+              <div class="projects-tags">
+                <span class="projects-tag">HTML</span>
+                <span class="projects-tag">CSS</span>
+                <span class="projects-tag">JS</span>
+                <span class="projects-tag">Bootstrap</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="projects-card">
+            <div class="projects-media">
+              <img alt="Site institucional para uma loja de informática" src="imgs/projetos/techcare.jpg" loading="lazy"
+                class="projects-image" />
+
+              <div class="projects-overlay">
+                <div class="projects-actions">
+                  <a href="https://joaovitordomingos.github.io/TechCare/" target="_blank">
+                    <div aria-label="Ver demostração" class="projects-action-btn">
+                      <svg fill="none" width="20" xmlns="http://www.w3.org/2000/svg" height="20" stroke="currentColor"
+                        viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M15 3h6v6m-11 5L21 3m-3 10v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6">
+                        </path>
+                      </svg>
+                    </div>
+                  </a>
+
+                  <a href="https://github.com/JoaoVitorDomingos/TechCare" target="_blank">
+                    <div aria-label="Ver código fonte" class="projects-action-btn">
+                      <svg fill="none" width="20" xmlns="http://www.w3.org/2000/svg" height="20" stroke="currentColor"
+                        viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path
+                          d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5c.08-1.25-.27-2.48-1-3.5c.28-1.15.28-2.35 0-3.5c0 0-1 0-3 1.5c-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.4 5.4 0 0 0 4 9c0 3.5 3 5.5 6 5.5c-.39.49-.68 1.05-.85 1.65S8.93 17.38 9 18v4">
+                        </path>
+                        <path d="M9 18c-4.51 2-5-2-7-2"></path>
+                      </svg>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="projects-content">
+              <h3 class="projects-card-title">Tech Care</h3>
+
+              <p class="section-content projects-description">
+                Uma landing page para uma empresa de manutenção de computadores, com suporte a tema claro/escuro e
+                dois idiomas (PT-BR e EN), utilizando abordagem Mobile First e foco em uma experiência personalizada
+                ao usuário.
+              </p>
+
+              <div class="projects-tags">
+                <span class="projects-tag">HTML</span>
+                <span class="projects-tag">CSS</span>
+                <span class="projects-tag">JS</span>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!--
+            <div class="projects-footer">
+              <a href="portfolio.html">
+                <div class="btn-outline btn-lg btn">
+                  <span>View All Projects</span>
+                </div>
+              </a>
+            </div>
+            -->
+      </div>
+    </section>
+
+    <!-- Contato -->
+    <section id="contato" class="contact-section">
+      <div class="contact-container">
+        <div class="contact-layout">
+          <div class="contact-info-column">
+            <div class="contact-header">
+              <h2 class="section-title">
+                <span>Vamos construir algo</span>
+                <span class="contact-thq-contact-accent-text-elm">
+                  Lendário
+                </span>
+              </h2>
+
+              <p class="section-content">
+                Boas ideias merecem sair do papel. <br>
+                Se você tem um projeto, uma oportunidade ou quer construir algo realmente relevante, vamos conversar.
+              </p>
+            </div>
+
+            <div class="contact-details-list">
+              <div class="contact-detail-item">
+                <div class="contact-icon-wrapper">
+                  <svg width="24" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24">
+                    <g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                      stroke-linejoin="round">
+                      <path d="m22 7l-8.991 5.727a2 2 0 0 1-2.009 0L2 7"></path>
+                      <rect x="2" y="4" rx="2" width="20" height="16"></rect>
+                    </g>
+                  </svg>
+                </div>
+
+                <div class="contact-text-group">
+                  <span class="contact-label">Email</span>
+                  <a href="mailto:hello@codevanta.dev?subject=">
+                    <div class="contact-link">
+                      <span>joaovitorcdomingos@gmail.com</span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="contact-social-footer">
+              <span class="contact-label">Conecte-se comigo</span>
+
+              <div class="contact-social-grid">
+                <a href="https://www.linkedin.com/in/jvdomingos/" target="_blank" rel="noreferrer noopener">
+                  <div rel="noopener noreferrer" target="_blank" aria-label="LinkedIn" class="contact-social-card">
+                    <svg width="24" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24">
+                      <g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path
+                          d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2a2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6M2 9h4v12H2z">
+                        </path>
+                        <circle r="2" cx="4" cy="4"></circle>
+                      </g>
+                    </svg>
+                    <span>LinkedIn</span>
+                  </div>
+                </a>
+
+                <a href="https://github.com/JoaoVitorDomingos" target="_blank" rel="noreferrer noopener">
+                  <div rel="noopener noreferrer" target="_blank" aria-label="GitHub" class="contact-social-card">
+                    <svg width="24" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24">
+                      <g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path
+                          d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5c.08-1.25-.27-2.48-1-3.5c.28-1.15.28-2.35 0-3.5c0 0-1 0-3 1.5c-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.4 5.4 0 0 0 4 9c0 3.5 3 5.5 6 5.5c-.39.49-.68 1.05-.85 1.65S8.93 17.38 9 18v4">
+                        </path>
+                        <path d="M9 18c-4.51 2-5-2-7-2"></path>
+                      </g>
+                    </svg>
+                    <span>GitHub</span>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-form-column">
+            <div class="contact-glass-card">
+              <form id="contactForm" action="/submit" method="POST" data-form-id="7f4bf2b0-20dc-4dd9-8738-7205e5ca8bf7"
+                class="contact-form">
+                <div class="contact-input-group">
+                  <label for="name" class="contact-form-label">
+                    Nome Completo
+                  </label>
+                  <div class="contact-field-container">
+                    <input type="text" id="name" name="true" required="true" placeholder="John Doe"
+                      data-form-field-id="name" class="contact-input" />
+                    <div class="contact-focus-line"></div>
+                  </div>
+                </div>
+                <div class="contact-input-group">
+                  <label for="email" class="contact-form-label">
+                    Email Principal
+                  </label>
+                  <div class="contact-field-container">
+                    <input type="email" id="email" name="email" required="true" placeholder="john@example.com"
+                      data-form-field-id="email" class="contact-input" />
+                    <div class="contact-focus-line"></div>
+                  </div>
+                </div>
+                <div class="contact-input-group">
+                  <label for="message" class="contact-form-label">
+                    Sua mensagem
+                  </label>
+                  <div class="contact-field-container">
+                    <textarea id="message" name="message" required="true" minlength="10"
+                      placeholder="Fale-me sobre o seu projeto..." data-form-field-id="message"
+                      class="contact-textarea"></textarea>
+                    <div class="contact-focus-line"></div>
+                  </div>
+                </div>
+                <button id="thq_button_JYPa" name="button" type="submit" data-form-field-id="thq_button_JYPa"
+                  class="btn-primary contact-submit-btn btn-lg btn">
+                  <span>Enviar Mensagem</span>
+                  <svg width="20" xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 0 24 24">
+                    <path
+                      d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11zm7.318-19.539l-10.94 10.939"
+                      fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    </path>
+                  </svg>
+                </button>
+                <div id="formStatus" aria-live="polite" class="contact-status-message"></div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-bg-glow contact-glow-1"></div>
+
+      <div class="contact-glow-2 contact-bg-glow"></div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer-root">
+    <div class="footer-container">
+      <div class="footer-grid">
+        <div class="footer-brand-col footer-column">
+          <div class="footer-logo-wrapper">
+            <svg fill="none" width="32" xmlns="http://www.w3.org/2000/svg" height="32" stroke="currentColor"
+              viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+              class="footer-logo-icon">
+              <path d="m16 18l6-6-6-6M8 6l-6 6l6 6"></path>
+            </svg>
+            <span class="footer-brand-name">João Vitor C. Domingos</span>
+          </div>
+
+          <p class="section-content footer-description">
+            Criando experiências digitais de alto desempenho com precisão e inovação. Desenvolvedor front-end em
+            transição para a excelência em full-stack.
+          </p>
+
+          <div class="footer-social-links">
+            <a href="https://github.com/JoaoVitorDomingos">
+              <div aria-label="GitHub" class="footer-social-btn">
+                <svg fill="none" width="20" xmlns="http://www.w3.org/2000/svg" height="20" stroke="currentColor"
+                  viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path
+                    d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5c.08-1.25-.27-2.48-1-3.5c.28-1.15.28-2.35 0-3.5c0 0-1 0-3 1.5c-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.4 5.4 0 0 0 4 9c0 3.5 3 5.5 6 5.5c-.39.49-.68 1.05-.85 1.65S8.93 17.38 9 18v4">
+                  </path>
+                  <path d="M9 18c-4.51 2-5-2-7-2"></path>
+                </svg>
+              </div>
+            </a>
+
+            <a href="https://www.linkedin.com/in/jvdomingos/">
+              <div aria-label="LinkedIn" class="footer-social-btn">
+                <svg fill="none" width="20" xmlns="http://www.w3.org/2000/svg" height="20" stroke="currentColor"
+                  viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2a2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6M2 9h4v12H2z">
+                  </path>
+                  <circle r="2" cx="4" cy="4"></circle>
+                </svg>
+              </div>
+            </a>
+
+            <a href="https://www.instagram.com/jvdomingoss/">
+              <div aria-label="Instagram" class="footer-social-btn">
+                <svg fill="none" width="20" xmlns="http://www.w3.org/2000/svg" height="20" stroke="currentColor"
+                  viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="2" rx="5" ry="5" width="20" height="20"></rect>
+                  <path d="M16 11.37A4 4 0 1 1 12.63 8A4 4 0 0 1 16 11.37m1.5-4.87h.01"></path>
+                </svg>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <nav aria-labelledby="footer-nav-heading" class="footer-column">
+          <h2 id="footer-nav-heading" class="footer-col-title section-subtitle">
+            Navegação
+          </h2>
+
+          <ul class="footer-link-list">
+            <li class="footer-link-item">
+              <a href="#sobre">
+                <div class="footer-link"><span>Sobre mim</span></div>
+              </a>
+            </li>
+
+            <li class="footer-link-item">
+              <a href="#servicos">
+                <div class="footer-link"><span>Serviços</span></div>
+              </a>
+            </li>
+
+            <li class="footer-link-item">
+              <a href="#projetos">
+                <div class="footer-link"><span>Projetos</span></div>
+              </a>
+            </li>
+
+            <li class="footer-link-item">
+              <a href="#habilidades">
+                <div class="footer-link"><span>Habilidades</span></div>
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="footer-column">
+          <h2 class="footer-col-title section-subtitle">
+            Tecnologias
+          </h2>
+
+          <ul class="footer-link-list">
+            <li class="footer-link-item">
+              <span class="footer-static-link">
+                HTML &amp; CSS
+              </span>
+            </li>
+
+            <li class="footer-link-item">
+              <span class="footer-static-link">
+                Javascript
+              </span>
+            </li>
+
+            <li class="footer-link-item">
+              <span class="footer-static-link">
+                WordPress
+              </span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-cta-col footer-column">
+          <h2 class="footer-col-title section-subtitle">
+            Começe um projeto
+          </h2>
+          <p class="section-content footer-cta-text">
+            Procura um website moderno e de alta qualidade? Vamos construir algo extraordinário.
+          </p>
+          <a href="mailto:joaovitorcdomingos@gmail.com?subject=">
+            <div class="btn-primary footer-cta-btn btn btn-sm">
+              <span>Entre em contato</span>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="footer-divider"></div>
+        <div class="footer-bottom-content">
+          <p class="footer-copyright">
+            © 2026 João Vitor C. Domingos. Todos os direitos reservados.
+          </p>
+
+          <div class="footer-legal-links">
+            <a href="#">
+              <div class="footer-legal-link">
+                <span>Política de Privacidade</span>
+              </div>
+            </a>
+
+            <a href="#">
+              <div class="footer-legal-link">
+                <span>Termos de Serviço</span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+
+  <script src="js/sobre.js"></script>
+
+  <script src="js/services-hover.js"></script>
+
+  <script src="js/projects-interaction.js"></script>
+
+  <script src="js/portfolio-enhancements.js"></script>
+
+  <script src="js/form.js"></script>
 </body>
+
 </html>
