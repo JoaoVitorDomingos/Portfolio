@@ -3075,6 +3075,10 @@
     text-align: center;
     flex-direction: column;
   }
+  
+  .footer-description {
+    text-align: justify;
+  }
 
   .intro-overlay {
     background: var(--color-scrim);
