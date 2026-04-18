@@ -13,25 +13,9 @@
   font-weight: 700;
 }
 
-.contact-wrapper {
-  display: contents;
-}
-
-.contact-container1 {
-  display: contents;
-}
-
 .contact-thq-contact-accent-text-elm {
   color: var(--color-primary);
   display: block;
-}
-
-.contact-container2 {
-  display: none;
-}
-
-.contact-container3 {
-  display: contents;
 }
 
 .footer-wrapper {
