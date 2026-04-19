@@ -2457,6 +2457,10 @@
   transition: transform 0.4s ease;
 }
 
+.mobile-only {
+  display: none;
+}
+
 .projects-tag {
   color: var(--color-primary);
   border: 1px solid color-mix(in srgb, var(--color-primary) 20%, transparent);
@@ -2861,6 +2865,15 @@
     grid-template-columns: 1fr 1fr 1fr;
   }
 
+  .about-me-description,
+  .tech-header p,
+  .services-header p,
+  .projects-intro,
+  .contact-header p,
+  .footer-description {
+    font-size: var(--font-size-xl);
+  }
+
   .navigation-container {
     padding: var(--spacing-md) var(--spacing-2xl);
   }
@@ -2902,6 +2915,14 @@
   .footer-brand-col {
     flex: 0 0 100%;
     margin-bottom: var(--spacing-xl);
+  }
+
+  .footer-brand-name {
+    font-size: var(--font-size-2xl);
+  }
+
+  .footer-col-title {
+    font-size: var(--font-size-xl);
   }
 
   .projects-grid {
@@ -2969,6 +2990,10 @@
     padding: var(--spacing-3xl) var(--spacing-lg);
   }
 
+  .hero-subtitle {
+    font-size: var(--font-size-xl);
+  }
+
   .skills-grid {
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   }
@@ -2988,6 +3013,27 @@
 
   .projects-projects-grid {
     gap: var(--spacing-xl);
+  }
+
+  .projects-overlay {
+    display: none;
+  }
+
+  .mobile-only {
+    display: flex;
+    justify-content: center;
+
+    gap: var(--spacing-md);
+    margin-top: var(--spacing-xl);
+  }
+
+  .projects-actions {
+    transform: none;
+  }
+
+  .projects-action-btn {
+    width: 44px;
+    height: 44px;
   }
 
   .services2-services-card {
@@ -3052,6 +3098,10 @@
     padding: var(--spacing-sm) var(--spacing-lg);
   }
 
+  .navigation-logo-link span:first-of-type {
+    display: none;
+  }
+
   .navigation-desktop-links {
     display: none;
   }
@@ -3062,12 +3112,29 @@
     justify-content: center;
   }
 
+  .navigation-mobile-links {
+    padding-block: var(--spacing-sm);
+  }
+
   .footer-root {
     padding-top: var(--spacing-3xl);
   }
 
+  .footer-grid {
+    gap: var(--spacing-3xl);
+  }
+
   .footer-column {
     flex: 0 0 calc(50% - var(--spacing-md));
+  }
+
+  .footer-col-title {
+    font-size: var(--font-size-lg);
+  }
+
+  nav.footer-column,
+  nav.footer-column + div {
+    text-align: center;
   }
 
   .footer-bottom-content {
@@ -3075,18 +3142,42 @@
     text-align: center;
     flex-direction: column;
   }
-  
+
   .footer-description {
     text-align: justify;
+    font-size: var(--font-size-md);
+  }
+
+  .portfolio-intro {
+    padding: var(--spacing-4xl) var(--spacing-md);
+    justify-content: center;
   }
 
   .intro-overlay {
-    background: var(--color-scrim);
+    background: rgba(0, 0, 0, 0.8);
   }
 
   .intro-text-block {
     text-align: center;
     align-items: center;
+  }
+
+  .hero-title {
+    font-size: var(--font-size-3xl);
+  }
+
+  .hero-subtitle {
+    text-align: justify;
+  }
+
+  .intro-actions {
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: stretch;
+  }
+
+  .intro-actions div {
+    width: 100%;
   }
 
   .case-grid {
@@ -3095,6 +3186,11 @@
 
   .tech-grid {
     grid-template-columns: 1fr;
+  }
+
+  .tech-header .section-content {
+    font-size: var(--font-size-lg);
+    margin-top: 15px;
   }
 
   .cta-card {
@@ -3109,6 +3205,10 @@
 
   .cta-buttons {
     flex-direction: column;
+  }
+
+  .about-me-description {
+    font-size: var(--font-size-lg);
   }
 
   .about-me-highlights {
@@ -3129,7 +3229,7 @@
   }
 
   .services-header .section-content {
-    text-align: justify;
+    font-size: var(--font-size-lg);
   }
 
   .services1-services-card {
@@ -3165,6 +3265,10 @@
     padding: var(--spacing-3xl) 0;
   }
 
+  .contact-header .section-content {
+    font-size: var(--font-size-lg);
+  }
+
   .contact-glass-card {
     padding: var(--spacing-xl);
   }
@@ -3179,6 +3283,10 @@
     margin-right: auto;
   }
 
+  .projects-intro {
+    font-size: var(--font-size-lg);
+  }
+
   .projects-projects-grid {
     grid-template-columns: 1fr;
   }
@@ -3187,7 +3295,7 @@
     justify-content: center;
   }
 
-  #featured-projects .projects-projects-header p {
+  #projetos .projects-projects-header p {
     text-align: justify;
   }
 
