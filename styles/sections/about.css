@@ -1,7 +1,3 @@
-/* ==========================================================
-   About
-========================================================== */
-
 .about-section {
   display: flex;
   align-items: center;
@@ -116,6 +112,11 @@
   max-width: 65ch;
 }
 
+#sobre .about-me-description strong {
+  color: var(--color-primary);
+  font-weight: 800;
+}
+
 .about-me-highlight-card {
   gap: var(--spacing-md);
   flex: 1;
@@ -206,38 +207,28 @@
   .about-me-description {
     font-size: var(--font-size-xl);
   }
-}
 
-@media(max-width: 991px) {
   .about-section {
     gap: var(--spacing-3xl);
     flex-direction: column;
   }
-}
 
-@media(max-width: 991px) {
   .about-me-media-wrapper {
     width: 100%;
     margin: 0 auto;
     max-width: 500px;
   }
-}
 
-@media(max-width: 991px) {
   .about-me-content-wrapper {
     width: 100%;
     text-align: center;
     align-items: center;
   }
-}
 
-@media(max-width: 991px) {
   .about-me-highlights {
     width: 100%;
   }
-}
 
-@media(max-width: 991px) {
   .about-me-description {
     margin: 0 auto;
     text-align: justify;
@@ -248,15 +239,11 @@
   .about-me-description {
     font-size: var(--font-size-lg);
   }
-}
 
-@media(max-width: 767px) {
   .about-me-highlights {
     flex-direction: column;
   }
-}
 
-@media(max-width: 767px) {
   .about-me-experience-badge {
     right: var(--spacing-md);
     bottom: var(--spacing-md);
@@ -267,22 +254,13 @@
   .about-me-skills-section {
     flex-direction: column;
   }
-}
 
-@media(max-width: 479px) {
   .about-me-actions {
     width: 100%;
     flex-direction: column;
   }
-}
 
-@media(max-width: 479px) {
   .about-me-actions .btn {
     width: 100%;
   }
-}
-
-#sobre .about-me-description strong {
-  color: var(--color-primary);
-  font-weight: 800;
 }

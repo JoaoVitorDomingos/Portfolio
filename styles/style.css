@@ -1,7 +1,3 @@
-/* ==========================================================
-   Main Stylesheet
-========================================================== */
-
 @import url("./base/variables.css");
 @import url("./base/reset.css");
 @import url("./base/typography.css");
@@ -17,3 +13,8 @@
 @import url("./sections/projects.css");
 @import url("./sections/contact.css");
 @import url("./pages/home.css");
+
+section {
+  padding: var(--spacing-4xl) 0;
+  overflow: hidden;
+}

@@ -1,7 +1,3 @@
-/* ==========================================================
-   Footer
-========================================================== */
-
 .footer-root {
   color: var(--color-on-surface);
   padding: var(--spacing-4xl) 0 var(--spacing-xl);
@@ -200,28 +196,20 @@
   .footer-description {
     font-size: var(--font-size-xl);
   }
-}
 
-@media(max-width: 991px) {
   .footer-grid {
     gap: var(--spacing-2xl);
   }
-}
 
-@media(max-width: 991px) {
   .footer-brand-col {
     flex: 0 0 100%;
     margin-bottom: var(--spacing-xl);
   }
-}
 
-@media(max-width: 991px) {
   .footer-brand-name {
     font-size: var(--font-size-2xl);
   }
-}
 
-@media(max-width: 991px) {
   .footer-col-title {
     font-size: var(--font-size-xl);
   }
@@ -231,47 +219,33 @@
   .footer-root {
     padding-top: var(--spacing-3xl);
   }
-}
 
-@media(max-width: 767px) {
   .footer-grid {
     gap: var(--spacing-3xl);
   }
-}
 
-@media(max-width: 767px) {
   .footer-column {
     flex: 0 0 calc(50% - var(--spacing-md));
   }
-}
 
-@media(max-width: 767px) {
   .footer-col-title {
     font-size: var(--font-size-lg);
   }
-}
 
-@media(max-width: 767px) {
   nav.footer-column {
     text-align: center;
   }
-}
 
-@media(max-width: 767px) {
-  nav.footer-column + div {
+  nav.footer-column+div {
     text-align: center;
   }
-}
 
-@media(max-width: 767px) {
   .footer-bottom-content {
     gap: var(--spacing-lg);
     text-align: center;
     flex-direction: column;
   }
-}
 
-@media(max-width: 767px) {
   .footer-description {
     text-align: justify;
   }
@@ -281,39 +255,29 @@
   .footer-column {
     flex: 0 0 100%;
   }
-}
 
-@media(max-width: 479px) {
   .footer-brand-col {
     text-align: center;
   }
-}
 
-@media(max-width: 479px) {
   .footer-cta-col {
     text-align: center;
     align-items: center;
     justify-content: center;
   }
-}
 
-@media(max-width: 479px) {
   .footer-logo-wrapper {
     text-align: center;
     align-items: center;
     justify-content: center;
   }
-}
 
-@media(max-width: 479px) {
   .footer-social-links {
     text-align: center;
     align-items: center;
     justify-content: center;
   }
-}
 
-@media(max-width: 479px) {
   .footer-legal-links {
     gap: var(--spacing-lg);
     justify-content: center;

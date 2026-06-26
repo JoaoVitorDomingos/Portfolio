@@ -1,7 +1,3 @@
-/* ==========================================================
-   Projects
-========================================================== */
-
 .projects-section {
   color: var(--color-on-surface);
   padding: var(--spacing-4xl) 0;
@@ -166,27 +162,19 @@
   .projects-intro {
     font-size: var(--font-size-xl);
   }
-}
 
-@media(max-width: 991px) {
   .projects-grid {
     gap: var(--spacing-xl);
   }
-}
 
-@media(max-width: 991px) {
   .project-card-overlay {
     display: none;
   }
-}
 
-@media(max-width: 991px) {
   .project-card-actions {
     transform: none;
   }
-}
 
-@media(max-width: 991px) {
   .project-action-button {
     width: 44px;
     height: 44px;
@@ -199,27 +187,19 @@
     margin-left: auto;
     margin-right: auto;
   }
-}
 
-@media(max-width: 767px) {
   .projects-intro {
     font-size: var(--font-size-lg);
   }
-}
 
-@media(max-width: 767px) {
   .projects-grid {
     grid-template-columns: 1fr;
   }
-}
 
-@media(max-width: 767px) {
   .projects-badge {
     justify-content: center;
   }
-}
 
-@media(max-width: 767px) {
   #projetos .projects-header p {
     text-align: justify;
   }
@@ -229,15 +209,11 @@
   .projects-section {
     padding: var(--spacing-3xl) 0;
   }
-}
 
-@media(max-width: 479px) {
   .project-card-content {
     padding: var(--spacing-lg);
   }
-}
 
-@media(max-width: 479px) {
   .project-action-button {
     width: 40px;
     height: 40px;

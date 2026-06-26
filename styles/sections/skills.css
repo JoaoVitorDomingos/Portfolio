@@ -1,7 +1,3 @@
-/* ==========================================================
-   Skills
-========================================================== */
-
 .skills-section {
   background: var(--color-surface-elevated);
 }
@@ -62,9 +58,7 @@
   .skills-grid {
     grid-template-columns: 1fr;
   }
-}
 
-@media(max-width: 767px) {
   .skills-header .section-content {
     font-size: var(--font-size-lg);
     margin-top: 15px;
