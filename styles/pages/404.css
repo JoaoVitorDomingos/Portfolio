@@ -1,0 +1,44 @@
+/* ==========================================================
+   404 Page
+========================================================== */
+
+.not-found-page {
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.not-found-kicker {
+  color: var(--color-on-surface);
+  font-size: 2rem;
+}
+
+.not-found-code {
+  color: transparent;
+  font-size: 20rem;
+  -webkit-text-stroke: 3px white;
+}
+
+.not-found-message {
+  color: var(--color-on-surface);
+  font-size: 2rem;
+  padding-inline: 20px;
+  text-align: center;
+}
+
+/* ==========================================================
+   Responsive
+========================================================== */
+
+@media (max-width: 768px) {
+  .not-found-kicker,
+  .not-found-message {
+    font-size: 1rem;
+  }
+
+  .not-found-code {
+    font-size: 10rem;
+  }
+}

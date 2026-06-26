@@ -1,0 +1,288 @@
+/* ==========================================================
+   About
+========================================================== */
+
+.about-section {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-4xl);
+  position: relative;
+  max-width: var(--content-max-width);
+  padding: var(--spacing-4xl) var(--spacing-xl);
+  margin: 0 auto;
+  overflow: hidden;
+  background-color: var(--color-surface);
+}
+
+.about-me-media-wrapper {
+  flex: 5;
+  position: relative;
+}
+
+.about-me-content-wrapper {
+  gap: var(--spacing-xl);
+  flex: 7;
+  display: flex;
+  flex-direction: column;
+}
+
+.about-me-image-frame {
+  z-index: 2;
+  overflow: visible;
+  position: relative;
+  aspect-ratio: 4/5;
+  border-radius: var(--border-radius-xl);
+}
+
+.about-me-skills-section {
+  gap: var(--spacing-md);
+  display: flex;
+  margin-top: var(--spacing-2xl);
+}
+
+.about-me-highlights {
+  gap: var(--spacing-lg);
+  margin: var(--spacing-lg) 0;
+  display: flex;
+}
+
+.about-me-actions {
+  gap: var(--spacing-md);
+  display: flex;
+  margin-top: var(--spacing-lg);
+}
+
+.about-me-profile-img {
+  width: 100%;
+  border: 1px solid var(--color-border);
+  filter: grayscale(20%) contrast(1.1);
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+  border-radius: var(--border-radius-xl);
+}
+
+.about-me-experience-badge {
+  right: calc(var(--spacing-xl) * -1);
+  bottom: var(--spacing-xl);
+  display: flex;
+  padding: var(--spacing-lg) var(--spacing-xl);
+  z-index: 3;
+  position: absolute;
+  background: var(--color-surface-elevated);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+  border-left: 4px solid var(--color-primary);
+  border-radius: var(--border-radius-lg);
+  flex-direction: column;
+}
+
+.about-me-decorative-dots {
+  top: -30px;
+  right: -30px;
+  width: 100px;
+  height: 100px;
+  opacity: 0.2;
+  z-index: 1;
+  position: absolute;
+  background-size: 15px 15px;
+  background-image: radial-gradient(var(--color-outline) 2px, transparent 2px);
+}
+
+.about-me-stack-item {
+  gap: var(--spacing-sm);
+  flex: 1;
+  border: 1px solid var(--color-border);
+  display: flex;
+  padding: var(--spacing-md);
+  background: var(--color-surface-elevated);
+  align-items: center;
+  border-radius: var(--border-radius-md);
+}
+
+.about-me-label {
+  color: var(--color-primary);
+  display: block;
+  margin-bottom: var(--spacing-sm);
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.about-me-title {
+  margin-bottom: var(--spacing-md);
+}
+
+.about-me-description {
+  color: var(--color-on-surface-secondary);
+  max-width: 65ch;
+}
+
+.about-me-highlight-card {
+  gap: var(--spacing-md);
+  flex: 1;
+  border: 1px solid var(--color-border);
+  display: flex;
+  padding: var(--spacing-lg);
+  background: color-mix(in srgb, var(--color-surface-elevated) 50%, transparent);
+  transition: all 0.3s ease;
+  align-items: flex-start;
+  border-radius: var(--border-radius-md);
+}
+
+.about-me-badge-number {
+  color: var(--color-primary);
+  font-size: var(--font-size-2xl);
+  font-family: var(--font-family-heading);
+  font-weight: var(--font-weight-heading);
+  line-height: 1;
+}
+
+.about-me-badge-text {
+  color: var(--color-on-surface-secondary);
+  font-size: var(--font-size-xs);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.about-me-icon-box {
+  color: var(--color-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-me-stack-label {
+  color: var(--color-on-surface);
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-medium);
+}
+
+.about-me-highlight-icon {
+  color: var(--color-primary);
+  width: 48px;
+  height: 48px;
+  display: flex;
+  background: color-mix(in srgb, var(--color-primary) 10%, transparent);
+  align-items: center;
+  flex-shrink: 0;
+  border-radius: var(--border-radius-sm);
+  justify-content: center;
+}
+
+.about-me-highlight-title {
+  color: var(--color-on-surface);
+  font-size: var(--font-size-base);
+  font-family: var(--font-family-heading);
+  margin-bottom: 2px;
+}
+
+.about-me-highlight-text {
+  color: var(--color-on-surface-secondary);
+  font-size: var(--font-size-xs);
+}
+
+.about-me-image-frame:hover .about-me-profile-img {
+  transform: scale(1.02);
+}
+
+.about-me-image-frame::before {
+  top: -20px;
+  left: -20px;
+  width: 100%;
+  border: 2px solid var(--color-outline);
+  height: 100%;
+  content: "";
+  opacity: 0.3;
+  z-index: -1;
+  position: absolute;
+  border-radius: var(--border-radius-xl);
+}
+
+.about-me-highlight-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--color-primary);
+}
+
+@media(max-width: 991px) {
+  .about-me-description {
+    font-size: var(--font-size-xl);
+  }
+}
+
+@media(max-width: 991px) {
+  .about-section {
+    gap: var(--spacing-3xl);
+    flex-direction: column;
+  }
+}
+
+@media(max-width: 991px) {
+  .about-me-media-wrapper {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 500px;
+  }
+}
+
+@media(max-width: 991px) {
+  .about-me-content-wrapper {
+    width: 100%;
+    text-align: center;
+    align-items: center;
+  }
+}
+
+@media(max-width: 991px) {
+  .about-me-highlights {
+    width: 100%;
+  }
+}
+
+@media(max-width: 991px) {
+  .about-me-description {
+    margin: 0 auto;
+    text-align: justify;
+  }
+}
+
+@media(max-width: 767px) {
+  .about-me-description {
+    font-size: var(--font-size-lg);
+  }
+}
+
+@media(max-width: 767px) {
+  .about-me-highlights {
+    flex-direction: column;
+  }
+}
+
+@media(max-width: 767px) {
+  .about-me-experience-badge {
+    right: var(--spacing-md);
+    bottom: var(--spacing-md);
+  }
+}
+
+@media(max-width: 479px) {
+  .about-me-skills-section {
+    flex-direction: column;
+  }
+}
+
+@media(max-width: 479px) {
+  .about-me-actions {
+    width: 100%;
+    flex-direction: column;
+  }
+}
+
+@media(max-width: 479px) {
+  .about-me-actions .btn {
+    width: 100%;
+  }
+}
+
+#sobre .about-me-description strong {
+  color: var(--color-primary);
+  font-weight: 800;
+}

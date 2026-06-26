@@ -1,9 +1,10 @@
+/* ==========================================================
+   Reset
+========================================================== */
+
 html {
   line-height: 1.15;
-}
-
-body {
-  margin: 0;
+  scroll-behavior: smooth;
 }
 
 * {
@@ -13,6 +14,7 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+body,
 p,
 li,
 ul,
@@ -40,10 +42,10 @@ input,
 optgroup,
 select,
 textarea {
+  margin: 0;
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
-  margin: 0;
 }
 
 button,
@@ -65,13 +67,6 @@ button::-moz-focus-inner,
 [type="submit"]::-moz-focus-inner {
   border-style: none;
   padding: 0;
-}
-
-button:-moz-focus,
-[type="button"]:-moz-focus,
-[type="reset"]:-moz-focus,
-[type="submit"]:-moz-focus {
-  outline: 1px dotted ButtonText;
 }
 
 a {
@@ -101,25 +96,17 @@ summary::-webkit-details-marker {
   display: none;
 }
 
-[data-thq="accordion"] [data-thq="accordion-content"] {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.3s ease-in-out;
-  padding: 0;
-}
-
-[data-thq="accordion"]
-  details[data-thq="accordion-trigger"][open]
-  + [data-thq="accordion-content"] {
-  max-height: 1000vh;
-}
-
-details[data-thq="accordion-trigger"][open]
-  summary
-  [data-thq="accordion-icon"] {
-  transform: rotate(180deg);
-}
-
 html {
-  scroll-behavior: smooth;
+  font-family: "Roboto Mono";
+  font-size: 1rem;
+}
+
+body {
+  color: var(--color-on-surface);
+  background: var(--color-surface);
+  fill: var(--color-on-surface);
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  line-height: 1.6;
 }

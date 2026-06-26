@@ -1,4 +1,7 @@
-/* Animações/Keyframes específicos do site */
+/* ==========================================================
+   Animations
+========================================================== */
+
 @keyframes servicesFadeUp {
   from {
     opacity: 0;

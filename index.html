@@ -8,42 +8,16 @@
   <meta charset="utf-8" />
   <meta property="twitter:card" content="summary_large_image" />
 
-  <!-- Reset CSS -->
-  <link rel="stylesheet" href="styles/reset.css" data-tag="reset-style-sheet">
-
-  <!-- CSS Padrão -->
-  <link rel="stylesheet" href="styles/padrao.css" data-tag="default-style-sheet">
-
-  <!-- Link Animação CSS -->
-  <link rel="stylesheet" href="https://unpkg.com/animate.css@4.1.1/animate.css" />
-
   <!-- Fontes Google -->
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;display=swap"
-    data-tag="font" />
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&amp;display=swap"
     data-tag="font" />
   <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
-    data-tag="font" />
-  <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Oxanium:wght@200;300;400;500;600;700;800&amp;display=swap"
     data-tag="font" />
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
-    data-tag="font" />
-
-  <!-- TeleportHQ Script -->
-  <link rel="stylesheet" href="https://unpkg.com/@teleporthq/teleport-custom-scripts/dist/style.css" />
 
   <!-- Estilos -->
   <link rel="stylesheet" href="styles/style.css" />
-
-  <link href="styles/portfolio.css" rel="stylesheet" />
-
-  <link rel="stylesheet" href="styles/animations.css" />
-
 </head>
 
 <body>
@@ -62,9 +36,9 @@
 
           <span class="navigation-logo">João</span>
 
-          <span class="navigation-logo navigation-thq-brand-initial-elm">C.</span>
+          <span class="navigation-logo navigation-logo-initial">C.</span>
 
-          <span class="navigation-logo navigation-text12">Domingos</span>
+          <span class="navigation-logo navigation-logo-surname">Domingos</span>
         </div>
       </a>
 
@@ -113,9 +87,9 @@
 
             <span class="navigation-logo">João</span>
 
-            <span class="navigation-logo navigation-thq-brand-initial-elm">C.</span>
+            <span class="navigation-logo navigation-logo-initial">C.</span>
 
-            <span class="navigation-logo navigation-text12">Domingos</span>
+            <span class="navigation-logo navigation-logo-surname">Domingos</span>
           </div>
         </a>
 
@@ -174,24 +148,24 @@
 
   <main>
     <!-- Hero -->
-    <section class="portfolio-intro">
-      <div class="intro-video-wrapper">
+    <section class="hero">
+      <div class="hero-media">
         <video src="video/hero.mp4" loop="true" muted="true"
           poster="https://images.pexels.com/videos/7101912/pictures/preview-0.jpg" autoplay="true" playsinline="true"
-          class="intro-video"></video>
+          class="hero-video"></video>
 
-        <div class="intro-overlay"></div>
+        <div class="hero-overlay"></div>
       </div>
 
-      <div class="intro-content-container">
-        <div class="intro-text-block">
-          <span class="intro-badge">
+      <div class="hero-container">
+        <div class="hero-content">
+          <span class="hero-badge">
             Desenvolvedor Front-end | Estudante Ciência Computação
           </span>
 
           <h1 class="hero-title">
             <span>Arquitetando o</span>
-            <span class="portfolio-text11">Futuro da Web</span>
+            <span class="hero-title-accent">Futuro da Web</span>
           </h1>
 
           <p class="hero-subtitle">
@@ -200,7 +174,7 @@
             construir soluções digitais robustas e completas.
           </p>
 
-          <div class="intro-actions">
+          <div class="hero-actions">
             <a href="#projetos">
               <div class="btn-primary btn-lg btn">
                 <span>Veja Meus Projetos</span>
@@ -218,7 +192,7 @@
     </section>
 
     <!-- Section Sobre mim -->
-    <section id="sobre" class="section_sobre">
+    <section id="sobre" class="about-section">
       <!-- Media -->
       <div class="about-me-media-wrapper">
         <!-- IMG -->
@@ -234,7 +208,7 @@
         </div>
 
         <!-- Tech Stack -->
-        <div class="about-me-tech-stack">
+        <div class="about-me-skills-section">
           <div class="about-me-stack-item">
             <div class="about-me-icon-box">
               <svg width="24" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24">
@@ -376,18 +350,18 @@
     </section>
 
     <!-- Skills -->
-    <section id="habilidades" class="tech-stack">
-      <div class="tech-container">
-        <div class="tech-header">
+    <section id="habilidades" class="skills-section">
+      <div class="skills-container">
+        <div class="skills-header">
           <h2 class="section-title">Minhas Habilidades</h2>
           <p class="section-content">
             Tecnologias principais que utilizo para experiências digitais modernas.
           </p>
         </div>
 
-        <div class="tech-grid">
-          <div class="tech-item">
-            <div class="tech-icon">
+        <div class="skills-grid">
+          <div class="skill-card">
+            <div class="skill-icon">
               <svg width="24" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24">
                 <path d="m18 16l4-4l-4-4M6 8l-4 4l4 4m8.5-12l-5 16" fill="none" stroke="currentColor" stroke-width="2"
                   stroke-linecap="round" stroke-linejoin="round"></path>
@@ -400,13 +374,13 @@
               HTML5, CSS3, JavaScript (ES6+). Construindo interfaces semânticas, responsivas e interativas.
             </p>
 
-            <div class="proficiency-bar">
-              <div class="portfolio-thq-proficiency-fill-elm1 proficiency-fill"></div>
+            <div class="skill-progress">
+              <div class="skill-progress-fill--frontend skill-progress-fill"></div>
             </div>
           </div>
 
-          <div class="tech-item">
-            <div class="tech-icon">
+          <div class="skill-card">
+            <div class="skill-icon">
               <svg width="24" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24">
                 <path
                   d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09"
@@ -424,13 +398,13 @@
               Desenvolvimento de sites personalizados e otimização de desempenho.
             </p>
 
-            <div class="proficiency-bar">
-              <div class="portfolio-thq-proficiency-fill-elm2 proficiency-fill"></div>
+            <div class="skill-progress">
+              <div class="skill-progress-fill--wordpress skill-progress-fill"></div>
             </div>
           </div>
 
-          <div class="tech-item">
-            <div class="tech-icon">
+          <div class="skill-card">
+            <div class="skill-icon">
               <svg width="24" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24">
                 <g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                   <rect x="2" y="2" rx="2" ry="2" width="20" height="8"></rect>
@@ -446,15 +420,15 @@
               Versionamento de código com Git e hospedagem de projetos no GitHub para colaboração.
             </p>
 
-            <div class="proficiency-bar">
-              <div class="portfolio-thq-proficiency-fill-elm6 proficiency-fill"></div>
+            <div class="skill-progress">
+              <div class="skill-progress-fill--git skill-progress-fill"></div>
             </div>
           </div>
 
           <!-- Futuros Skills - Full Stack
 
-          <div class="tech-item">
-            <div class="tech-icon">
+          <div class="skill-card">
+            <div class="skill-icon">
               <svg width="24" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24">
                 <g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                   <path
@@ -472,13 +446,13 @@
               enterprise-grade applications.
             </p>
             
-            <div class="proficiency-bar">
-              <div class="portfolio-thq-proficiency-fill-elm3 proficiency-fill"></div>
+            <div class="skill-progress">
+              <div class="skill-progress-fill--java skill-progress-fill"></div>
             </div>
           </div>
 
-          <div class="tech-item">
-            <div class="tech-icon">
+          <div class="skill-card">
+            <div class="skill-icon">
               <svg width="24" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24">
                 <g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                   <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
@@ -492,13 +466,13 @@
               Relational database design, complex queries, and data
               integrity management.
             </p>
-            <div class="proficiency-bar">
-              <div class="portfolio-thq-proficiency-fill-elm4 proficiency-fill"></div>
+            <div class="skill-progress">
+              <div class="skill-progress-fill--postgresql skill-progress-fill"></div>
             </div>
           </div>
 
-          <div class="tech-item">
-            <div class="tech-icon">
+          <div class="skill-card">
+            <div class="skill-icon">
               <svg width="24" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24">
                 <g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                   <path
@@ -515,8 +489,8 @@
               Figma prototyping, design systems, and user-centric interface
               architectural design.
             </p>
-            <div class="proficiency-bar">
-              <div class="portfolio-thq-proficiency-fill-elm5 proficiency-fill"></div>
+            <div class="skill-progress">
+              <div class="skill-progress-fill--design skill-progress-fill"></div>
             </div>
           </div>
 
@@ -536,8 +510,8 @@
       </div>
 
       <div class="services-grid">
-        <article class="services-card">
-          <div class="services-icon-wrapper">
+        <article class="service-card">
+          <div class="service-card-icon">
             <svg fill="none" width="24" xmlns="http://www.w3.org/2000/svg" height="24" stroke="currentColor"
               viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <path
@@ -555,11 +529,11 @@
             Páginas responsivas e de alta conversão para marketing e geração de leads
           </p>
 
-          <div class="services-card-glow"></div>
+          <div class="service-card-glow"></div>
         </article>
 
-        <article class="services-card">
-          <div class="services-icon-wrapper">
+        <article class="service-card">
+          <div class="service-card-icon">
             <svg fill="none" width="24" xmlns="http://www.w3.org/2000/svg" height="24" stroke="currentColor"
               viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <path d="M4 8h16M4 6a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2zm4-2v4"></path>
@@ -572,11 +546,11 @@
             Sites profissionais focados em forte presença online e experiência do usuário
           </p>
 
-          <div class="services-card-glow"></div>
+          <div class="service-card-glow"></div>
         </article>
 
-        <article class="services-card">
-          <div class="services-icon-wrapper">
+        <article class="service-card">
+          <div class="service-card-icon">
             <svg fill="none" width="24" xmlns="http://www.w3.org/2000/svg" height="24" stroke="currentColor"
               viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -594,11 +568,11 @@
             Websites personalizados e escaláveis construídos e customizados com WordPress
           </p>
 
-          <div class="services-card-glow"></div>
+          <div class="service-card-glow"></div>
         </article>
 
-        <article class="services-card">
-          <div class="services-icon-wrapper">
+        <article class="service-card">
+          <div class="service-card-icon">
             <svg fill="none" width="24" xmlns="http://www.w3.org/2000/svg" height="24" stroke="currentColor"
               viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -618,11 +592,11 @@
             Atualizações, correções de bugs e melhorias de desempenho
           </p>
 
-          <div class="services-card-glow"></div>
+          <div class="service-card-glow"></div>
         </article>
 
-        <article class="services-card">
-          <div class="services-icon-wrapper">
+        <article class="service-card">
+          <div class="service-card-icon">
             <svg fill="none" width="24" xmlns="http://www.w3.org/2000/svg" height="24" stroke="currentColor"
               viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -638,10 +612,10 @@
             Melhore a estrutura, desempenho e SEO na página para melhor visibilidade
           </p>
 
-          <div class="services-card-glow"></div>
+          <div class="service-card-glow"></div>
         </article>
 
-        <div aria-hidden="true" class="services-card-decorative services-card">
+        <div aria-hidden="true" class="service-card--placeholder service-card">
           <span class="section-subtitle">Serviço Futuro</span>
           <p class="section-content">
             Expandindo para desenvolvimento Fullstack com Java e
@@ -654,7 +628,7 @@
     <!-- Projetos -->
     <section id="projetos" class="projects-section">
       <div class="projects-container">
-        <div class="projects-projects-header">
+        <div class="projects-header">
           <div class="projects-badge">
             <svg fill="none" width="20" xmlns="http://www.w3.org/2000/svg" height="20" stroke="currentColor"
               viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -672,17 +646,17 @@
           </p>
         </div>
 
-        <div class="projects-projects-grid">
-          <article class="projects-card">
-            <div class="projects-media">
+        <div class="projects-grid">
+          <article class="project-card">
+            <div class="project-card-media">
               <img alt="Site institucional de uma empresa de fisioterapia" src="#" loading="lazy"
-                class="projects-image" />
+                class="project-card-image" />
 
               <!-- Desktop Overlay -->
-              <div class="projects-overlay">
-                <div class="projects-actions">
+              <div class="project-card-overlay">
+                <div class="project-card-actions">
                   <a href="#">
-                    <div aria-label="Veja demonstração" class="projects-action-btn">
+                    <div aria-label="Veja demonstração" class="project-action-button">
                       <svg fill="none" width="20" xmlns="http://www.w3.org/2000/svg" height="20" stroke="currentColor"
                         viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                         <path d="M15 3h6v6m-11 5L21 3m-3 10v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6">
@@ -692,7 +666,7 @@
                   </a>
 
                   <a href="#">
-                    <div aria-label="Ver código fonte" class="projects-action-btn">
+                    <div aria-label="Ver código fonte" class="project-action-button">
                       <svg fill="none" width="20" xmlns="http://www.w3.org/2000/svg" height="20" stroke="currentColor"
                         viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                         <path
@@ -706,23 +680,23 @@
               </div>
             </div>
 
-            <div class="projects-content">
-              <h3 class="projects-card-title">Skin Vital</h3>
+            <div class="project-card-content">
+              <h3 class="project-card-title">Skin Vital</h3>
 
-              <p class="section-content projects-description">
+              <p class="section-content project-card-description">
                 Um site institucional clean e responsivo, construído com WordPress (Astra), otimizado para SEO e
                 integrado ao Mailchimp para fortalecer a presença digital.
               </p>
 
-              <div class="projects-tags">
-                <span class="projects-tag">Wordpress</span>
-                <span class="projects-tag">Astra</span>
+              <div class="project-card-tags">
+                <span class="project-card-tag">Wordpress</span>
+                <span class="project-card-tag">Astra</span>
               </div>
 
               <!-- Mobile -->
-              <div class="projects-actions mobile-only">
+              <div class="project-card-actions mobile-only">
                 <a href="#">
-                  <div aria-label="Veja demonstração" class="projects-action-btn">
+                  <div aria-label="Veja demonstração" class="project-action-button">
                     <svg fill="none" width="20" xmlns="http://www.w3.org/2000/svg" height="20" stroke="currentColor"
                       viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                       <path d="M15 3h6v6m-11 5L21 3m-3 10v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6">
@@ -732,7 +706,7 @@
                 </a>
 
                 <a href="#">
-                  <div aria-label="Ver código fonte" class="projects-action-btn">
+                  <div aria-label="Ver código fonte" class="project-action-button">
                     <svg fill="none" width="20" xmlns="http://www.w3.org/2000/svg" height="20" stroke="currentColor"
                       viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                       <path
@@ -746,16 +720,16 @@
             </div>
           </article>
 
-          <article class="projects-card">
-            <div class="projects-media">
+          <article class="project-card">
+            <div class="project-card-media">
               <img alt="Landing page de alta conversão para um e-book de nutrição" src="imgs/projetos/lp1.png"
-                loading="lazy" class="projects-image" />
+                loading="lazy" class="project-card-image" />
 
               <!-- Desktop Overlay -->
-              <div class="projects-overlay">
-                <div class="projects-actions">
+              <div class="project-card-overlay">
+                <div class="project-card-actions">
                   <a href="https://joaovitordomingos.github.io/LP-eBook/" target="_blank">
-                    <div aria-label="Ver demostração" class="projects-action-btn">
+                    <div aria-label="Ver demostração" class="project-action-button">
                       <svg fill="none" width="20" xmlns="http://www.w3.org/2000/svg" height="20" stroke="currentColor"
                         viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                         <path d="M15 3h6v6m-11 5L21 3m-3 10v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6">
@@ -765,7 +739,7 @@
                   </a>
 
                   <a href="https://github.com/JoaoVitorDomingos/LP-eBook" target="_blank">
-                    <div aria-label="Ver código fonte" class="projects-action-btn">
+                    <div aria-label="Ver código fonte" class="project-action-button">
                       <svg fill="none" width="20" xmlns="http://www.w3.org/2000/svg" height="20" stroke="currentColor"
                         viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                         <path
@@ -779,26 +753,26 @@
               </div>
             </div>
 
-            <div class="projects-content">
-              <h3 class="projects-card-title">LP Alta Conversão</h3>
+            <div class="project-card-content">
+              <h3 class="project-card-title">LP Alta Conversão</h3>
 
-              <p class="section-content projects-description">
+              <p class="section-content project-card-description">
                 Uma landing page de alta conversão para um e-book de receitas saudáveis, com design responsivo,
                 desenvolvida em HTML e CSS, e integração com Mailchimp com formulário personalizado para captação de
                 leads.
               </p>
 
-              <div class="projects-tags">
-                <span class="projects-tag">HTML</span>
-                <span class="projects-tag">CSS</span>
-                <span class="projects-tag">Mailchimp</span>
-                <span class="projects-tag">Mobile First</span>
+              <div class="project-card-tags">
+                <span class="project-card-tag">HTML</span>
+                <span class="project-card-tag">CSS</span>
+                <span class="project-card-tag">Mailchimp</span>
+                <span class="project-card-tag">Mobile First</span>
               </div>
 
               <!-- Mobile -->
-              <div class="projects-actions mobile-only">
+              <div class="project-card-actions mobile-only">
                 <a href="https://joaovitordomingos.github.io/LP-eBook/" target="_blank">
-                  <div aria-label="Ver demostração" class="projects-action-btn">
+                  <div aria-label="Ver demostração" class="project-action-button">
                     <svg fill="none" width="20" xmlns="http://www.w3.org/2000/svg" height="20" stroke="currentColor"
                       viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                       <path d="M15 3h6v6m-11 5L21 3m-3 10v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6">
@@ -808,7 +782,7 @@
                 </a>
 
                 <a href="https://github.com/JoaoVitorDomingos/LP-eBook" target="_blank">
-                  <div aria-label="Ver código fonte" class="projects-action-btn">
+                  <div aria-label="Ver código fonte" class="project-action-button">
                     <svg fill="none" width="20" xmlns="http://www.w3.org/2000/svg" height="20" stroke="currentColor"
                       viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                       <path
@@ -822,16 +796,16 @@
             </div>
           </article>
 
-          <article class="projects-card">
-            <div class="projects-media">
+          <article class="project-card">
+            <div class="project-card-media">
               <img alt="Site institucional de uma loja de roupas" src="imgs/projetos/movex1.jpg" loading="lazy"
-                class="projects-image" />
+                class="project-card-image" />
 
               <!-- Desktop Overlay -->
-              <div class="projects-overlay">
-                <div class="projects-actions">
+              <div class="project-card-overlay">
+                <div class="project-card-actions">
                   <a href="https://joaovitordomingos.github.io/moveX/" target="_blank">
-                    <div aria-label="Ver demostração" class="projects-action-btn">
+                    <div aria-label="Ver demostração" class="project-action-button">
                       <svg fill="none" width="20" xmlns="http://www.w3.org/2000/svg" height="20" stroke="currentColor"
                         viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                         <path d="M15 3h6v6m-11 5L21 3m-3 10v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6">
@@ -841,7 +815,7 @@
                   </a>
 
                   <a href="https://github.com/JoaoVitorDomingos/moveX" target="_blank">
-                    <div aria-label="Ver código fonte" class="projects-action-btn">
+                    <div aria-label="Ver código fonte" class="project-action-button">
                       <svg fill="none" width="20" xmlns="http://www.w3.org/2000/svg" height="20" stroke="currentColor"
                         viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                         <path
@@ -855,26 +829,26 @@
               </div>
             </div>
 
-            <div class="projects-content">
-              <h3 class="projects-card-title">MoveX</h3>
+            <div class="project-card-content">
+              <h3 class="project-card-title">MoveX</h3>
 
-              <p class="section-content projects-description">
+              <p class="section-content project-card-description">
                 Um site moderno para uma loja de roupas esportivas, desenvolvido com HTML, CSS, JavaScript e
                 Bootstrap, com abordagem Mobile First e design responsivo para uma melhor experiência em diferentes
                 dispositivos.
               </p>
 
-              <div class="projects-tags">
-                <span class="projects-tag">HTML</span>
-                <span class="projects-tag">CSS</span>
-                <span class="projects-tag">JS</span>
-                <span class="projects-tag">Bootstrap</span>
+              <div class="project-card-tags">
+                <span class="project-card-tag">HTML</span>
+                <span class="project-card-tag">CSS</span>
+                <span class="project-card-tag">JS</span>
+                <span class="project-card-tag">Bootstrap</span>
               </div>
 
               <!-- Mobile -->
-              <div class="projects-actions mobile-only">
+              <div class="project-card-actions mobile-only">
                 <a href="https://joaovitordomingos.github.io/moveX/" target="_blank">
-                  <div aria-label="Ver demostração" class="projects-action-btn">
+                  <div aria-label="Ver demostração" class="project-action-button">
                     <svg fill="none" width="20" xmlns="http://www.w3.org/2000/svg" height="20" stroke="currentColor"
                       viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                       <path d="M15 3h6v6m-11 5L21 3m-3 10v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6">
@@ -884,7 +858,7 @@
                 </a>
 
                 <a href="https://github.com/JoaoVitorDomingos/moveX" target="_blank">
-                  <div aria-label="Ver código fonte" class="projects-action-btn">
+                  <div aria-label="Ver código fonte" class="project-action-button">
                     <svg fill="none" width="20" xmlns="http://www.w3.org/2000/svg" height="20" stroke="currentColor"
                       viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                       <path
@@ -898,16 +872,16 @@
             </div>
           </article>
 
-          <article class="projects-card">
-            <div class="projects-media">
+          <article class="project-card">
+            <div class="project-card-media">
               <img alt="Site institucional para uma loja de informática" src="imgs/projetos/techcare.jpg" loading="lazy"
-                class="projects-image" />
+                class="project-card-image" />
 
               <!-- Desktop Overlay -->
-              <div class="projects-overlay">
-                <div class="projects-actions">
+              <div class="project-card-overlay">
+                <div class="project-card-actions">
                   <a href="https://joaovitordomingos.github.io/TechCare/" target="_blank">
-                    <div aria-label="Ver demostração" class="projects-action-btn">
+                    <div aria-label="Ver demostração" class="project-action-button">
                       <svg fill="none" width="20" xmlns="http://www.w3.org/2000/svg" height="20" stroke="currentColor"
                         viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                         <path d="M15 3h6v6m-11 5L21 3m-3 10v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6">
@@ -917,7 +891,7 @@
                   </a>
 
                   <a href="https://github.com/JoaoVitorDomingos/TechCare" target="_blank">
-                    <div aria-label="Ver código fonte" class="projects-action-btn">
+                    <div aria-label="Ver código fonte" class="project-action-button">
                       <svg fill="none" width="20" xmlns="http://www.w3.org/2000/svg" height="20" stroke="currentColor"
                         viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                         <path
@@ -931,25 +905,25 @@
               </div>
             </div>
 
-            <div class="projects-content">
-              <h3 class="projects-card-title">Tech Care</h3>
+            <div class="project-card-content">
+              <h3 class="project-card-title">Tech Care</h3>
 
-              <p class="section-content projects-description">
+              <p class="section-content project-card-description">
                 Uma landing page para uma empresa de manutenção de computadores, com suporte a tema claro/escuro e
                 dois idiomas (PT-BR e EN), utilizando abordagem Mobile First e foco em uma experiência personalizada
                 ao usuário.
               </p>
 
-              <div class="projects-tags">
-                <span class="projects-tag">HTML</span>
-                <span class="projects-tag">CSS</span>
-                <span class="projects-tag">JS</span>
+              <div class="project-card-tags">
+                <span class="project-card-tag">HTML</span>
+                <span class="project-card-tag">CSS</span>
+                <span class="project-card-tag">JS</span>
               </div>
 
               <!-- Mobile -->
-              <div class="projects-actions mobile-only">
+              <div class="project-card-actions mobile-only">
                 <a href="https://joaovitordomingos.github.io/TechCare/" target="_blank">
-                  <div aria-label="Ver demostração" class="projects-action-btn">
+                  <div aria-label="Ver demostração" class="project-action-button">
                     <svg fill="none" width="20" xmlns="http://www.w3.org/2000/svg" height="20" stroke="currentColor"
                       viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                       <path d="M15 3h6v6m-11 5L21 3m-3 10v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6">
@@ -959,7 +933,7 @@
                 </a>
 
                 <a href="https://github.com/JoaoVitorDomingos/TechCare" target="_blank">
-                  <div aria-label="Ver código fonte" class="projects-action-btn">
+                  <div aria-label="Ver código fonte" class="project-action-button">
                     <svg fill="none" width="20" xmlns="http://www.w3.org/2000/svg" height="20" stroke="currentColor"
                       viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                       <path
@@ -994,7 +968,7 @@
             <div class="contact-header">
               <h2 class="section-title">
                 <span>Vamos construir algo</span>
-                <span class="contact-thq-contact-accent-text-elm">
+                <span class="contact-title-accent">
                   Lendário
                 </span>
               </h2>
@@ -1100,7 +1074,7 @@
                     <div class="contact-focus-line"></div>
                   </div>
                 </div>
-                <button id="thq_button_JYPa" name="button" type="submit" data-form-field-id="thq_button_JYPa"
+                <button id="contact-submit-button" name="button" type="submit" data-form-field-id="contact-submit-button"
                   class="btn-primary contact-submit-btn btn-lg btn">
                   <span>Enviar Mensagem</span>
                   <svg width="20" xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 0 24 24">

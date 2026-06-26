@@ -1,0 +1,96 @@
+/* ==========================================================
+   Skills
+========================================================== */
+
+.skills-section {
+  background: var(--color-surface-elevated);
+}
+
+.skills-container {
+  margin: 0 auto;
+  padding: 0 var(--spacing-xl);
+  max-width: var(--content-max-width);
+}
+
+.skills-header {
+  text-align: center;
+  margin-bottom: var(--spacing-3xl);
+}
+
+.skills-grid {
+  gap: var(--spacing-xl);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.skill-card {
+  padding: var(--spacing-2xl);
+  background: var(--color-surface);
+  transition: transform 0.3s ease;
+  border-radius: var(--border-radius-card);
+}
+
+.skill-icon {
+  color: var(--color-primary);
+  margin-bottom: var(--spacing-lg);
+}
+
+.skill-progress {
+  height: 4px;
+  overflow: hidden;
+  background: var(--color-border);
+  margin-top: var(--spacing-lg);
+  border-radius: var(--border-radius-full);
+}
+
+.skill-progress-fill {
+  height: 100%;
+  background: var(--color-primary);
+}
+
+.skill-card:hover {
+  transform: translateY(-5px);
+}
+
+@media(max-width: 991px) {
+  .skills-header p {
+    font-size: var(--font-size-xl);
+  }
+}
+
+@media(max-width: 767px) {
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media(max-width: 767px) {
+  .skills-header .section-content {
+    font-size: var(--font-size-lg);
+    margin-top: 15px;
+  }
+}
+
+.skill-progress-fill--frontend {
+  width: 95%;
+}
+
+.skill-progress-fill--wordpress {
+  width: 90%;
+}
+
+.skill-progress-fill--java {
+  width: 75%;
+}
+
+.skill-progress-fill--postgresql {
+  width: 80%;
+}
+
+.skill-progress-fill--design {
+  width: 85%;
+}
+
+.skill-progress-fill--git {
+  width: 70%;
+}

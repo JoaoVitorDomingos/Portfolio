@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-  const servicesCards = document.querySelectorAll(".services-card");
+  const servicesCards = document.querySelectorAll(".service-card");
 
   servicesCards.forEach((card) => {
     card.addEventListener("mousemove", (e) => {
@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
       const x = e.clientX - rect.left;
       const y = e.clientY - rect.top;
 
-      const glow = card.querySelector(".services-card-glow");
+      const glow = card.querySelector(".service-card-glow");
       if (glow) {
         glow.style.background = `radial-gradient(circle at ${x}px ${y}px, color-mix(in srgb, var(--color-primary) 20%, transparent) 0%, transparent 70%)`;
       }

@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-  const projectCards = document.querySelectorAll(".projects-card");
+  const projectCards = document.querySelectorAll(".project-card");
 
   const observerOptions = {
     threshold: 0.1,
